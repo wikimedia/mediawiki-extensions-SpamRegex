@@ -37,7 +37,7 @@ $specialPageAliases['hsb'] = array(
 
 /** Interlingua (Interlingua) */
 $specialPageAliases['ia'] = array(
-	'SpamRegex' => array( 'Regex antispam', 'Regex anti-spam' ),
+	'SpamRegex' => array( 'Regex_antispam', 'Regex_anti-spam' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
