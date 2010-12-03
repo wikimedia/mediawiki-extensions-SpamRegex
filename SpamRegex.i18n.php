@@ -926,6 +926,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'spamregex' => 'スパム正規表現フィルター',
@@ -942,7 +943,7 @@ $messages['ja'] = array(
 	'spamregex-unblock-success' => 'ブロック解除成功',
 	'spamregex-unblock-message' => "「'''$1'''」という語句を使えるようブロック解除しました。",
 	'spamregex-page-title-2' => '正規表現を使って語句を保存できないようブロック',
-	'spamregex-block-success' => 'ブロック成功',
+	'spamregex-block-success' => 'ブロックに成功しました',
 	'spamregex-block-message' => "「'''$1'''」という語句をブロックしました。",
 	'spamregex-warning-1' => 'ブロックする語句を指定してください。',
 	'spamregex-error-1' => '正規表現が無効です。',
