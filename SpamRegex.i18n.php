@@ -1631,6 +1631,7 @@ $messages['sma'] = array(
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
+ * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
@@ -1644,9 +1645,9 @@ $messages['sr-ec'] = array(
 	'spamregex-no-currently-blocked' => "'''Нема блокираних фраза.'''",
 	'spamregex-log' => "* '''$1''' $2 ([{{SERVER}}$3&text=$4 уклони]) додат са $5 на $6 у $7",
 	'spamregex-page-title-1' => 'Блокирај фразе помоћу регуларних израза',
-	'spamregex-unblock-success' => 'Деблокирање успешно',
+	'spamregex-unblock-success' => 'Приступ је враћен',
 	'spamregex-unblock-message' => "Фраза '''$1''' је била одблокирана за измене.",
-	'spamregex-block-success' => 'Блок успешан.',
+	'spamregex-block-success' => 'Приступ је забрањен',
 	'spamregex-block-message' => "Фраза '''$1''' је сада блокирана.",
 	'spamregex-warning-1' => 'Наведите фразу коју треба блокирати.',
 	'spamregex-error-1' => 'Невалидан регуларни израз.',
