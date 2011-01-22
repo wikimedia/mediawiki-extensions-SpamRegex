@@ -181,7 +181,7 @@ $messages['be'] = array(
 	'spamregex-text' => '(Тэкст)',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -384,7 +384,7 @@ Sei aber vorsichtig, Phrasen sollten nicht zu kurz oder zu allgemein sein.',
 	'right-spamregex' => 'Ungewollte Phrasen über [[Special:SpamRegex]] blockieren',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author ChrisiPK
  * @author Imre
  */
