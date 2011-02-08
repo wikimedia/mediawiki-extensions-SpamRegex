@@ -1052,6 +1052,13 @@ do es e Stöck Tex dren, dä jesperrt es.',
 	'right-spamregex' => '<i lang="en">SPAM</i>-Wööter övver <i lang="en">[[Special:SpamRegex]]</i> sperre',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'spamregex-text' => '(Nivîs)',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
