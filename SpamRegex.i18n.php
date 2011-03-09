@@ -1895,6 +1895,13 @@ $messages['vo'] = array(
 	'spamregex-text' => '(Vödem)',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'spamregex-text' => '(טעקסט)',
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Liangent
  */
