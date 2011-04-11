@@ -330,6 +330,7 @@ Preporučuje se oprez, da izrazi ne budu previše kratki niti previše uobičaje
  */
 $messages['ca'] = array(
 	'spamregex-already-blocked' => '«$1» ja està blocat',
+	'right-spamregex' => 'Blocar frases de spam a través de [[Special:SpamRegex]]',
 );
 
 /** Sorani (کوردی)
@@ -1665,7 +1666,7 @@ $messages['sr-ec'] = array(
 	'spamregex-phrase-block-summary' => 'блокирајте фразу у опису измене',
 	'spamregex-block-submit' => 'Блокирајте&nbsp;ову&nbsp;фразу',
 	'spamregex-text' => '(Текст)',
-	'spamregex-summary-log' => '(Опис)',
+	'spamregex-summary-log' => '(сажетак)',
 	'right-spamregex' => 'Блокирајте спам-фразе помоћу [[Special:SpamRegex]]',
 );
 
