@@ -1181,6 +1181,13 @@ $messages['mr'] = array(
 	'spamregex-summary-log' => 'आढावा',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'spamregex-summary-log' => '(Ringkasan)',
+);
+
 /** Maltese (Malti)
  * @author Roderick Mallia
  */
