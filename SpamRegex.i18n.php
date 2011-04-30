@@ -1784,6 +1784,7 @@ $messages['te'] = array(
  */
 $messages['tet'] = array(
 	'spamregex-text' => '(Testu)',
+	'spamregex-summary-log' => '(Rezumu)',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
