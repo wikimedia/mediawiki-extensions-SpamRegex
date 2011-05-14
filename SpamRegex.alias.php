@@ -8,9 +8,7 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author Bartek Łapiński
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'SpamRegex' => array( 'SpamRegex' ),
 );
@@ -35,6 +33,11 @@ $specialPageAliases['hsb'] = array(
 	'SpamRegex' => array( 'Spamowe regularne wurazy' ),
 );
 
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'SpamRegex' => array( 'PouryèlReg' ),
+);
+
 /** Interlingua (Interlingua) */
 $specialPageAliases['ia'] = array(
 	'SpamRegex' => array( 'Regex_antispam', 'Regex_anti-spam' ),
@@ -55,6 +58,16 @@ $specialPageAliases['lb'] = array(
 	'SpamRegex' => array( 'Regele_fir_Spam_ze_fannen' ),
 );
 
+/** Macedonian (Македонски) */
+$specialPageAliases['mk'] = array(
+	'SpamRegex' => array( 'РегИзрЗаСпам' ),
+);
+
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'SpamRegex' => array( 'പാഴെഴുത്ത്റെജെക്സ്' ),
+);
+
 /** Marathi (मराठी) */
 $specialPageAliases['mr'] = array(
 	'SpamRegex' => array( 'उत्पातरिजेक्स' ),
@@ -72,7 +85,7 @@ $specialPageAliases['nl'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $specialPageAliases['no'] = array(
-	'SpamRegex' => array( 'Regulære uttrykk mot spam' ),
+	'SpamRegex' => array( 'Regulære_uttrykk_mot_spam' ),
 );
 
 /** Tagalog (Tagalog) */
