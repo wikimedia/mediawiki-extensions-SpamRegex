@@ -605,6 +605,10 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'spamregex' => 'Èxprèssions racionèles de spames',
+	'spamregex-unblock-success' => 'Lo dèblocâjo at reussi',
+	'spamregex-block-success' => 'Lo blocâjo at reussi',
+	'spamregex-phrase-block' => 'Frâsa a blocar :',
+	'spamregex-block-submit' => 'Blocar&nbsp;cela&nbsp;frâsa',
 	'spamregex-text' => '(Tèxto)',
 	'spamregex-summary-log' => '(Rèsumâ)',
 );
