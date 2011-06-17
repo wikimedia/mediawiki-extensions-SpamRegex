@@ -486,13 +486,14 @@ $messages['eo'] = array(
  * @author Antur
  * @author Crazymadlover
  * @author Dferg
+ * @author Fitoschido
  * @author Imre
  */
 $messages['es'] = array(
 	'spamregex' => 'Spam regex',
 	'spamregex-desc' => '[[Special:SpamRegex|Filtrar]] frases no deseadas en páginas editadas, basadas en expresiones regulares',
-	'spamregex-error-unblocking' => 'Error desbloqueando "$1". Probablemente no existe tal ruta.',
-	'spamregex-summary' => 'El texto fue encontrado en el resumen de página.',
+	'spamregex-error-unblocking' => 'Error al desbloquear «$1». Probablemente no exista tal ruta.',
+	'spamregex-summary' => 'El texto fue encontrado en el resumen de la página.',
 	'spamregex-intro' => 'Use este formulario para evitar la inclusión de expresiones en el texto de una página.
 Si el texto contiene la expresion dada, no se grabará el cambio y se mostrará una explicación al usuario que intenta guardar la página.
 Sea cuidadoso, las expresiones a prohibir no deberían ser muy cortas o muy comunes.',
@@ -502,19 +503,19 @@ Sea cuidadoso, las expresiones a prohibir no deberían ser muy cortas o muy comu
 	'spamregex-no-currently-blocked' => "'''No hay frases bloqueadas.'''",
 	'spamregex-log' => " '''$1''' $2 ([{{SERVER}}$3&text=$4 borrado]) agregado por  $5 sobre $6 en $7",
 	'spamregex-page-title-1' => 'Bloquear frase usando expresiones regulares',
-	'spamregex-unblock-success' => 'Desbloque fue un éxito',
-	'spamregex-unblock-message' => "Frase '''$1''' ha sido bloqueada de la edición.",
+	'spamregex-unblock-success' => 'Desbloqueo exitoso',
+	'spamregex-unblock-message' => "La frase '''$1''' ha sido desbloqueada de la edición.",
 	'spamregex-page-title-2' => 'Bloquear frases desde el grabado usando expresiones regulares',
 	'spamregex-block-success' => 'Bloqueo exitoso',
-	'spamregex-block-message' => "Frase '''$1''' ha sido bloqueada",
-	'spamregex-warning-1' => 'De una frase a bloquear.',
-	'spamregex-error-1' => 'Expresión regular inválida.',
-	'spamregex-warning-2' => 'Por favor chequee al menos un modo de bloqueo.',
-	'spamregex-already-blocked' => '"$1" ya está bloqueado',
+	'spamregex-block-message' => "La frase '''$1''' ha sido bloqueada.",
+	'spamregex-warning-1' => 'Proporcione una frase a bloquear.',
+	'spamregex-error-1' => 'Expresión regular no válida.',
+	'spamregex-warning-2' => 'Marque al menos un modo de bloqueo.',
+	'spamregex-already-blocked' => '«$1» ya está bloqueado',
 	'spamregex-phrase-block' => 'Frase a bloquear:',
 	'spamregex-phrase-block-text' => 'bloquear frase en texto de página',
 	'spamregex-phrase-block-summary' => 'bloquear frase en resumen',
-	'spamregex-block-submit' => 'Block&nbsp;this&nbsp;frases',
+	'spamregex-block-submit' => 'Bloquear&nbsp;esta&nbsp;frase',
 	'spamregex-text' => '(Texto)',
 	'spamregex-summary-log' => '(Resumen)',
 	'right-spamregex' => 'Bloquear frases spam a traves de [[Special:SpamRegex]]',
