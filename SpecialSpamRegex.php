@@ -50,16 +50,16 @@ class SpamRegex extends SpecialPage {
 		if ( 'success_block' == $action ) {
 			$sRF->showSuccess();
 			$sRF->showForm('');
-		} else if ( 'success_unblock' == $action ) {
+		} elseif ( 'success_unblock' == $action ) {
 			$sRL->showSuccess();
 			$sRF->showForm('');
-		} else if ( 'failure_unblock' == $action ) {
+		} elseif ( 'failure_unblock' == $action ) {
 			$text = htmlspecialchars( $wgRequest->getVal( 'text' ) );
 			$sRF->showForm( wfMsg( 'spamregex-error-unblocking', $text ) );
-		} else if ( $wgRequest->wasPosted() && 'submit' == $action &&
+		} elseif ( $wgRequest->wasPosted() && 'submit' == $action &&
 			$wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
 			$sRF->doSubmit();
-		} else if ( 'delete' == $action ) {
+		} elseif ( 'delete' == $action ) {
 			$sRL->deleteFromList();
 		} else {
 			$sRF->showForm( '' );
