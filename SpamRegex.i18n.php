@@ -606,9 +606,15 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'spamregex' => 'Èxprèssions racionèles de spames',
+	'spamregex-currently-blocked' => "'''Frâses ora blocâs :'''",
+	'spamregex-no-currently-blocked' => "'''Y at gins de frâsa blocâ.'''",
 	'spamregex-unblock-success' => 'Lo dèblocâjo at reussi',
 	'spamregex-block-success' => 'Lo blocâjo at reussi',
+	'spamregex-block-message' => "La frâsa '''$1''' at étâ blocâ.",
+	'spamregex-already-blocked' => '« $1 » est ja blocâ',
 	'spamregex-phrase-block' => 'Frâsa a blocar :',
+	'spamregex-phrase-block-text' => 'blocar la frâsa dens lo tèxto de la pâge',
+	'spamregex-phrase-block-summary' => 'blocar la frâsa dens lo rèsumâ',
 	'spamregex-block-submit' => 'Blocar&nbsp;cela&nbsp;frâsa',
 	'spamregex-text' => '(Tèxto)',
 	'spamregex-summary-log' => '(Rèsumâ)',
