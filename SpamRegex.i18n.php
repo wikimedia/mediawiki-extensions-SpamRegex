@@ -351,6 +351,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author ChrisiPK
  * @author Revolus
+ * @author SVG
  * @author Umherirrender
  */
 $messages['de'] = array(
