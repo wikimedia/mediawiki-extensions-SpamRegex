@@ -174,6 +174,14 @@ $messages['arz'] = array(
 	'right-spamregex' => 'منع عبارات السبام من خلال [[Special:SpamRegex]]',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'spamregex-text' => '(Mətn)',
+	'spamregex-summary-log' => '(Xülasə)',
+);
+
 /** Belarusian (Беларуская)
  * @author Тест
  */
