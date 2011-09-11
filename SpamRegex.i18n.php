@@ -363,7 +363,7 @@ $messages['da'] = array(
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'spamregex' => 'Spam regex',
+	'spamregex' => 'Spam Regex',
 	'spamregex-desc' => '[[Special:SpamRegex|Filtert]] ungewollte Phrasen, basierend auf regulären Ausdrücken, aus geänderten Seiten aus',
 	'spamregex-error-unblocking' => 'Konnte „$1“ nicht freigeben. Wahrscheinlich existiert kein solches Muster.',
 	'spamregex-summary' => 'Der Text wurde in der Zusammenfassung gefunden.',
