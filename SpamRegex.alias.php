@@ -75,7 +75,7 @@ $specialPageAliases['mr'] = array(
 
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
-	'SpamRegex' => array( 'Moek_regeliere_uutdrokking' ),
+	'SpamRegex' => array( 'Moek_reguliere_uutdrokking' ),
 );
 
 /** Dutch (Nederlands) */
