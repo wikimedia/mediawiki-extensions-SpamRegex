@@ -1312,6 +1312,7 @@ $messages['nn'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  * @author Nghtwlkr
+ * @author Unhammer
  */
 $messages['no'] = array(
 	'spamregex' => 'SpamRegex',
@@ -1340,7 +1341,7 @@ $messages['no'] = array(
 	'spamregex-block-submit' => 'Blokker&nbsp;denne&nbsp;frasen',
 	'spamregex-text' => '(Tekst)',
 	'spamregex-summary-log' => '(Sammendrag)',
-	'right-spamregex' => 'Blokkér spamfraser gjennom [[Special:SpamRegex]]',
+	'right-spamregex' => 'Blokker spamfraser gjennom [[Special:SpamRegex]]',
 );
 
 /** Occitan (Occitan)
