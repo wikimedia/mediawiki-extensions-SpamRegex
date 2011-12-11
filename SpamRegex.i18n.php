@@ -1696,7 +1696,7 @@ $messages['sr-ec'] = array(
 	'spamregex-phrase-block-summary' => 'блокирајте фразу у опису измене',
 	'spamregex-block-submit' => 'Блокирајте&nbsp;ову&nbsp;фразу',
 	'spamregex-text' => '(Текст)',
-	'spamregex-summary-log' => '(сажетак)',
+	'spamregex-summary-log' => '(опис)',
 	'right-spamregex' => 'Блокирајте спам-фразе помоћу [[Special:SpamRegex]]',
 );
 
