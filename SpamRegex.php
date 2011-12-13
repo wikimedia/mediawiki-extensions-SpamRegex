@@ -33,7 +33,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Regular Expression Spam Block',
 	'version' => '1.2.2',
 	'author' => array( 'Bartek Łapiński', 'Alexandre Emsenhuber', 'Jack Phoenix' ),
-	'url' => 'http://www.mediawiki.org/wiki/Extension:SpamRegex',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:SpamRegex',
 	'descriptionmsg' => 'spamregex-desc',
 );
 
