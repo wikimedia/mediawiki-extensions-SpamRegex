@@ -84,7 +84,7 @@ $specialPageAliases['nl'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['no'] = array(
+$specialPageAliases['nb'] = array(
 	'SpamRegex' => array( 'Regulære_uttrykk_mot_spam' ),
 );
 

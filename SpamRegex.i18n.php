@@ -1316,7 +1316,7 @@ $messages['nn'] = array(
  * @author Nghtwlkr
  * @author Unhammer
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'spamregex' => 'SpamRegex',
 	'spamregex-desc' => '[[Special:SpamRegex|Filtrer ut]] uønskede fraser i redigerte sider, basert på regulære uttrykk',
 	'spamregex-error-unblocking' => 'Feil ved avblokkering av «$1». Det er nok ikke noe slikt mønster.',
