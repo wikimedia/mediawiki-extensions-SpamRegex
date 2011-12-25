@@ -56,7 +56,7 @@ function wfSpamRegexCacheKey( /*...*/ ) {
 // Set up the new special page
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['SpamRegex'] = $dir . 'SpamRegex.i18n.php';
-$wgExtensionAliasesFiles['SpamRegex'] = $dir . 'SpamRegex.alias.php';
+$wgExtensionMessagesFiles['SpamRegexAlias'] = $dir . 'SpamRegex.alias.php';
 $wgAutoloadClasses['SpamRegex'] = $dir . 'SpecialSpamRegex.php';
 $wgAutoloadClasses['SpamRegexHooks'] = $dir . 'SpamRegexCore.php';
 $wgSpecialPages['SpamRegex'] = 'SpamRegex';
