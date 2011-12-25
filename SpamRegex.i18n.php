@@ -1231,6 +1231,41 @@ $messages['nah'] = array(
 	'spamregex-summary-log' => '(Tlahcuilōltōn)',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ * @author Unhammer
+ */
+$messages['nb'] = array(
+	'spamregex' => 'SpamRegex',
+	'spamregex-desc' => '[[Special:SpamRegex|Filtrer ut]] uønskede fraser i redigerte sider, basert på regulære uttrykk',
+	'spamregex-error-unblocking' => 'Feil ved avblokkering av «$1». Det er nok ikke noe slikt mønster.',
+	'spamregex-summary' => 'Teksten ble funnet i sidens sammendrag.',
+	'spamregex-intro' => 'Bruk dette skjemaet for å effektivt blokkere uttrykk fra å bli lagret på sidene. Om teksten inneholder gitt uttrykk, vil endringen ikke bli lagret, og en forklaring vil vises til brukeren som prøvde å lagre siden. Vær obs på at uttrykk ikke bør være for korte eller for vanlige.',
+	'spamregex-page-title' => 'Blokkering av uønskede uttrykk med regulære uttrykk',
+	'spamregex-currently-blocked' => "'''Nåværende blokkerte fraser:'''",
+	'spamregex-move' => 'Årsaken du skrev inn inneholdt en blokkert frase.',
+	'spamregex-no-currently-blocked' => "'''Det er ingen blokkerte fraser.'''",
+	'spamregex-log' => "'''$1''' $2 ([{{SERVER}}$3&text=$4 fjern]) lagt til av $5 den $6 klokka $7",
+	'spamregex-page-title-1' => 'Blokker frase ved hjelp av regulære uttrykk',
+	'spamregex-unblock-success' => 'Avblokkering lyktes',
+	'spamregex-unblock-message' => "Frasen '''$1''' er ikke lenger blokkert.",
+	'spamregex-page-title-2' => 'Blokker fraser fra å kunne lagres ved hjelp av regulære uttrykk.',
+	'spamregex-block-success' => 'Blokkering lyktes',
+	'spamregex-block-message' => "Frasen '''$1''' er blokkert.",
+	'spamregex-warning-1' => 'Oppgi en frase å blokkere.',
+	'spamregex-error-1' => 'Ugyldig regulært uttrykk.',
+	'spamregex-warning-2' => 'Du må velge minst en blokkeringsmodus.',
+	'spamregex-already-blocked' => '«$1» er allerede blokkert',
+	'spamregex-phrase-block' => 'Frase å blokkere:',
+	'spamregex-phrase-block-text' => 'blokker frase i sidetekst',
+	'spamregex-phrase-block-summary' => 'blokker frase i sammendrag',
+	'spamregex-block-submit' => 'Blokker&nbsp;denne&nbsp;frasen',
+	'spamregex-text' => '(Tekst)',
+	'spamregex-summary-log' => '(Sammendrag)',
+	'right-spamregex' => 'Blokker spamfraser gjennom [[Special:SpamRegex]]',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1309,41 +1344,6 @@ $messages['nn'] = array(
 	'spamregex-text' => '(Tekst)',
 	'spamregex-summary-log' => '(Samandrag)',
 	'right-spamregex' => 'Blokkera spamfrasar gjennom [[Special:SpamRegex]]',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- * @author Unhammer
- */
-$messages['nb'] = array(
-	'spamregex' => 'SpamRegex',
-	'spamregex-desc' => '[[Special:SpamRegex|Filtrer ut]] uønskede fraser i redigerte sider, basert på regulære uttrykk',
-	'spamregex-error-unblocking' => 'Feil ved avblokkering av «$1». Det er nok ikke noe slikt mønster.',
-	'spamregex-summary' => 'Teksten ble funnet i sidens sammendrag.',
-	'spamregex-intro' => 'Bruk dette skjemaet for å effektivt blokkere uttrykk fra å bli lagret på sidene. Om teksten inneholder gitt uttrykk, vil endringen ikke bli lagret, og en forklaring vil vises til brukeren som prøvde å lagre siden. Vær obs på at uttrykk ikke bør være for korte eller for vanlige.',
-	'spamregex-page-title' => 'Blokkering av uønskede uttrykk med regulære uttrykk',
-	'spamregex-currently-blocked' => "'''Nåværende blokkerte fraser:'''",
-	'spamregex-move' => 'Årsaken du skrev inn inneholdt en blokkert frase.',
-	'spamregex-no-currently-blocked' => "'''Det er ingen blokkerte fraser.'''",
-	'spamregex-log' => "'''$1''' $2 ([{{SERVER}}$3&text=$4 fjern]) lagt til av $5 den $6 klokka $7",
-	'spamregex-page-title-1' => 'Blokker frase ved hjelp av regulære uttrykk',
-	'spamregex-unblock-success' => 'Avblokkering lyktes',
-	'spamregex-unblock-message' => "Frasen '''$1''' er ikke lenger blokkert.",
-	'spamregex-page-title-2' => 'Blokker fraser fra å kunne lagres ved hjelp av regulære uttrykk.',
-	'spamregex-block-success' => 'Blokkering lyktes',
-	'spamregex-block-message' => "Frasen '''$1''' er blokkert.",
-	'spamregex-warning-1' => 'Oppgi en frase å blokkere.',
-	'spamregex-error-1' => 'Ugyldig regulært uttrykk.',
-	'spamregex-warning-2' => 'Du må velge minst en blokkeringsmodus.',
-	'spamregex-already-blocked' => '«$1» er allerede blokkert',
-	'spamregex-phrase-block' => 'Frase å blokkere:',
-	'spamregex-phrase-block-text' => 'blokker frase i sidetekst',
-	'spamregex-phrase-block-summary' => 'blokker frase i sammendrag',
-	'spamregex-block-submit' => 'Blokker&nbsp;denne&nbsp;frasen',
-	'spamregex-text' => '(Tekst)',
-	'spamregex-summary-log' => '(Sammendrag)',
-	'right-spamregex' => 'Blokker spamfraser gjennom [[Special:SpamRegex]]',
 );
 
 /** Occitan (Occitan)
@@ -1702,32 +1702,33 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  * @author Жељко Тодоровић
  */
 $messages['sr-el'] = array(
 	'spamregex' => 'Regularni izrazi za spam',
-	'spamregex-desc' => '[[Special:SpamRegex|Filtrirajte]] neželjene fraze u izmenjenim stranama, pomoću regularnih izraza',
+	'spamregex-desc' => '[[Special:SpamRegex|Filtrirajte]] neželjene fraze u izmenjenim stranicama, pomoću regularnih izraza',
 	'spamregex-error-unblocking' => 'Greška prilikom deblokiranja „$1”. Verovatno ta fraza i nije blokirana.',
 	'spamregex-summary' => 'Tekst se našao u opisu stranice.',
-	'spamregex-currently-blocked' => "'''Trenutno blokirane fraze:'''",
+	'spamregex-currently-blocked' => "'''Zabranjene fraze:'''",
 	'spamregex-move' => 'Razlog koji ste naveli je sadržao blokiranu frazu.',
 	'spamregex-no-currently-blocked' => "'''Nema blokiranih fraza.'''",
 	'spamregex-log' => "* '''$1''' $2 ([{{SERVER}}$3&text=$4 ukloni]) dodat sa $5 na $6 u $7",
-	'spamregex-page-title-1' => 'Blokiraj fraze pomoću regularnih izraza',
-	'spamregex-unblock-success' => 'Deblokiranje uspešno',
+	'spamregex-page-title-1' => 'Blokiraj fraze koristeći regularne izraze',
+	'spamregex-unblock-success' => 'Pristup je vraćen',
 	'spamregex-unblock-message' => "Fraza '''$1''' je bila deblokirana za izmene.",
-	'spamregex-block-success' => 'Blok uspešan.',
+	'spamregex-block-success' => 'Blokiranje je uspelo',
 	'spamregex-block-message' => "Fraza '''$1''' je sada blokirana.",
-	'spamregex-warning-1' => 'Navedite frazu koju treba blokirati.',
+	'spamregex-warning-1' => 'Unesite frazu koju želite da zabranite.',
 	'spamregex-error-1' => 'Nevalidan regularni izraz.',
 	'spamregex-warning-2' => 'Molimo Vas da označite makar jedan način blokiranja.',
 	'spamregex-already-blocked' => '"$1" je već blokirana',
-	'spamregex-phrase-block' => 'Fraza za blokiranje:',
+	'spamregex-phrase-block' => 'Zabranjena fraza:',
 	'spamregex-phrase-block-text' => 'blokirajte frazu u tekstu stranice',
 	'spamregex-phrase-block-summary' => 'blokirajte frazu u opisu izmene',
 	'spamregex-block-submit' => 'Blokirajte&nbsp;ovu&nbsp;frazu',
 	'spamregex-text' => '(Tekst)',
-	'spamregex-summary-log' => '(Opis)',
+	'spamregex-summary-log' => '(opis)',
 	'right-spamregex' => 'Blokirajte spam-fraze pomoću [[Special:SpamRegex]]',
 );
 
