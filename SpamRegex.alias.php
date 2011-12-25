@@ -73,6 +73,11 @@ $specialPageAliases['mr'] = array(
 	'SpamRegex' => array( 'उत्पातरिजेक्स' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'SpamRegex' => array( 'Regulære_uttrykk_mot_spam' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'SpamRegex' => array( 'Moek_reguliere_uutdrokking' ),
@@ -83,17 +88,7 @@ $specialPageAliases['nl'] = array(
 	'SpamRegex' => array( 'SpamReguliereExpressie' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'SpamRegex' => array( 'Regulære_uttrykk_mot_spam' ),
-);
-
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
 	'SpamRegex' => array( 'Karaniwang pagsasaad ng manlulusob' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
