@@ -174,6 +174,41 @@ $messages['arz'] = array(
 	'right-spamregex' => 'منع عبارات السبام من خلال [[Special:SpamRegex]]',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'spamregex' => 'Spam regex',
+	'spamregex-desc' => "[[Special:SpamRegex|Peñera]] les frases que nun se quieren nes páxines editaes, basandose n'espresiones regulares",
+	'spamregex-error-unblocking' => 'Error al desbloquiar "$1". Ye probable que nun esista esi patrón.',
+	'spamregex-summary' => "El testu s'atopó nel resume de la páxina.",
+	'spamregex-intro' => "Usa esti formulariu pa bloquiar espresiones de mou efectivu y que nun se puedan guardar nel testu d'una páxina.
+Si'l testu contién la espresión dada, el cambiu nun podrá guardase y s'amosará una esplicación al usuariu qu'intentó guardar la páxina.
+Ten especial procuru, les espresiones nun tendríen de ser demasiao curties nin mui comúnes.",
+	'spamregex-page-title' => "Bloquéu d'espresiones nun deseaes spam regex",
+	'spamregex-currently-blocked' => "'''Frases bloquiaes anguaño:'''",
+	'spamregex-move' => "El motivu qu'escribisti contién una frase bloquiada.",
+	'spamregex-no-currently-blocked' => "'''Nun hai frases bloquiaes.'''",
+	'spamregex-log' => "* '''$1''' $2 ([{{SERVER}}$3&text=$4 desaniciar]) amestada por $5 el $6 a les $7",
+	'spamregex-page-title-1' => 'Bloquiar frase usando espresiones regulares',
+	'spamregex-unblock-success' => 'Desbloquéu correutu',
+	'spamregex-unblock-message' => "La frase '''$1''' se desbloquió pa edición.",
+	'spamregex-page-title-2' => 'Bloquiar el guardáu de frases usando espresiones regulares',
+	'spamregex-block-success' => 'Bloquéu correutu',
+	'spamregex-block-message' => "Se bloquió la frase '''$1'''.",
+	'spamregex-warning-1' => 'Da una frase pa bloquiar.',
+	'spamregex-error-1' => 'Espresión regular inválida.',
+	'spamregex-warning-2' => 'Por favor, marca polo menos un mou de bloquéu.',
+	'spamregex-already-blocked' => '"$1" yá ta bloquiáu',
+	'spamregex-phrase-block' => 'Frase a bloquiar:',
+	'spamregex-phrase-block-text' => 'bloquiar una frase del testu de la páxina',
+	'spamregex-phrase-block-summary' => 'bloquiar una frase del resume',
+	'spamregex-block-submit' => 'Bloquiar&nbsp;esta&nbsp;frase',
+	'spamregex-text' => '(Testu)',
+	'spamregex-summary-log' => '(Resume)',
+	'right-spamregex' => 'Bloquiar les frases de spam con [[Special:SpamRegex]]',
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  */
