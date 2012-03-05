@@ -579,6 +579,17 @@ $messages['eu'] = array(
 	'spamregex-summary-log' => '(Laburpen)',
 );
 
+/** Persian (فارسی)
+ * @author ZxxZxxZ
+ */
+$messages['fa'] = array(
+	'spamregex-currently-blocked' => "'''عبارت‌های مسدودشدهٔ کنونی:'''",
+	'spamregex-block-success' => 'مسدودکردن با موفقیت انجام شد',
+	'spamregex-block-message' => "عبارت '''$1''' مسدود شده‌است.",
+	'spamregex-text' => '(متن)',
+	'spamregex-summary-log' => '(خلاصه)',
+);
+
 /** Finnish (Suomi)
  * @author Silvonen
  * @author Str4nd
