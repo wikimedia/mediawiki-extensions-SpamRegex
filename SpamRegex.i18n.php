@@ -1432,6 +1432,13 @@ $messages['or'] = array(
 	'spamregex-summary-log' => '(ସାରକଥା)',
 );
 
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'spamregex-currently-blocked' => "'''Im Aachebligg gschberde Ausdrigg:'''",
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Leinad
