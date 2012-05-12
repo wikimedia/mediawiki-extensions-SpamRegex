@@ -995,6 +995,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -1024,7 +1025,7 @@ $messages['ja'] = array(
 	'spamregex-block-submit' => 'この語句をブロック',
 	'spamregex-text' => '(本文)',
 	'spamregex-summary-log' => '(要約)',
-	'right-spamregex' => '[[Special:SpamRegex]] を使ってスパム語句をブロックする',
+	'right-spamregex' => '[[Special:SpamRegex]] を使ってスパム語句をブロック',
 );
 
 /** Javanese (Basa Jawa)
@@ -1361,6 +1362,7 @@ Zorg dat de uitdrukkingen niet te kort of veelvoorkomend zijn.',
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'spamregex' => 'SpamRegex',
@@ -1874,7 +1876,7 @@ $messages['tg-cyrl'] = array(
 	'spamregex-summary-log' => '(Хулоса)',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1948,7 +1950,7 @@ $messages['uk'] = array(
 	'spamregex-summary-log' => '(опис)',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
