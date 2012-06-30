@@ -33,7 +33,7 @@ $specialPageAliases['he'] = array(
 	'SpamRegex' => array( 'ביטויי_ספאם' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'SpamRegex' => array( 'Spamowe regularne wurazy' ),
 );
