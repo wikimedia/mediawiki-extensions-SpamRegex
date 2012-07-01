@@ -89,7 +89,7 @@ $messages['am'] = array(
 	'spamregex-text' => '(ጽሕፈት)',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -224,7 +224,7 @@ $messages['be'] = array(
 	'spamregex-text' => '(Тэкст)',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -441,7 +441,7 @@ Seien Sie aber vorsichtig, Phrasen sollten nicht zu kurz oder zu allgemein sein.
 	'spamregex-warning-2' => 'Bitte wählen Sie mindestens eine Sperrmethode aus.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -684,7 +684,7 @@ $messages['fy'] = array(
 	'spamregex-already-blocked' => '"$1" is al útsluten',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  * @author Xosé
@@ -827,7 +827,7 @@ $messages['hr'] = array(
 	'spamregex-summary-log' => '(Sažetak)',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1664,7 +1664,7 @@ $messages['ru'] = array(
 	'right-spamregex' => 'блокирование спам-фраз с помощью [[Special:SpamRegex]]',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
