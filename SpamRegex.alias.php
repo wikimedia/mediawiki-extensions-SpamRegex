@@ -100,5 +100,5 @@ $specialPageAliases['nl'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'SpamRegex' => array( 'Karaniwang pagsasaad ng manlulusob' ),
+	'SpamRegex' => array( 'Karaniwang_pagsasaad_ng_manlulusob' ),
 );
