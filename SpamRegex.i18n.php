@@ -1043,14 +1043,14 @@ $messages['jv'] = array(
 	'spamregex-summary-log' => '(Ringkesan)',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author GaiJin
  */
 $messages['kk-cyrl'] = array(
 	'spamregex-summary-log' => '(Түйіндемесі)',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬)
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬)
  * @author GaiJin
  */
 $messages['kk-latn'] = array(
@@ -1153,7 +1153,7 @@ $messages['lb'] = array(
 	'spamregex-summary-log' => '(Resumé)',
 );
 
-/** Moksha (Мокшень)
+/** Moksha (мокшень)
  * @author Jarmanj Turtash
  * @author Khazar II
  */
@@ -1161,7 +1161,7 @@ $messages['mdf'] = array(
 	'spamregex-already-blocked' => '"$1" сёлкфоль ни',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Сай
  */
 $messages['mhr'] = array(
@@ -1266,7 +1266,7 @@ $messages['mt'] = array(
 	'spamregex-already-blocked' => '"$1" diġà bblokkjat',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -1280,8 +1280,7 @@ $messages['nah'] = array(
 	'spamregex-summary-log' => '(Tlahcuilōltōn)',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  * @author Unhammer
  */
@@ -1952,7 +1951,7 @@ $messages['uk'] = array(
 	'spamregex-summary-log' => '(опис)',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
