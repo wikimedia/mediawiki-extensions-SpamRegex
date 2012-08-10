@@ -975,6 +975,7 @@ $messages['is'] = array(
 
 /** Italian (italiano)
  * @author Beta16
+ * @author Darth Kule
  */
 $messages['it'] = array(
 	'spamregex-summary' => "Il testo è stato trovato nell'oggetto della pagina.",
@@ -985,6 +986,7 @@ $messages['it'] = array(
 	'spamregex-block-message' => "La frase '''$1''' è stata bloccata.",
 	'spamregex-warning-1' => 'Inserisci una frase da bloccare.',
 	'spamregex-error-1' => 'Espressione regolare non valida.',
+	'spamregex-already-blocked' => '"$1" è già bloccato',
 	'spamregex-phrase-block' => 'Frase da bloccare:',
 	'spamregex-phrase-block-text' => 'frase bloccata nel testo della pagina',
 	'spamregex-phrase-block-summary' => "frase bloccata nell'oggetto",
