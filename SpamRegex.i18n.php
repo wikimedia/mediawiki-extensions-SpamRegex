@@ -807,10 +807,11 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
 	'spamregex-already-blocked' => '"$1" को पहलेसे ब्लॉक किया हुआ हैं',
-	'spamregex-summary-log' => '(संक्षिप्त ज़ानकारी)',
+	'spamregex-summary-log' => '(संक्षिप्त जानकारी)',
 );
 
 /** Hiligaynon (Ilonggo)
