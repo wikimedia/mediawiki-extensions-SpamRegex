@@ -1688,6 +1688,14 @@ $messages['sdc'] = array(
 	'spamregex-already-blocked' => '"$1" è già broccaddu',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'spamregex-text' => '(පාඨය)',
+	'spamregex-summary-log' => '(සාරාංශය)',
+);
+
 /** Slovak (slovenčina)
  * @author Helix84
  */
