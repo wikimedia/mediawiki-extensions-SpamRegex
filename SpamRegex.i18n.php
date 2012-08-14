@@ -565,6 +565,14 @@ Sea cuidadoso, las expresiones a prohibir no deberían ser muy cortas o muy comu
 	'right-spamregex' => 'Bloquear frases spam a traves de [[Special:SpamRegex]]',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'spamregex-unblock-success' => 'Blokeerimise tühistamine õnnestus',
+	'spamregex-block-success' => 'Blokeerimine õnnestus',
+);
+
 /** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
