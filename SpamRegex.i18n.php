@@ -692,6 +692,13 @@ $messages['fy'] = array(
 	'spamregex-already-blocked' => '"$1" is al útsluten',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'spamregex-summary-log' => '(Achoimre)',
+);
+
 /** Galician (galego)
  * @author Alma
  * @author Toliño
