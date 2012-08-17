@@ -1985,6 +1985,14 @@ $messages['uk'] = array(
 	'spamregex-summary-log' => '(опис)',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'spamregex-text' => '(ٹیکسٹ)',
+	'spamregex-summary-log' => '(خلاصہ)',
+);
+
 /** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
