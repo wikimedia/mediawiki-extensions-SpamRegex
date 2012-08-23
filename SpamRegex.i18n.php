@@ -1045,7 +1045,7 @@ $messages['ja'] = array(
 	'spamregex-block-submit' => 'この語句をブロック',
 	'spamregex-text' => '(本文)',
 	'spamregex-summary-log' => '(要約)',
-	'right-spamregex' => '[[Special:SpamRegex]] を使ってスパム語句をブロック',
+	'right-spamregex' => '[[Special:SpamRegex]] を使用してスパム語句をブロック',
 );
 
 /** Javanese (Basa Jawa)
