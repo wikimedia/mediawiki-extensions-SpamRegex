@@ -83,7 +83,7 @@ $specialPageAliases['mr'] = array(
 	'SpamRegex' => array( 'उत्पातरिजेक्स' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'SpamRegex' => array( 'Regulære_uttrykk_mot_spam' ),
 );
