@@ -224,7 +224,7 @@ $messages['be'] = array(
 	'spamregex-text' => '(Тэкст)',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -430,7 +430,7 @@ Sei aber vorsichtig, Phrasen sollten nicht zu kurz oder zu allgemein sein.',
 	'right-spamregex' => 'Ungewollte Phrasen über [[Special:SpamRegex]] blockieren',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author ChrisiPK
  * @author Imre
  * @author Kghbln
@@ -782,7 +782,7 @@ Bii aber vorsichtig, Phrase sotte nit z churz oder zue allgmein syy.',
 	'right-spamregex' => 'Sperr nit gwinschti Phrase iber [[Special:SpamRegex]]',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'spamregex-summary-log' => '(Taƙaici)',
 );
@@ -1072,14 +1072,14 @@ $messages['ka'] = array(
 	'spamregex-summary-log' => '(რეზიუმე)',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author GaiJin
  */
 $messages['kk-cyrl'] = array(
 	'spamregex-summary-log' => '(Түйіндемесі)',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬)
+/** Kazakh (Latin script) (qazaqşa (latın)‎)
  * @author GaiJin
  */
 $messages['kk-latn'] = array(
@@ -1153,7 +1153,7 @@ do es e Stöck Tex dren, dä jesperrt es.',
 	'right-spamregex' => '<i lang="en">SPAM</i>-Wööter övver <i lang="en">[[Special:SpamRegex]]</i> sperre',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -1309,7 +1309,7 @@ $messages['nah'] = array(
 	'spamregex-summary-log' => '(Tlahcuilōltōn)',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  * @author Unhammer
  */
@@ -1387,7 +1387,7 @@ Zorg dat de uitdrukkingen niet te kort of veelvoorkomend zijn.',
 	'right-spamregex' => 'Spamwoorden blokkeren via [[Special:SpamRegex]]',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
@@ -1761,7 +1761,7 @@ $messages['sma'] = array(
 	'spamregex-text' => '(Tjaalege)',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -1793,7 +1793,7 @@ $messages['sr-ec'] = array(
 	'right-spamregex' => 'Блокирајте спам-фразе помоћу [[Special:SpamRegex]]',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  * @author Жељко Тодоровић
@@ -2036,7 +2036,7 @@ $messages['yi'] = array(
 	'spamregex-text' => '(טעקסט)',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Liangent
  */
 $messages['zh-hans'] = array(
@@ -2044,7 +2044,7 @@ $messages['zh-hans'] = array(
 	'spamregex-summary-log' => '（摘要）',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  */
 $messages['zh-hant'] = array(
