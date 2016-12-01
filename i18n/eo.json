@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Melancholie",
+			"Yekrats"
+		]
+	},
+	"spamregex-summary": "La teksto estis trovita en la resumo de la paĝo.",
+	"spamregex-currently-blocked": "'''Nune forbaritaj frazeroj:'''",
+	"spamregex-move": "La kialo kiun vi enigis enhavis forbaritajn frazeron.",
+	"spamregex-no-currently-blocked": "'''Ne estas iuj ajn forbaritaj vortaj kombinaĵoj.'''",
+	"spamregex-page-title-1": "Forbari frazero uzante regularajn esprimojn",
+	"spamregex-unblock-success": "Malforbaro sukcesis",
+	"spamregex-unblock-message": "Frazero '''$1''' estis malforbarita de redaktado.",
+	"spamregex-page-title-2": "Malpermesigi frazerojn kontraŭ konservado per regularaj esprimoj",
+	"spamregex-block-success": "Forbaro sukcesis",
+	"spamregex-block-message": "Frazero '''$1''' estis forbarita.",
+	"spamregex-warning-1": "Eligi frazeron por forbari.",
+	"spamregex-error-1": "Nevalida regula esprimo.",
+	"spamregex-already-blocked": "\"$1\" jam estas forbarita.",
+	"spamregex-phrase-block": "Vorta kombinaĵo por forbari:",
+	"spamregex-phrase-block-text": "forbari frazon en paĝa teksto",
+	"spamregex-phrase-block-summary": "forbari frazeron en resumo",
+	"spamregex-block-submit": "Forbari&nbsp;ĉi&nbsp;tiun&nbsp;frazeron",
+	"spamregex-text": "(Teksto)",
+	"spamregex-summary-log": "(Resumo)"
+}

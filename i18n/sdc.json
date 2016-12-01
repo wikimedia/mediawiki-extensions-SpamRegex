@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felis"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" è già broccaddu"
+}

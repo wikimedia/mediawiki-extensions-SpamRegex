@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaustubh",
+			"Siddhartha Ghai"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" को पहलेसे ब्लॉक किया हुआ हैं",
+	"spamregex-summary-log": "(संक्षिप्त जानकारी)"
+}

@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"DCLXVI",
+			"Spiritia"
+		]
+	},
+	"spamregex-desc": "[[Special:SpamRegex|Филтриране]] на нежелани фрази в редактираните страници с помощта на регулярни изрази",
+	"spamregex-summary": "Текстът е намерен в резюмето на страницата.",
+	"spamregex-currently-blocked": "'''Текущо блокирани фрази:'''",
+	"spamregex-move": "Въведената причина съдържа блокирана фраза.",
+	"spamregex-no-currently-blocked": "'''Няма блокирани фрази.'''",
+	"spamregex-page-title-1": "Блокиране на фрази чрез регулярни изрази",
+	"spamregex-unblock-success": "Успешно разблокиране",
+	"spamregex-unblock-message": "Фразата '''$1''' беше отблокирана за редактиране.",
+	"spamregex-page-title-2": "Блокиране на съхранението на фраза посредством регулярни изрази",
+	"spamregex-block-success": "Успешно блокиране",
+	"spamregex-block-message": "Фразата '''$1''' беше блокирана.",
+	"spamregex-error-1": "Невалиден регулярен израз.",
+	"spamregex-already-blocked": "„$1“ е вече блокиран",
+	"spamregex-phrase-block": "Фраза за блокиране:",
+	"spamregex-phrase-block-text": "блокиране на фраза в текста на статията",
+	"spamregex-phrase-block-summary": "блокиране на фраза в резюмето",
+	"spamregex-block-submit": "Блокиране&nbsp;на&nbsp;фразата",
+	"spamregex-text": "(Текст)",
+	"spamregex-summary-log": "(Резюме)",
+	"right-spamregex": "Блокиране на спам фрази чрез [[Special:SpamRegex]]"
+}

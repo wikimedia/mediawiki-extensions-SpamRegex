@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Karduelis",
+			"Vito Genovese"
+		]
+	},
+	"spamregex": "Reklam regexi",
+	"spamregex-unblock-success": "Engel kaldırma işlemi başarılı",
+	"spamregex-error-1": "Geçersiz kurallı ifade.",
+	"spamregex-text": "(Metin)",
+	"spamregex-summary-log": "(Özet)"
+}

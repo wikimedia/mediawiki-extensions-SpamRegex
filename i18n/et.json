@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Avjoska"
+		]
+	},
+	"spamregex-unblock-success": "Blokeerimise tühistamine õnnestus",
+	"spamregex-block-success": "Blokeerimine õnnestus"
+}

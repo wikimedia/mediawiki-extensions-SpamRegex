@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liangent"
+		]
+	},
+	"spamregex-error-1": "Iborai oddiji nomū'tabar",
+	"spamregex-already-blocked": "\"$1\" allakaj basta şudaast",
+	"spamregex-text": "(Matn)",
+	"spamregex-summary-log": "(Xulosa)"
+}

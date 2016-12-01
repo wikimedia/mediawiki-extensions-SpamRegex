@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Rancher",
+			"Жељко Тодоровић"
+		]
+	},
+	"spamregex": "Regularni izrazi za spam",
+	"spamregex-desc": "[[Special:SpamRegex|Filtrirajte]] neželjene fraze u izmenjenim stranicama, pomoću regularnih izraza",
+	"spamregex-error-unblocking": "Greška prilikom deblokiranja „$1”. Verovatno ta fraza i nije blokirana.",
+	"spamregex-summary": "Tekst se našao u opisu stranice.",
+	"spamregex-currently-blocked": "'''Zabranjene fraze:'''",
+	"spamregex-move": "Razlog koji ste naveli je sadržao blokiranu frazu.",
+	"spamregex-no-currently-blocked": "'''Nema blokiranih fraza.'''",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 ukloni]) dodat sa $5 na $6 u $7",
+	"spamregex-page-title-1": "Blokiraj fraze koristeći regularne izraze",
+	"spamregex-unblock-success": "Pristup je vraćen",
+	"spamregex-unblock-message": "Fraza '''$1''' je bila deblokirana za izmene.",
+	"spamregex-block-success": "Blokiranje je uspelo",
+	"spamregex-block-message": "Fraza '''$1''' je sada blokirana.",
+	"spamregex-warning-1": "Unesite frazu koju želite da zabranite.",
+	"spamregex-error-1": "Nevalidan regularni izraz.",
+	"spamregex-warning-2": "Molimo Vas da označite makar jedan način blokiranja.",
+	"spamregex-already-blocked": "\"$1\" je već blokirana",
+	"spamregex-phrase-block": "Zabranjena fraza:",
+	"spamregex-phrase-block-text": "blokirajte frazu u tekstu stranice",
+	"spamregex-phrase-block-summary": "blokirajte frazu u opisu izmene",
+	"spamregex-block-submit": "Blokirajte&nbsp;ovu&nbsp;frazu",
+	"spamregex-text": "(Tekst)",
+	"spamregex-summary-log": "(opis)",
+	"right-spamregex": "Blokirajte spam-fraze pomoću [[Special:SpamRegex]]"
+}

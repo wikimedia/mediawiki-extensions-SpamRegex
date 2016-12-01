@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ghaly",
+			"Meno25"
+		]
+	},
+	"spamregex": "تعبير منتظم لسبام",
+	"spamregex-desc": "[[Special:SpamRegex|فلتر]] العبارات غير المرغوب فيها فى الصفحات المعدلة، بالاعتماد على التعبيرات المنتظمة",
+	"spamregex-error-unblocking": "خطأ رفع منع \"$1\". على الأرجح لا يوجد نمط كهذا.",
+	"spamregex-summary": "النص تم العثور عليه فى ملخص الصفحة.",
+	"spamregex-intro": "استخدم الاستمارة دى لمنع تعبيرات من الحفظ فى نص صفحة بكفاءة.\nلو أن النص يحتوى على التعبير المعطى، مش هايتحفظ التغيير و هايتعرض تفسير لليوزر اللى حاول حفظ الصفحة.\nينصح بالحذر، التعبيرات لازم ماتكونش قصيرة جدا أو شائعة جدا.",
+	"spamregex-page-title": "منع تعبير منتظم لسبام التعبيرات غير المرغوب فيها",
+	"spamregex-currently-blocked": "'''العبارات الممنوعة حاليا:'''",
+	"spamregex-move": "السبب الذى أدخلته يحتوى على عبارة ممنوعة.",
+	"spamregex-no-currently-blocked": "'''لا توجد عبارات ممنوعة.'''",
+	"spamregex-page-title-1": "منع عبارة باستخدام التعبيرات المنتظمة",
+	"spamregex-unblock-success": "رفع المنع نجح",
+	"spamregex-unblock-message": "العبارة '''$1''' تم رفع المنع عنها ضد التحرير.",
+	"spamregex-page-title-2": "منع العبارات من الحفظ باستخدام التعبيرات المنتظمة",
+	"spamregex-block-success": "المنع نجح",
+	"spamregex-block-message": "العبارة '''$1''' تم منعها.",
+	"spamregex-warning-1": "أعط عبارة للمنع.",
+	"spamregex-error-1": "تعبير منتظم غير صحيح.",
+	"spamregex-warning-2": "من فضلك علم على نمط منع واحد على الأقل.",
+	"spamregex-already-blocked": "\"$1\" ممنوعة بالفعل",
+	"spamregex-phrase-block": "العبارة للمنع:",
+	"spamregex-phrase-block-text": "منع عبارة فى نص صفحة",
+	"spamregex-phrase-block-summary": "منع عبارة فى ملخص",
+	"spamregex-block-submit": "منع&nbsp;هذه&nbsp;العبارة",
+	"spamregex-text": "(نص)",
+	"spamregex-summary-log": "(ملخص)",
+	"right-spamregex": "منع عبارات السبام من خلال [[Special:SpamRegex]]"
+}

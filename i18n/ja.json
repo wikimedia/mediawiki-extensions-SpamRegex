@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fryed-peach",
+			"Shirayuki",
+			"青子守歌"
+		]
+	},
+	"spamregex": "スパム正規表現フィルター",
+	"spamregex-desc": "編集されたページから望まない語句を正規表現に基づいて[[Special:SpamRegex|除去する]]",
+	"spamregex-error-unblocking": "「$1」のブロック解除中のエラーです。おそらく、そのようなパターンは存在しません。",
+	"spamregex-summary": "その文字列はページの要約文で見つかりました。",
+	"spamregex-intro": "このフォームを使用すると、ある語句をページの文章に保存されないように、効率的にブロックできます。\n文章が指定された語句を含む場合は、変更は保存されず、ページを保存しようとした利用者に説明文が表示されます。\n語句として短すぎるものやあまりにありふれたものを指定しないように注意してください。",
+	"spamregex-page-title": "スパム正規表現フィルターによる望まない語句のブロック",
+	"spamregex-currently-blocked": "'''現在ブロックされている語句:'''",
+	"spamregex-move": "あなたが入力した理由にはブロックされている語句が含まれていました。",
+	"spamregex-no-currently-blocked": "'''ブロックされている語句はありません。'''",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 除去]) が、$5 により $6 $7 に追加",
+	"spamregex-page-title-1": "正規表現を使って語句をブロック",
+	"spamregex-unblock-success": "ブロックの解除に成功しました",
+	"spamregex-unblock-message": "「'''$1'''」という語句を使えるようブロック解除しました。",
+	"spamregex-page-title-2": "正規表現を使用して、語句を保存できないようブロック",
+	"spamregex-block-success": "ブロックに成功しました",
+	"spamregex-block-message": "「'''$1'''」という語句をブロックしました。",
+	"spamregex-warning-1": "ブロックする語句を指定してください。",
+	"spamregex-error-1": "正規表現が無効です。",
+	"spamregex-warning-2": "ブロック指定を少なくとも1つ選択してください。",
+	"spamregex-already-blocked": "「$1」は既にブロックされています",
+	"spamregex-phrase-block": "ブロックする語句:",
+	"spamregex-phrase-block-text": "語句を本文中でブロック",
+	"spamregex-phrase-block-summary": "語句を要約文中でブロック",
+	"spamregex-block-submit": "この語句をブロック",
+	"spamregex-text": "(本文)",
+	"spamregex-summary-log": "(要約)",
+	"right-spamregex": "[[Special:SpamRegex]] を使用してスパム語句をブロック"
+}

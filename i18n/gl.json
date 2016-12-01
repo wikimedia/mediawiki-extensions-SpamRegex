@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alma",
+			"Toliño",
+			"Xosé"
+		]
+	},
+	"spamregex": "SpamRegex",
+	"spamregex-desc": "[[Special:SpamRegex|Filtro]] de frases non desexadas nas páxinas editadas, baseado en expresións regulares",
+	"spamregex-error-unblocking": "Erro ao desbloquear \"$1\". Probablemente non hai tal patrón.",
+	"spamregex-summary": "O texto atopouse no resumo da páxina.",
+	"spamregex-intro": "Use este formulario para bloquear de maneira efectiva expresións para que non se poidan gardar no texto dunha páxina.\nSe o texto contén a expresión dada, o cambio non poderá ser gardado e unha explicación será amosada ao usuario que intentou gardar a páxina.\nTeña en conta que as expresións non deberían ser moi curtas ou moi comúns.",
+	"spamregex-page-title": "Bloqueo spam regex de expresións non desexadas",
+	"spamregex-currently-blocked": "'''Frases actualmente bloqueadas:'''",
+	"spamregex-move": "O motivo que inseriu contén unha frase bloqueada.",
+	"spamregex-no-currently-blocked": "'''Non hai frases bloqueadas.'''",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 eliminar]) engadido por $5 o $6 ás $7",
+	"spamregex-page-title-1": "Bloquear frase usando expresións regulares",
+	"spamregex-unblock-success": "Desbloqueo con éxito",
+	"spamregex-unblock-message": "A frase '''$1''' foi desbloqueada para a edición.",
+	"spamregex-page-title-2": "Bloquear frases usando expresións regulares para que non poidan ser guardadas",
+	"spamregex-block-success": "Bloqueo con éxito",
+	"spamregex-block-message": "A frase '''$1''' foi bloqueada.",
+	"spamregex-warning-1": "Dar unha frase para bloquear.",
+	"spamregex-error-1": "Expresión regular non válida.",
+	"spamregex-warning-2": "Por favor, comprobe, polo menos, un modo de bloqueo.",
+	"spamregex-already-blocked": "\"$1\" xa está bloqueado",
+	"spamregex-phrase-block": "Frase para bloquear:",
+	"spamregex-phrase-block-text": "bloquear unha frase no texto da páxina",
+	"spamregex-phrase-block-summary": "bloquear frase no resumo",
+	"spamregex-block-submit": "Bloquear&nbsp;esta&nbsp;frase",
+	"spamregex-text": "(Texto)",
+	"spamregex-summary-log": "(Resumo)",
+	"right-spamregex": "Bloquear as frases de spam mediante [[Special:SpamRegex]]"
+}

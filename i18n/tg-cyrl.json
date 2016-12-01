@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ibrahim"
+		]
+	},
+	"spamregex-error-1": "Ибораи оддии номӯътабар",
+	"spamregex-already-blocked": "\"$1\" аллакай баста шудааст",
+	"spamregex-text": "(Матн)",
+	"spamregex-summary-log": "(Хулоса)"
+}

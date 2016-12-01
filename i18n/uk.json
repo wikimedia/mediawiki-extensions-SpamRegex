@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Prima klasy4na",
+			"Тест"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" вже заблокований",
+	"spamregex-text": "(Текст)",
+	"spamregex-summary-log": "(опис)"
+}

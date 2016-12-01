@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bellayet"
+		]
+	},
+	"spamregex-text": "(লেখা)",
+	"spamregex-summary-log": "(সারাংশ)"
+}

@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Dragonòt"
+		]
+	},
+	"spamregex": "Regex dë spam",
+	"spamregex-desc": "[[Special:SpamRegex|A filtra]] fras pa vorsùe an pàgine modificà, basà dzora a espression regolar",
+	"spamregex-error-unblocking": "Eror an sblocand \"$1\". Probabilment col model a-i é pa.",
+	"spamregex-summary": "Ël test a l'é stàit trovà ant ël somari dla pàgina.",
+	"spamregex-intro": "Deuvra sta forma-sì për vieté efetivament ëd salvé j'espression ant ël test ëd na pàgina.\nSe ël test a conten l'espression dàita, ël cambi a sarà pa salvà e na spiegassion a sarà visualisà a l'utent ch'a l'ha provà a salvé la pàgina.\nAs sugeriss che l'espression a dovrìa esse pa tròp curta o tròp comun-a.",
+	"spamregex-page-title": "Blocagi ëd j'espression pa vorsùe dë spam regex",
+	"spamregex-currently-blocked": "'''Fras blocà al moment:'''",
+	"spamregex-move": "La rason ch'it l'has anserì a contnìa na fras blocà.",
+	"spamregex-no-currently-blocked": "'''A-i é pa gnun-e fras blocà.'''",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 gava]) giontà da $5 dzora $6 a $7",
+	"spamregex-page-title-1": "Blòca fras ch'a deuvra d'espression regolar",
+	"spamregex-unblock-success": "Sblocagi andàit bin",
+	"spamregex-unblock-message": "La fras '''$1''' a l'é stàita sblocà e a peul esse modificà.",
+	"spamregex-page-title-2": "Blòca le fras (a peulo pa esse salvà) an dovrand espression regolar",
+	"spamregex-block-success": "Blocagi andàit bin",
+	"spamregex-block-message": "La fras '''$1''' a l'é stàita blocà.",
+	"spamregex-warning-1": "Dà na fras da bloché.",
+	"spamregex-error-1": "Espression regolar pa bon-a.",
+	"spamregex-warning-2": "Për piasì contròla almanch na manera ëd bloché.",
+	"spamregex-already-blocked": "\"$1\" a l'é già blocà.",
+	"spamregex-phrase-block": "Fras da bloché:",
+	"spamregex-phrase-block-text": "blòca fras ant ël test ëd pàgina",
+	"spamregex-phrase-block-summary": "blòca fras ant ël resumé",
+	"spamregex-block-submit": "Blòca&nbsp;sta&nbsp;fras",
+	"spamregex-text": "(Test)",
+	"spamregex-summary-log": "(Resumé)",
+	"right-spamregex": "Blòca fras dë spam con [[Special:SpamRegex]]"
+}

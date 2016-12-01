@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"spamregex-text": "(Teste)",
+	"spamregex-summary-log": "(Riepileghe)"
+}

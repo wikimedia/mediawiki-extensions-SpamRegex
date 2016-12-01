@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"SMP"
+		]
+	},
+	"spamregex-already-blocked": "«$1» ja està blocat",
+	"right-spamregex": "Blocar frases de spam a través de [[Special:SpamRegex]]"
+}

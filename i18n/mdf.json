@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jarmanj Turtash",
+			"Khazar II"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" сёлкфоль ни"
+}

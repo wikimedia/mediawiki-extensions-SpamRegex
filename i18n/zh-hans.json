@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liangent"
+		]
+	},
+	"spamregex-text": "（文字）",
+	"spamregex-summary-log": "（摘要）"
+}

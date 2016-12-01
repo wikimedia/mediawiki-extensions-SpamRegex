@@ -1,0 +1,64 @@
+{
+	"name": "Regular Expression Spam Block",
+	"version": "1.3",
+	"author": [
+		"Bartek Łapiński",
+		"Alexandre Emsenhuber",
+		"Jack Phoenix"
+	],
+	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Extension:SpamRegex",
+	"descriptionmsg": "spamregex-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"SpamRegex": "SpecialSpamRegex"
+	},
+	"MessagesDirs": {
+		"SpamRegex": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SpamRegexAliases": "SpamRegex.alias.php"
+	},
+	"AutoloadClasses": {
+		"spamRegexForm": "/backend/spamRegexForm.php",
+		"spamRegexList": "/backend/spamRegexList.php",
+		"SpamRegexUITemplate": "/templates/ui.tmpl.php",
+		"SpecialSpamRegex": "/backend/SpecialSpamRegex.php",
+		"SpamRegexHooks": "/backend/SpamRegexHooks.php"
+	},
+	"Hooks": {
+		"EditFilter": [
+			"SpamRegexHooks::onEditFilter"
+		],
+		"MovePageCheckPermissions": [
+			"SpamRegexHooks::onMovePageCheckPermissions"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"SpamRegexHooks::onLoadExtensionSchemaUpdates"
+		],
+		"RenameUserComplete": [
+			"SpamRegexHooks::onRenameUserComplete"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SpamRegex"
+	},
+	"ResourceModules": {
+		"ext.spamRegex.js": {
+			"scripts": "resources/js/ext.spamRegex.js",
+			"position": "bottom"
+		}
+	},
+	"AvailableRights": [
+		"spamregex"
+	],
+	"GroupPermissions": {
+		"staff": {
+			"spamregex": true
+		}
+	},
+	"manifest_version": 1
+}

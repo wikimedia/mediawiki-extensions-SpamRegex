@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Naudefj",
+			"SPQRobin"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" is reeds geblok",
+	"spamregex-text": "(Teks)",
+	"spamregex-summary-log": "(Opsomming)"
+}

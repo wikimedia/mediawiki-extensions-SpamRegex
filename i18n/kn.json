@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nayvik"
+		]
+	},
+	"spamregex-text": "(ಪಠ್ಯ)",
+	"spamregex-summary-log": "(ಸಾರಾಂಶ)"
+}

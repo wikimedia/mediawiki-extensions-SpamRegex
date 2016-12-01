@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shijualex"
+		]
+	},
+	"spamregex-unblock-success": "സ്വതന്ത്രമാക്കൽ വിജയിച്ചിരിക്കുന്നു",
+	"spamregex-block-success": "തടയൽ വിജയിച്ചിരിക്കുന്നു",
+	"spamregex-already-blocked": "\"$1\" ഇതിനകം തന്നെ തടയപ്പെട്ടിരിക്കുന്നു.",
+	"spamregex-summary-log": "(ചുരുക്കം)"
+}

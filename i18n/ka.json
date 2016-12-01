@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"spamregex-text": "(ტექსტი)",
+	"spamregex-summary-log": "(რეზიუმე)"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Snakesteuben"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" is al útsluten"
+}

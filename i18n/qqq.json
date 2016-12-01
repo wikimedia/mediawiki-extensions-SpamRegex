@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby",
+			"Purodha",
+			"Siebrand",
+			"The Evil IP address"
+		]
+	},
+	"spamregex-desc": "{{desc}}",
+	"spamregex-log": "Parameters:\n* $1 is spam text\n* $2 is a description\n* $3 is an unblock link\n* $4 is the IP address to be unblocked\n* $5 is a username\n* $6 is a date\n* $7 is a time",
+	"spamregex-already-blocked": "{{Identical|$1 is already blocked}}",
+	"spamregex-text": "{{Identical|Text}}",
+	"spamregex-summary-log": "{{Identical|Summary}}",
+	"right-spamregex": "{{doc-right|spamregex}}"
+}

@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Als-Holder",
+			"Melancholie"
+		]
+	},
+	"spamregex": "Spam regex",
+	"spamregex-desc": "[[Special:SpamRegex|Filter]] nit gwinschti Phrasen us gänderete Syte uus, basiert uf reguläre Uusdrick",
+	"spamregex-error-unblocking": "Het „$1“ nit chenne frejgee. Wahrschyyns git kei sonigs Muschter.",
+	"spamregex-summary": "Dr Täxt isch in dr Zämmefassig gfunde wore.",
+	"spamregex-intro": "Verwänd des Formular go effektiv verhindere, ass Phrase, wu aagee wore sin, in dr Täxt yygee wäre.\nWänn s im Täxt Phrase het, wu aagee sin, no wird d Änderig nit gspycheret un e Hiiwyys an de Benutzer uusgee, wu versuecht het, d Syte z spychere.\nBii aber vorsichtig, Phrase sotte nit z churz oder zue allgmein syy.",
+	"spamregex-page-title": "Nit gwinschti Uusdrick filtere",
+	"spamregex-currently-blocked": "'''Im Momänt gsperrti Phrase:'''",
+	"spamregex-move": "In dr Zämmefassig, wu Du aagee hesch, het s e gsperrti Phrase.",
+	"spamregex-no-currently-blocked": "'''S git im Momänt kei gsperrti Phrase.'''",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 useneh]) zuegfiegt vu $5 am $6 am $7",
+	"spamregex-page-title-1": "Sperr Phrase as reguläre Uusdruck",
+	"spamregex-unblock-success": "Entsperrig erfolgryych",
+	"spamregex-unblock-message": "Phrase „'''$1'''“ isch fir Bearbeitige entsperrt.",
+	"spamregex-page-title-2": "Sperr s Spychere vu dr Phrase as reguläre Uusdruck",
+	"spamregex-block-success": "Sperrig erfolgryych",
+	"spamregex-block-message": "Phrase „'''$1'''“ isch gsperrt wore.",
+	"spamregex-warning-1": "Phrase zum Sperren aagee",
+	"spamregex-error-1": "Nit giltige reguläre Uusdruck.",
+	"spamregex-warning-2": "Bitte wehl zmindescht ei Sperrmethod uus.",
+	"spamregex-already-blocked": "„$1“ isch scho gsperrt",
+	"spamregex-phrase-block": "Phrase, wu soll gsperrt wäre:",
+	"spamregex-phrase-block-text": "Phrase im Sytetäxt sperre",
+	"spamregex-phrase-block-summary": "Phrase in dr Zämmefassig sperre",
+	"spamregex-block-submit": "Phrase sperre",
+	"spamregex-text": "(Täxt)",
+	"spamregex-summary-log": "(Zämmefassig)",
+	"right-spamregex": "Sperr nit gwinschti Phrase iber [[Special:SpamRegex]]"
+}

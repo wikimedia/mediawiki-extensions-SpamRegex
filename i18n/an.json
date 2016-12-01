@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Juanpabl"
+		]
+	},
+	"spamregex-already-blocked": "\"$1\" ya yera bloqueyato"
+}
