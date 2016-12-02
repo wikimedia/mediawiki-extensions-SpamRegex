@@ -104,7 +104,7 @@ class SpamRegexHooks {
 	 * Fetch regex data for the given mode, either from memcached, or failing
 	 * that, then from the database.
 	 *
-	 * @param int $mode 0 = textbox, 1 = summary
+	 * @param int $mode 0 = summary, 1 = textbox
 	 * @param int $db_master Use master database for fetching data?
 	 * @return array Array of spamRegexed phrases
 	 */
@@ -113,13 +113,13 @@ class SpamRegexHooks {
 
 		$phrases = array();
 		/* first, check if regex string is already stored in memcache */
-		$key_clause = ( $mode == 1 ) ? 'Summary' : 'Textbox';
+		$key_clause = ( $mode == 1 ) ? 'Textbox' : 'Summary';
 		$key = self::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
 		$cached = $wgMemc->get( $key );
 
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
-			$field = ( $mode == 1 ? 'spam_summary' : 'spam_textbox' );
+			$field = ( $mode == 1 ? 'spam_textbox' : 'spam_summary' );
 			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_SLAVE );
 			$res = $dbr->select(
 				'spam_regex',
