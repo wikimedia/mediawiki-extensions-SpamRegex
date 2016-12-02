@@ -11,6 +11,11 @@ class spamRegexForm {
 	public $mBlockedPhrase;
 
 	/**
+	 * @var string $mBlockedReason Reason for blocking a phrase
+	 */
+	public $mBlockedReason;
+
+	/**
 	 * @var bool $mBlockedTextbox Is the phrase to be blocked in article text?
 	 */
 	public $mBlockedTextbox;
@@ -36,6 +41,7 @@ class spamRegexForm {
 		// urldecode() to avoid *displaying* \ as %5C etc.; even w/o it the
 		// entries are saved correctly to the DB
 		$this->mBlockedPhrase = $request->getVal( 'wpBlockedPhrase', urldecode( $request->getVal( 'text', $par ) ) );
+		$this->mBlockedReason = $request->getVal( 'wpBlockedReason' );
 		$this->mBlockedTextbox = $request->getCheck( 'wpBlockedTextbox' ) ? 1 : 0;
 		$this->mBlockedSummary = $request->getCheck( 'wpBlockedSummary' ) ? 1 : 0;
 		$this->context = $context;
@@ -104,6 +110,12 @@ class spamRegexForm {
 			return;
 		}
 
+		/* make sure that we have a good reason for doing all this... */
+		if ( !$this->mBlockedReason ) {
+			$this->showForm( $this->context->msg( 'spamregex-error-no-reason' )->escaped() );
+			return;
+		}
+
 		/* insert to memc */
 		if ( !empty( $this->mBlockedTextbox ) ) {
 			spamRegexList::updateMemcKeys( 'add', $this->mBlockedPhrase, 0 );
@@ -121,7 +133,8 @@ class spamRegexForm {
 				'spam_timestamp' => wfTimestampNow(),
 				'spam_user' => $this->context->getUser()->getName(),
 				'spam_textbox' => $this->mBlockedTextbox,
-				'spam_summary' => $this->mBlockedSummary
+				'spam_summary' => $this->mBlockedSummary,
+				'spam_reason' => $this->mBlockedReason
 			),
 			__METHOD__,
 			array( 'IGNORE' )

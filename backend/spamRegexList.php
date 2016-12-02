@@ -145,7 +145,8 @@ class spamRegexList {
 					$unblock_phrase,
 					$row->spam_user,
 					$date,
-					$time
+					$time,
+					$row->spam_reason
 				);
 				$out->addHTML( '</ul>' );
 			}

@@ -24,6 +24,12 @@ class SpamRegexUITemplate extends QuickTemplate {
 			</td>
 		</tr>
 		<tr>
+			<td align="right"><?php echo wfMessage( 'spamregex-reason' )->parse() ?></td>
+			<td align="left">
+				<input tabindex="1" name="wpBlockedReason" value="" size="75" />
+			</td>
+		</tr>
+		<tr>
 			<td align="right">&#160;</td>
 			<td align="left">
 				<input type="checkbox" tabindex="2" name="wpBlockedTextbox" id="wpBlockedTextbox" value="1" checked="checked" />
