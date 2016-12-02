@@ -130,10 +130,10 @@ class spamRegexList {
 				}
 
 				if ( $row->spam_summary == 1 ) {
-					if ( $row->spam_textbox == 1 ) {
-						$desc .= $this->context->msg( 'word-separator' )->escaped();
-					}
 					$desc .= $this->context->msg( 'spamregex-summary-log' )->plain();
+					if ( $row->spam_textbox == 1 ) {
+						$desc = $this->context->msg( 'spamregex-text-and-summary-log' )->plain();
+					}
 				}
 
 				$out->addHTML( '<ul>' );

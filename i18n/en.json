@@ -30,8 +30,9 @@
 	"spamregex-phrase-block-text": "block phrase in page text",
 	"spamregex-phrase-block-summary": "block phrase in summary",
 	"spamregex-block-submit": "Block&nbsp;this&nbsp;phrase",
-	"spamregex-text": "(Text)",
-	"spamregex-summary-log": "(Summary)",
+	"spamregex-text": "(text)",
+	"spamregex-text-and-summary-log": "(text, summary)",
+	"spamregex-summary-log": "(summary)",
 	"action-spamregex": "block spam phrases",
 	"right-spamregex": "Block spam phrases through [[Special:SpamRegex]]"
 }
