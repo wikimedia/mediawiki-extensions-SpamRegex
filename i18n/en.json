@@ -13,7 +13,7 @@
 	"spamregex-currently-blocked": "'''Currently blocked phrases:'''",
 	"spamregex-move": "The reason you entered contained a blocked phrase.",
 	"spamregex-no-currently-blocked": "'''There are no blocked phrases.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 remove]) added by $5 on $6 at $7 (reason: $8)",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 remove]) added by $5 on $6 at $7 (reason: $8)",
 	"spamregex-page-title-1": "Block phrase using regular expressions",
 	"spamregex-unblock-success": "Unblock succedeed",
 	"spamregex-unblock-message": "Phrase '''$1''' has been unblocked from editing.",
