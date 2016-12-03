@@ -40,7 +40,8 @@ class spamRegexForm {
 		$request = $context->getRequest();
 		// urldecode() to avoid *displaying* \ as %5C etc.; even w/o it the
 		// entries are saved correctly to the DB
-		$this->mBlockedPhrase = $request->getVal( 'wpBlockedPhrase', urldecode( $request->getVal( 'text', $par ) ) );
+		// and trim() to avoid unwanted trailing whitespace in blocked entries
+		$this->mBlockedPhrase = trim( $request->getVal( 'wpBlockedPhrase', urldecode( $request->getVal( 'text', $par ) ) ) );
 		$this->mBlockedReason = $request->getVal( 'wpBlockedReason' );
 		$this->mBlockedTextbox = $request->getCheck( 'wpBlockedTextbox' ) ? 1 : 0;
 		$this->mBlockedSummary = $request->getCheck( 'wpBlockedSummary' ) ? 1 : 0;
