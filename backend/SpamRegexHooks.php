@@ -1,8 +1,9 @@
 <?php
-
 /**
- * Fetch phrases to block, and fill $wgSpamRegex with them, rather than
- * scribble that into the variable at startup
+ * Hooked functions used by SpamRegex to add our magic to things like the edit
+ * page and whatnot.
+ *
+ * @file
  */
 class SpamRegexHooks {
 
@@ -104,6 +105,9 @@ class SpamRegexHooks {
 	 * Fetch regex data for the given mode, either from memcached, or failing
 	 * that, then from the database.
 	 *
+	 * @todo Maybe consider moving to the SpamRegex class? Then again there are
+	 * no outside callers for this method...
+	 *
 	 * @param int $mode 0 = summary, 1 = textbox
 	 * @param int $db_master Use master database for fetching data?
 	 * @return array Array of spamRegexed phrases
@@ -114,7 +118,7 @@ class SpamRegexHooks {
 		$phrases = array();
 		/* first, check if regex string is already stored in memcache */
 		$key_clause = ( $mode == 1 ) ? 'Textbox' : 'Summary';
-		$key = self::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
+		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
 		$cached = $wgMemc->get( $key );
 
 		if ( !$cached ) {
@@ -187,21 +191,5 @@ class SpamRegexHooks {
 		);
 
 		return true;
-	}
-
-	/**
-	 * @note This is not a hooked function, but an utility function used all
-	 *       over the place.
-	 * @return string The proper memcached key, depending on whether spamRegex's DB table is shared or not
-	 */
-	public static function getCacheKey( /*...*/ ) {
-		global $wgSharedDB, $wgSharedTables, $wgSharedPrefix;
-		$args = func_get_args();
-		if ( in_array( 'spam_regex', $wgSharedTables ) ) {
-			$args = array_merge( array( $wgSharedDB, $wgSharedPrefix ), $args );
-			return call_user_func_array( 'wfForeignMemcKey', $args );
-		} else {
-			return call_user_func_array( 'wfMemcKey', $args );
-		}
 	}
 }
