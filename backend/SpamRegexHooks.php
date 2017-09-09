@@ -124,7 +124,7 @@ class SpamRegexHooks {
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
 			$field = ( $mode == 1 ? 'spam_textbox' : 'spam_summary' );
-			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_SLAVE );
+			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_REPLICA );
 			$res = $dbr->select(
 				'spam_regex',
 				'spam_text',

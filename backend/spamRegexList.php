@@ -58,7 +58,7 @@ class spamRegexList {
 		if ( !$this->fetchNumResults() ) {
 			$out->addWikiMsg( 'spamregex-no-currently-blocked' );
 		} else {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 			$action = htmlspecialchars( $titleObj->getLocalURL( self::getListBits() ) );
 			$action_unblock = htmlspecialchars( $titleObj->getLocalURL(
@@ -154,7 +154,7 @@ class spamRegexList {
 		$results = 0;
 
 		if ( !$cached || is_null( $cached ) || $cached === false ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$results = $dbr->selectField( 'spam_regex', 'COUNT(*)', '', __METHOD__ );
 			$wgMemc->set( $key, $results, 0 );
 		} else {
