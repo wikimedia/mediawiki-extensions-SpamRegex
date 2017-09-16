@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bellayet"
+			"Bellayet",
+			"Aftabuzzaman"
 		]
 	},
-	"spamregex-text": "(লেখা)",
+	"spamregex-reason": "কারণ:",
+	"spamregex-text": "(পাঠ্য)",
+	"spamregex-text-and-summary-log": "(পাঠ্য, সারাংশ)",
 	"spamregex-summary-log": "(সারাংশ)"
 }

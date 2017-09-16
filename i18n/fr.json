@@ -4,7 +4,8 @@
 			"Grondin",
 			"IAlex",
 			"Meno25",
-			"Urhixidur"
+			"Urhixidur",
+			"Wladek92"
 		]
 	},
 	"spamregex": "Expressions rationnelles de pourriels",
@@ -28,10 +29,12 @@
 	"spamregex-warning-2": "Choisissez au moins un mode de blocage.",
 	"spamregex-already-blocked": "« $1 » est déjà bloqué",
 	"spamregex-phrase-block": "Phrase à bloquer :",
+	"spamregex-reason": "Motif :",
 	"spamregex-phrase-block-text": "bloquer la phrase dans le texte de la page",
 	"spamregex-phrase-block-summary": "bloquer la phrase dans le commentaire",
 	"spamregex-block-submit": "Bloquer&nbsp;cette&nbsp;phrase",
 	"spamregex-text": "(Texte)",
 	"spamregex-summary-log": "(Commentaire)",
+	"action-spamregex": "bloquer les phrases de pourriel",
 	"right-spamregex": "Bloquer du spam depuis [[Special:SpamRegex]]"
 }

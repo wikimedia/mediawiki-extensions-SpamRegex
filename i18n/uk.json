@@ -2,10 +2,39 @@
 	"@metadata": {
 		"authors": [
 			"Prima klasy4na",
-			"Тест"
+			"Тест",
+			"Piramidion"
 		]
 	},
+	"spamregex": "Спам-фільтр",
+	"spamregex-desc": "[[Special:SpamRegex|Фільтрування]] небажаних фраз на редагованих сторінках на основі регулярних виразів",
+	"spamregex-error-unblocking": "Помилка при розблокуванні «$1». Можливо, такого зразка немає.",
+	"spamregex-summary": "Текст було виявлено в описі редагування сторінки.",
+	"spamregex-intro": "Використовуйте цю форму, щоб ефективно блокувати збереження певних виразів у тексті сторінки.\nЯкщо текст містить цей вираз, зміну не буде збережено, а користувач, який намагався зберегти сторінку, отримає відповідне пояснення.\nКористуйтеся з обережністю: вирази не повинні бути надто короткими чи надто поширеними.",
+	"spamregex-page-title": "Блокування небажаних виразів через спам-фільтр",
+	"spamregex-currently-blocked": "'''Заблоковані фрази станом на зараз:'''",
+	"spamregex-move": "Причина, яку Ви ввели, містила заблоковану фразу.",
+	"spamregex-no-currently-blocked": "'''Заблокованих фраз немає.'''",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 вилучити]) додано $5 станом на $6 о $7 (причина: $8)",
+	"spamregex-page-title-1": "Блокування фрази за допомогою регулярних виразів",
+	"spamregex-unblock-success": "Розблокування виконано",
+	"spamregex-unblock-message": "Заборону на використання фрази '''$1''' знято.",
+	"spamregex-page-title-2": "Блокування використання фраз за допомогою регулярних виразів",
+	"spamregex-block-success": "Блокування виконано",
+	"spamregex-block-message": "Використання фрази '''$1''' заблоковано.",
+	"spamregex-warning-1": "Вкажіть фразу, яку слід заборонити.",
+	"spamregex-error-1": "Недійсний регулярний вираз.",
+	"spamregex-warning-2": "Будь ласка, виберіть хоча б один режим блокування.",
 	"spamregex-already-blocked": "\"$1\" вже заблокований",
-	"spamregex-text": "(Текст)",
-	"spamregex-summary-log": "(опис)"
+	"spamregex-phrase-block": "Фраза, яку слід заблокувати:",
+	"spamregex-reason": "Причина:",
+	"spamregex-error-no-reason": "Вам треба вказати причину блокування фрази!",
+	"spamregex-phrase-block-text": "блокування фрази в тексті сторінки",
+	"spamregex-phrase-block-summary": "блокування фрази в описі редагування",
+	"spamregex-block-submit": "Заблокувати&nbsp;цю&nbsp;фразу",
+	"spamregex-text": "(текст)",
+	"spamregex-text-and-summary-log": "(текст, опис редагування)",
+	"spamregex-summary-log": "(опис редагування)",
+	"action-spamregex": "блокування спам-фраз",
+	"right-spamregex": "блокування спам-фраз через [[Special:SpamRegex]]"
 }

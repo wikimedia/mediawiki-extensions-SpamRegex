@@ -15,6 +15,7 @@
 	"spamregex-block-message": "De Saatz '''$1''' gouf gespaart.",
 	"spamregex-already-blocked": "\"$1\" ass scho gespaart",
 	"spamregex-phrase-block": "Saatz fir ze spären",
+	"spamregex-reason": "Grond:",
 	"spamregex-phrase-block-text": "Saatz am Text vun enger Säit spären",
 	"spamregex-phrase-block-summary": "Saatz am Resumé spären",
 	"spamregex-block-submit": "Spär&nbsp;dëse&nbsp;Saz",

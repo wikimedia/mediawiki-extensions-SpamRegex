@@ -4,6 +4,6 @@
 			"Joetaras"
 		]
 	},
-	"spamregex-text": "(Teste)",
-	"spamregex-summary-log": "(Riepileghe)"
+	"spamregex-text": "(teste)",
+	"spamregex-summary-log": "(oggette)"
 }

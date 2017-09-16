@@ -5,7 +5,8 @@
 			"Kghbln",
 			"Revolus",
 			"SVG",
-			"Umherirrender"
+			"Umherirrender",
+			"Metalhead64"
 		]
 	},
 	"spamregex": "Spam-Regex",
@@ -17,7 +18,7 @@
 	"spamregex-currently-blocked": "'''Derzeit gesperrte Phrasen:'''",
 	"spamregex-move": "Die Zusammenfassung, die du angabst, enthält eine gesperrte Phrase.",
 	"spamregex-no-currently-blocked": "'''Es gibt derzeit keine gesperrten Phrasen.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 entfernen]) hinzugefügt von $5 am $6 um $7 Uhr",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 entfernen]) hinzugefügt von $5 am $6 um $7 Uhr (Grund: $8)",
 	"spamregex-page-title-1": "Sperre von Phrasen anhand regulärer Ausdrücke",
 	"spamregex-unblock-success": "Die Entsperrung war erfolgreich.",
 	"spamregex-unblock-message": "Die Phrase '''$1''' wurde für Bearbeitungen entsperrt.",
@@ -29,10 +30,14 @@
 	"spamregex-warning-2": "Bitte wähle mindestens eine Sperrmethode aus.",
 	"spamregex-already-blocked": "„$1“ ist bereits gesperrt",
 	"spamregex-phrase-block": "Zu sperrende Phrase:",
+	"spamregex-reason": "Grund:",
+	"spamregex-error-no-reason": "Du musst einen Grund für das Sperren eines Ausdrucks angeben!",
 	"spamregex-phrase-block-text": "Phrase im Seitentext sperren",
 	"spamregex-phrase-block-summary": "Phrase in der Zusammenfassung sperren",
 	"spamregex-block-submit": "Phrase sperren",
 	"spamregex-text": "(Text)",
+	"spamregex-text-and-summary-log": "(Text, Zusammenfassung)",
 	"spamregex-summary-log": "(Zusammenfassung)",
+	"action-spamregex": "Spamausdrücke zu sperren",
 	"right-spamregex": "Ungewollte Phrasen über [[Special:SpamRegex]] blockieren"
 }
