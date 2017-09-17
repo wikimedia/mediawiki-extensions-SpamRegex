@@ -5,7 +5,8 @@
 			"Leinad",
 			"Maikking",
 			"Sp5uhe",
-			"Wpedzich"
+			"Wpedzich",
+			"Chrumps"
 		]
 	},
 	"spamregex": "Spam regex",
@@ -29,10 +30,12 @@
 	"spamregex-warning-2": "Wybierz co najmniej jeden sposób blokowania.",
 	"spamregex-already-blocked": "„$1” jest już zablokowany",
 	"spamregex-phrase-block": "Wyrażenie do zablokowania:",
+	"spamregex-reason": "Powód:",
 	"spamregex-phrase-block-text": "blokuj zwrot w treści strony",
 	"spamregex-phrase-block-summary": "blokuj zwrot w opisie zmian",
 	"spamregex-block-submit": "Blokuj&nbsp;to&nbsp;wyrażenie",
-	"spamregex-text": "(Tekst)",
-	"spamregex-summary-log": "(Podsumowanie)",
+	"spamregex-text": "(tekst)",
+	"spamregex-text-and-summary-log": "(tekst, podsumowanie)",
+	"spamregex-summary-log": "(podsumowanie)",
 	"right-spamregex": "Blokowanie spamu, przez blokowanie zwrotów na stronie [[Special:SpamRegex]]"
 }

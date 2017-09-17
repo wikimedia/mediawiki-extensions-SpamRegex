@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"spamregex-reason": "이유:",
+	"spamregex-text": "(텍스트)",
+	"spamregex-text-and-summary-log": "(텍스트, 요약)",
+	"spamregex-summary-log": "(요약)"
+}
