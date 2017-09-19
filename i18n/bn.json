@@ -5,8 +5,26 @@
 			"Aftabuzzaman"
 		]
 	},
+	"spamregex": "স্প্যাম রেজেক্স",
+	"spamregex-summary": "পাঠ্যটি পৃষ্ঠার সারসংক্ষেপে পাওয়া গেছে।",
+	"spamregex-currently-blocked": "'''বর্তমানে অবরুদ্ধ বাক্যাংশগুলি:'''",
+	"spamregex-no-currently-blocked": "'''এখানে কোন অবরুদ্ধ বাক্যাংশ নেই।'''",
+	"spamregex-log": "* $5 কর্তৃক $6 তারিখে $7 টায় <code>$1</code> $2 ([{{SERVER}}$3&text=$4 সরান]) যোগ হয়েছে (কারণ: $8)",
+	"spamregex-page-title-1": "রেগুলার এক্সপ্রেশন ব্যবহার করে বাক্যাংশ অবরুদ্ধ করুন",
+	"spamregex-unblock-message": "সম্পাদনা থেকে বাক্যাংশ '''$1'''-এর অবরুদ্ধ তোলা হয়েছে।",
+	"spamregex-block-message": "বাক্যাংশ '''$1''' অবরুদ্ধ করা হয়েছে।",
+	"spamregex-warning-1": "অবরুদ্ধ করার জন্য একটি বাক্যাংশ দিন।",
+	"spamregex-error-1": "অবৈধ রেগুলার এক্সপ্রেশন।",
+	"spamregex-already-blocked": "\"$1\" ইতিমধ্যে বাধাপ্রাপ্ত",
+	"spamregex-phrase-block": "অবরুদ্ধ করার বাক্যাংশ:",
 	"spamregex-reason": "কারণ:",
+	"spamregex-error-no-reason": "আপনাকে একটি বাক্যাংশ অবরুদ্ধ করার কারণ প্রদান করতে হবে!",
+	"spamregex-phrase-block-text": "পাতার লেখায় বাক্যাংশ অবরুদ্ধ করুন",
+	"spamregex-phrase-block-summary": "সারাংশে বাক্যাংশ অবরুদ্ধ করুন",
+	"spamregex-block-submit": "এই&nbsp;বাক্যাংশ&nbsp;অবরুদ্ধ&nbsp;করুন",
 	"spamregex-text": "(পাঠ্য)",
 	"spamregex-text-and-summary-log": "(পাঠ্য, সারাংশ)",
-	"spamregex-summary-log": "(সারাংশ)"
+	"spamregex-summary-log": "(সারাংশ)",
+	"action-spamregex": "স্প্যাম বাক্যাংশগুলি অবরুদ্ধ করার",
+	"right-spamregex": "[[Special:SpamRegex]]-এর মাধ্যমে স্প্যাম বাক্যাংশ অবরুদ্ধ করা"
 }

@@ -5,7 +5,8 @@
 			"IAlex",
 			"Meno25",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
 	"spamregex": "Expressions rationnelles de pourriels",
@@ -17,7 +18,7 @@
 	"spamregex-currently-blocked": "'''Phrases actuellement bloquées :'''",
 	"spamregex-move": "Le motif que vous avez inscrit contenait une phrase bloquée.",
 	"spamregex-no-currently-blocked": "'''Il n’y a aucune phrase bloquée.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 supprimer]) ajouté par $5 le $6 à $7",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 supprimer]) ajouté par $5 le $6 à $7 (motif : $8)",
 	"spamregex-page-title-1": "Blocage d’une phrase utilisant des expressions rationnelles",
 	"spamregex-unblock-success": "Le déblocage a réussi",
 	"spamregex-unblock-message": "La phrase '''$1''' a été débloquée à l’édition.",
@@ -30,11 +31,13 @@
 	"spamregex-already-blocked": "« $1 » est déjà bloqué",
 	"spamregex-phrase-block": "Phrase à bloquer :",
 	"spamregex-reason": "Motif :",
+	"spamregex-error-no-reason": "Vous devez fournir un motif pour bloquer une phrase !",
 	"spamregex-phrase-block-text": "bloquer la phrase dans le texte de la page",
 	"spamregex-phrase-block-summary": "bloquer la phrase dans le commentaire",
 	"spamregex-block-submit": "Bloquer&nbsp;cette&nbsp;phrase",
-	"spamregex-text": "(Texte)",
-	"spamregex-summary-log": "(Commentaire)",
+	"spamregex-text": "(texte)",
+	"spamregex-text-and-summary-log": "(texte, commentaire)",
+	"spamregex-summary-log": "(commentaire)",
 	"action-spamregex": "bloquer les phrases de pourriel",
 	"right-spamregex": "Bloquer du spam depuis [[Special:SpamRegex]]"
 }

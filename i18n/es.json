@@ -6,7 +6,8 @@
 			"Dferg",
 			"Fitoschido",
 			"Imre",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Macofe"
 		]
 	},
 	"spamregex": "Spam regex",
@@ -30,10 +31,12 @@
 	"spamregex-warning-2": "Marque al menos un modo de bloqueo.",
 	"spamregex-already-blocked": "«$1» ya está bloqueado",
 	"spamregex-phrase-block": "Frase a bloquear:",
+	"spamregex-reason": "Motivo:",
 	"spamregex-phrase-block-text": "bloquear frase en texto de página",
 	"spamregex-phrase-block-summary": "bloquear frase en resumen",
 	"spamregex-block-submit": "Bloquear&nbsp;esta&nbsp;frase",
-	"spamregex-text": "(Texto)",
-	"spamregex-summary-log": "(Resumen)",
+	"spamregex-text": "(texto)",
+	"spamregex-text-and-summary-log": "(texto, resumen)",
+	"spamregex-summary-log": "(resumen)",
 	"right-spamregex": "Bloquear frases spam a traves de [[Special:SpamRegex]]"
 }
