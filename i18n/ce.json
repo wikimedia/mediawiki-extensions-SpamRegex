@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"spamregex": "Спам-луьттург",
+	"spamregex-reason": "Бахьана:",
+	"spamregex-text": "(йоза)",
+	"spamregex-summary-log": "Цунах лаьцна"
+}
