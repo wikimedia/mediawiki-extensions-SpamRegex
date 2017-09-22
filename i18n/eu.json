@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"An13sa",
-			"Kobazulo"
+			"Kobazulo",
+			"Mikel Ibaiba"
 		]
 	},
 	"spamregex-currently-blocked": "'''Gaur egun blokeatutako esaldiak:'''",
@@ -10,6 +11,6 @@
 	"spamregex-warning-1": "Idatz ezazu blokeatzeko esaldi bat.",
 	"spamregex-phrase-block": "Blokeatu beharreko esaldia:",
 	"spamregex-block-submit": "Esaldi&nbsp;hau&nbsp;blokeatu",
-	"spamregex-text": "(Testu)",
-	"spamregex-summary-log": "(Laburpen)"
+	"spamregex-text": "(Testua)",
+	"spamregex-summary-log": "(Laburpena)"
 }
