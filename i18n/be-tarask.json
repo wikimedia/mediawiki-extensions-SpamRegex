@@ -15,7 +15,7 @@
 	"spamregex-currently-blocked": "'''Цяперашнія выразы для блякаваньня:'''",
 	"spamregex-move": "Прычына ў тым, што Вы ўвялі заблякаваную фразу.",
 	"spamregex-no-currently-blocked": "'''Няма заблякаваных фразаў.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 выдаліць]) дададзены $5 ў $6 $7",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 выдаліць]) дададзены $5 у $6 $7 (прычына: $8)",
 	"spamregex-page-title-1": "Блякаваньне фразы з дапамогай рэгулярных выразаў",
 	"spamregex-unblock-success": "Разблякавана",
 	"spamregex-unblock-message": "Фраза '''$1''' была разблякаваная для рэдагаваньня.",
