@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meursault2004"
+			"Meursault2004",
+			"NoiX180"
 		]
 	},
 	"spamregex": "SpamRegex",
@@ -9,6 +10,6 @@
 	"spamregex-warning-1": "Wènèhana ukara sing kudu diblokir.",
 	"spamregex-already-blocked": "\"$1\" wis diblokir",
 	"spamregex-phrase-block": "Ukara sing diblokir:",
-	"spamregex-text": "(Tèks)",
-	"spamregex-summary-log": "(Ringkesan)"
+	"spamregex-text": "(tèks)",
+	"spamregex-summary-log": "(ringkesan)"
 }

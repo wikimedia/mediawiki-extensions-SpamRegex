@@ -27,6 +27,8 @@
 	"spamregex-warning-2": "Калі ласка, праверце дзеяньне блякаваньня хаця б адзін раз.",
 	"spamregex-already-blocked": "«$1» ужо заблякаваны",
 	"spamregex-phrase-block": "Фраза да блякаваньня:",
+	"spamregex-reason": "Прычына:",
+	"spamregex-error-no-reason": "Вам трэба падаць прычыну для блякаваньня фразы!",
 	"spamregex-phrase-block-text": "блякаваньне фразы ў тэксьце старонкі",
 	"spamregex-phrase-block-summary": "блякаваньне фразы ў кароткім апісаньні зьменаў старонкі",
 	"spamregex-block-submit": "Блякаваньне&nbsp;гэтага&nbsp;выразу",

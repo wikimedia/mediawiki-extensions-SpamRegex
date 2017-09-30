@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Indus Asia"
+		]
+	},
+	"spamregex-reason": "سبب:",
+	"spamregex-text": "(متن)",
+	"spamregex-text-and-summary-log": "(متن, تت)",
+	"spamregex-summary-log": "(تت)"
+}
