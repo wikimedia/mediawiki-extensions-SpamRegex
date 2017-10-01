@@ -33,6 +33,7 @@
 	"spamregex-phrase-block-summary": "блякаваньне фразы ў кароткім апісаньні зьменаў старонкі",
 	"spamregex-block-submit": "Блякаваньне&nbsp;гэтага&nbsp;выразу",
 	"spamregex-text": "(тэкст)",
+	"spamregex-text-and-summary-log": "(тэкст, апісаньне)",
 	"spamregex-summary-log": "(кароткае апісаньне зьменаў)",
 	"right-spamregex": "Блякаваньне спамавых фразаў з дапамогай [[Special:SpamRegex]]"
 }
