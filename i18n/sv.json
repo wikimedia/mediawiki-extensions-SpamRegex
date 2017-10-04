@@ -3,7 +3,9 @@
 		"authors": [
 			"Boivie",
 			"M.M.S.",
-			"Najami"
+			"Najami",
+			"Bengtsson96",
+			"WikiPhoenix"
 		]
 	},
 	"spamregex": "SpamRegex",
@@ -15,7 +17,7 @@
 	"spamregex-currently-blocked": "'''Nuvarande blockerade fraser:'''",
 	"spamregex-move": "Anledningen du skrev in innehöll en blockerad fras.",
 	"spamregex-no-currently-blocked": "'''Det finns inga blockerade fraser.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 ta bort]) lagd till av $5 den $6 kl $7",
+	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 ta bort]) lades till av $5 den $6 kl $7 (anledning: $8)",
 	"spamregex-page-title-1": "Blockera fras med hjälp av reguljära uttryck",
 	"spamregex-unblock-success": "Avblockering lyckades",
 	"spamregex-unblock-message": "Frasen '''$1''' är inte längre blockerad.",
@@ -27,10 +29,14 @@
 	"spamregex-warning-2": "Du måste välja minst en blockeringsmetod.",
 	"spamregex-already-blocked": "\"$1\" är redan blockerad",
 	"spamregex-phrase-block": "Fras att blockera:",
+	"spamregex-reason": "Orsak:",
+	"spamregex-error-no-reason": "Du måste ange en anledning för att blockera en fras!",
 	"spamregex-phrase-block-text": "blockera fras i sidtext",
 	"spamregex-phrase-block-summary": "blockera fras i sammanfattning",
 	"spamregex-block-submit": "Blockera&nbsp;den&nbsp;här&nbsp;frasen",
-	"spamregex-text": "(Text)",
+	"spamregex-text": "(text)",
+	"spamregex-text-and-summary-log": "(text, sammanfattning)",
 	"spamregex-summary-log": "(Sammanfattning)",
+	"action-spamregex": "blockera spamfraser",
 	"right-spamregex": "Blockera spamfraser genom [[Special:SpamRegex]]"
 }

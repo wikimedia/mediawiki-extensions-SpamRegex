@@ -35,5 +35,6 @@
 	"spamregex-text": "(тэкст)",
 	"spamregex-text-and-summary-log": "(тэкст, апісаньне)",
 	"spamregex-summary-log": "(кароткае апісаньне зьменаў)",
+	"action-spamregex": "блякаваньне спам-фразаў",
 	"right-spamregex": "Блякаваньне спамавых фразаў з дапамогай [[Special:SpamRegex]]"
 }
