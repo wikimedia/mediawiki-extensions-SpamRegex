@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Rubin",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Okras"
 		]
 	},
 	"spamregex": "Спам-фильтр",
@@ -29,7 +30,7 @@
 	"spamregex-phrase-block-text": "блокировка фразы в тексте страницы",
 	"spamregex-phrase-block-summary": "блокировка фразы в описании изменений",
 	"spamregex-block-submit": "Блокировать эту фразу",
-	"spamregex-text": "(Текст)",
+	"spamregex-text": "(текст)",
 	"spamregex-summary-log": "(описание)",
 	"right-spamregex": "блокирование спам-фраз с помощью [[Special:SpamRegex]]"
 }
