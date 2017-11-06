@@ -3,7 +3,8 @@
 		"authors": [
 			"Alma",
 			"Toliño",
-			"Xosé"
+			"Xosé",
+			"Elisardojm"
 		]
 	},
 	"spamregex": "SpamRegex",
@@ -27,10 +28,12 @@
 	"spamregex-warning-2": "Por favor, comprobe, polo menos, un modo de bloqueo.",
 	"spamregex-already-blocked": "\"$1\" xa está bloqueado",
 	"spamregex-phrase-block": "Frase para bloquear:",
+	"spamregex-reason": "Motivo:",
 	"spamregex-phrase-block-text": "bloquear unha frase no texto da páxina",
 	"spamregex-phrase-block-summary": "bloquear frase no resumo",
 	"spamregex-block-submit": "Bloquear&nbsp;esta&nbsp;frase",
-	"spamregex-text": "(Texto)",
-	"spamregex-summary-log": "(Resumo)",
+	"spamregex-text": "(texto)",
+	"spamregex-text-and-summary-log": "(texto, resumo)",
+	"spamregex-summary-log": "(resumo)",
 	"right-spamregex": "Bloquear as frases de spam mediante [[Special:SpamRegex]]"
 }
