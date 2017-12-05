@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Nghtwlkr",
-			"Unhammer"
+			"Unhammer",
+			"Jon Harald Søby"
 		]
 	},
 	"spamregex": "SpamRegex",
