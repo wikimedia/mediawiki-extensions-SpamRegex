@@ -30,7 +30,7 @@
 	"spamregex-phrase-block-text": "blokker frase i sidetekst",
 	"spamregex-phrase-block-summary": "blokker frase i sammendrag",
 	"spamregex-block-submit": "Blokker&nbsp;denne&nbsp;frasen",
-	"spamregex-text": "(Tekst)",
-	"spamregex-summary-log": "(Sammendrag)",
+	"spamregex-text": "(tekst)",
+	"spamregex-summary-log": "(sammendrag)",
 	"right-spamregex": "Blokker spamfraser gjennom [[Special:SpamRegex]]"
 }
