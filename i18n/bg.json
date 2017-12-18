@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Spiritia"
+			"Spiritia",
+			"StanProg"
 		]
 	},
 	"spamregex-desc": "[[Special:SpamRegex|Филтриране]] на нежелани фрази в редактираните страници с помощта на регулярни изрази",
@@ -22,7 +23,7 @@
 	"spamregex-phrase-block-text": "блокиране на фраза в текста на статията",
 	"spamregex-phrase-block-summary": "блокиране на фраза в резюмето",
 	"spamregex-block-submit": "Блокиране&nbsp;на&nbsp;фразата",
-	"spamregex-text": "(Текст)",
-	"spamregex-summary-log": "(Резюме)",
+	"spamregex-text": "(текст)",
+	"spamregex-summary-log": "(резюме)",
 	"right-spamregex": "Блокиране на спам фрази чрез [[Special:SpamRegex]]"
 }
