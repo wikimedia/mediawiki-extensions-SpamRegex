@@ -164,7 +164,7 @@ class SpamRegexHooks {
 		}
 		*/
 
-		$updater->addExtensionUpdate( array( 'addTable', 'spam_regex', "{$dir}/{$filename}", true ) );
+		$updater->addExtensionTable( 'spam_regex', "{$dir}/{$filename}" );
 
 		return true;
 	}
