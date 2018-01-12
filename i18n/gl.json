@@ -4,7 +4,8 @@
 			"Alma",
 			"Toliño",
 			"Xosé",
-			"Elisardojm"
+			"Elisardojm",
+			"Athena in Wonderland"
 		]
 	},
 	"spamregex": "SpamRegex",
@@ -16,7 +17,7 @@
 	"spamregex-currently-blocked": "'''Frases actualmente bloqueadas:'''",
 	"spamregex-move": "O motivo que inseriu contén unha frase bloqueada.",
 	"spamregex-no-currently-blocked": "'''Non hai frases bloqueadas.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 eliminar]) engadido por $5 o $6 ás $7",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 eliminar]) engadido por $5 o $6 ás $7 (motivo: $8)",
 	"spamregex-page-title-1": "Bloquear frase usando expresións regulares",
 	"spamregex-unblock-success": "Desbloqueo con éxito",
 	"spamregex-unblock-message": "A frase '''$1''' foi desbloqueada para a edición.",
