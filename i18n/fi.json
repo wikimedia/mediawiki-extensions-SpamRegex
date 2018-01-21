@@ -3,7 +3,8 @@
 		"authors": [
 			"Silvonen",
 			"Str4nd",
-			"Hopea"
+			"Hopea",
+			"01miki10"
 		]
 	},
 	"spamregex-error-unblocking": "Ilmauksen ”$1” eston poisto ei onnistunut. Sitä ei todennäköisesti ole estetty.",
@@ -29,9 +30,9 @@
 	"spamregex-phrase-block-text": "estä ilmaus sivun tekstissä",
 	"spamregex-phrase-block-summary": "estä ilmaus yhteenvedossa",
 	"spamregex-block-submit": "Estä&nbsp;tämä&nbsp;ilmaus",
-	"spamregex-text": "(Teksti)",
+	"spamregex-text": "(teksti)",
 	"spamregex-text-and-summary-log": "(teksti, yhteenveto)",
-	"spamregex-summary-log": "(Yhteenveto)",
+	"spamregex-summary-log": "(yhteenveto)",
 	"action-spamregex": "estää ilmauksia",
 	"right-spamregex": "Estää ilmauksia [[Special:SpamRegex]]-toimintosivun kautta"
 }
