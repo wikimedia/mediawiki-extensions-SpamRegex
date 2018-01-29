@@ -3,7 +3,8 @@
 		"authors": [
 			"Rancher",
 			"Жељко Тодоровић",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Acamicamacaraca"
 		]
 	},
 	"spamregex": "Регуларни изрази за спам",
@@ -20,7 +21,7 @@
 	"spamregex-block-success": "Блокирање је успело",
 	"spamregex-block-message": "Фраза '''$1''' је сада блокирана.",
 	"spamregex-warning-1": "Унесите фразу коју желите да забраните.",
-	"spamregex-error-1": "Невалидан регуларни израз.",
+	"spamregex-error-1": "Неисправан регуларни израз.",
 	"spamregex-warning-2": "Молимо Вас да означите макар један начин блокирања.",
 	"spamregex-already-blocked": "„$1“ је већ блокиран",
 	"spamregex-phrase-block": "Забрањена фраза:",
