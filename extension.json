@@ -49,8 +49,7 @@
 	},
 	"ResourceModules": {
 		"ext.spamRegex.js": {
-			"scripts": "resources/js/ext.spamRegex.js",
-			"position": "bottom"
+			"scripts": "resources/js/ext.spamRegex.js"
 		}
 	},
 	"AvailableRights": [
