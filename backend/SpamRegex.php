@@ -145,7 +145,7 @@ class SpamRegex {
 					break;
 			}
 
-			$wgMemc->set( $key, $phrases, 0 );
+			$wgMemc->set( $key, $phrases, 30 * 86400 );
 		}
 	}
 

@@ -156,7 +156,7 @@ class spamRegexList {
 		if ( !$cached || is_null( $cached ) || $cached === false ) {
 			$dbr = wfGetDB( DB_REPLICA );
 			$results = $dbr->selectField( 'spam_regex', 'COUNT(*)', '', __METHOD__ );
-			$wgMemc->set( $key, $results, 0 );
+			$wgMemc->set( $key, $results, 30 * 86400 );
 		} else {
 			$results = $cached;
 		}

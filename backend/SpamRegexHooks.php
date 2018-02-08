@@ -134,7 +134,7 @@ class SpamRegexHooks {
 			while ( $row = $res->fetchObject() ) {
 				$phrases[] = '/' . $row->spam_text . '/i';
 			}
-			$wgMemc->set( $key, $phrases, 0 );
+			$wgMemc->set( $key, $phrases, 30 * 86400 );
 			$res->free();
 		} else {
 			/* take from cache */
