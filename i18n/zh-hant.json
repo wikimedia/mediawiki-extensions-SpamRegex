@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liangent"
+			"Liangent",
+			"Liuxinyu970226"
 		]
 	},
+	"spamregex-already-blocked": "「$1」已被封禁",
 	"spamregex-text": "（文字）",
 	"spamregex-summary-log": "（摘要）"
 }
