@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"George Animal"
+			"George Animal",
+			"Bikarhêner"
 		]
 	},
-	"spamregex-text": "(Nivîs)"
+	"spamregex-text": "(nivîs)"
 }
