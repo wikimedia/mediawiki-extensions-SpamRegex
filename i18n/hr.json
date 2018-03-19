@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dalibor Bosits"
+			"Dalibor Bosits",
+			"MaGa"
 		]
 	},
-	"spamregex-summary-log": "(Sažetak)"
+	"spamregex-summary-log": "(sažetak)"
 }
