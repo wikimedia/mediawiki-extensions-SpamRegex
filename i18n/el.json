@@ -3,7 +3,8 @@
 		"authors": [
 			"Consta",
 			"Lou",
-			"ZaDiak"
+			"ZaDiak",
+			"Nikosgranturismogt"
 		]
 	},
 	"spamregex": "Τακτική έκφραση spam",
@@ -21,5 +22,6 @@
 	"spamregex-phrase-block-summary": "φραγή φράση στη σύνοψη",
 	"spamregex-block-submit": "Φραγή&nbsp;της&nbsp;φράσης",
 	"spamregex-text": "(κείμενο)",
-	"spamregex-summary-log": "(Περίληψη)"
+	"spamregex-text-and-summary-log": "(κείμενο, περίληψη)",
+	"spamregex-summary-log": "(περίληψη)"
 }
