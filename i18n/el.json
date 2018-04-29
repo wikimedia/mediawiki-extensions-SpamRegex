@@ -18,6 +18,7 @@
 	"spamregex-warning-2": "Παρακαλώ ελέγξτε τουλάχιστον μια λειτουργία φραγής.",
 	"spamregex-already-blocked": "Ο \"$1\" είναι ήδη φραγμένος",
 	"spamregex-phrase-block": "Φράση για φραγή:",
+	"spamregex-reason": "Λόγος:",
 	"spamregex-phrase-block-text": "γραφή φράσης στο κείμενο της σελίδας",
 	"spamregex-phrase-block-summary": "φραγή φράση στη σύνοψη",
 	"spamregex-block-submit": "Φραγή&nbsp;της&nbsp;φράσης",
