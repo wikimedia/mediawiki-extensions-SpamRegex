@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"OsamaK"
+			"OsamaK",
+			"ديفيد"
 		]
 	},
 	"spamregex": "تعبير منتظم لسبام",
@@ -14,7 +15,7 @@
 	"spamregex-currently-blocked": "'''العبارات الممنوعة حاليا:'''",
 	"spamregex-move": "السبب الذي أدخلته يحتوي على عبارة ممنوعة.",
 	"spamregex-no-currently-blocked": "'''لا توجد عبارات ممنوعة.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 إزالة]) أضيف بواسطة $5 في $6 الساعة $7",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 إزالة]) أُضِيف بواسطة $5 في $6 الساعة $7 (السبب: $8)",
 	"spamregex-page-title-1": "منع عبارة باستخدام التعبيرات المنتظمة",
 	"spamregex-unblock-success": "رفع المنع نجح",
 	"spamregex-unblock-message": "العبارة '''$1''' تم رفع المنع عنها ضد التحرير.",
@@ -26,10 +27,14 @@
 	"spamregex-warning-2": "من فضلك علم على نمط منع واحد على الأقل.",
 	"spamregex-already-blocked": "\"$1\" ممنوعة بالفعل",
 	"spamregex-phrase-block": "العبارة للمنع:",
+	"spamregex-reason": "السبب:",
+	"spamregex-error-no-reason": "يجب تقديم سبب لحظر عبارة!",
 	"spamregex-phrase-block-text": "منع عبارة في نص صفحة",
 	"spamregex-phrase-block-summary": "منع عبارة في ملخص",
 	"spamregex-block-submit": "منع&nbsp;هذه&nbsp;العبارة",
 	"spamregex-text": "(نص)",
+	"spamregex-text-and-summary-log": "(نص، ملخص)",
 	"spamregex-summary-log": "(ملخص)",
+	"action-spamregex": "حظر عبارات السخام",
 	"right-spamregex": "منع عبارات السبام من خلال [[Special:SpamRegex]]"
 }
