@@ -31,10 +31,10 @@ class spamRegexList {
 		global $wgRequest;
 
 		list( $limit, $offset ) = $wgRequest->getLimitOffset();
-		$bits = array(
+		$bits = [
 			'limit' => $limit,
 			'offset' => $offset
-		);
+		];
 
 		return $bits;
 	}
@@ -62,7 +62,7 @@ class spamRegexList {
 			$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 			$action = htmlspecialchars( $titleObj->getLocalURL( self::getListBits() ) );
 			$action_unblock = htmlspecialchars( $titleObj->getLocalURL(
-				array( 'action' => 'delete' ) + self::getListBits()
+				[ 'action' => 'delete' ] + self::getListBits()
 			) );
 			list( $limit, $offset ) = $this->context->getRequest()->getLimitOffset();
 
@@ -72,13 +72,13 @@ class spamRegexList {
 			$res = $dbr->select(
 				'spam_regex',
 				'*',
-				array(),
+				[],
 				__METHOD__,
-				array(
+				[
 					'LIMIT' => $limit,
 					'OFFSET' => $offset,
 					'ORDER BY' => 'spam_timestamp DESC'
-				)
+				]
 			);
 
 			$lang = $this->context->getLanguage();
@@ -135,7 +135,7 @@ class spamRegexList {
 		}
 
 		$this->context->getOutput()->redirect( $titleObj->getFullURL(
-			array( 'action' => $action, 'text' => $text ) + self::getListBits()
+			[ 'action' => $action, 'text' => $text ] + self::getListBits()
 		) );
 	}
 
@@ -181,7 +181,7 @@ class spamRegexList {
 			$this->context->getTitle(),
 			$offset,
 			$limit,
-			array(),
+			[],
 			( $this->numResults - $offset ) <= $limit
 		);
 		$out->addHTML( '<p>' . $html . '</p>' );

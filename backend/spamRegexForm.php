@@ -55,7 +55,7 @@ class spamRegexForm {
 		$token = htmlspecialchars( $this->context->getUser()->getEditToken() );
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 		$action = htmlspecialchars( $titleObj->getLocalURL(
-			array( 'action' => 'submit' ) + spamRegexList::getListBits()
+			[ 'action' => 'submit' ] + spamRegexList::getListBits()
 		) );
 
 		if ( $err != '' ) {
@@ -92,7 +92,7 @@ class spamRegexForm {
 
 	/* on submit */
 	function doSubmit() {
-		$modes = array();
+		$modes = [];
 		if ( $this->mBlockedTextbox ) {
 			$modes['text'] = true;
 		}
@@ -115,7 +115,7 @@ class spamRegexForm {
 		/* redirect */
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 		$this->context->getOutput()->redirect( $titleObj->getFullURL(
-			array( 'action' => 'success_block', 'text' => urlencode( $this->mBlockedPhrase ) ) +
+			[ 'action' => 'success_block', 'text' => urlencode( $this->mBlockedPhrase ) ] +
 				spamRegexList::getListBits()
 		) );
 	}

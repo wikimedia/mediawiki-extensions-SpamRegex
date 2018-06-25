@@ -51,16 +51,16 @@ class SpamRegex {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->insert(
 			'spam_regex',
-			array(
+			[
 				'spam_text' => $phrase,
 				'spam_timestamp' => wfTimestampNow(),
 				'spam_user' => $blocker->getName(),
 				'spam_textbox' => $textbox,
 				'spam_summary' => $summary,
 				'spam_reason' => $reason
-			),
+			],
 			__METHOD__,
-			array( 'IGNORE' )
+			[ 'IGNORE' ]
 		);
 
 		/* duplicate entry */
@@ -87,7 +87,7 @@ class SpamRegex {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->delete(
 			'spam_regex',
-			array( 'spam_text' => $text ),
+			[ 'spam_text' => $text ],
 			__METHOD__
 		);
 
@@ -105,7 +105,7 @@ class SpamRegex {
 		global $wgSharedDB, $wgSharedTables, $wgSharedPrefix;
 		$args = func_get_args();
 		if ( in_array( 'spam_regex', $wgSharedTables ) ) {
-			$args = array_merge( array( $wgSharedDB, $wgSharedPrefix ), $args );
+			$args = array_merge( [ $wgSharedDB, $wgSharedPrefix ], $args );
 			return call_user_func_array( 'wfForeignMemcKey', $args );
 		} else {
 			return call_user_func_array( 'wfMemcKey', $args );
@@ -141,7 +141,7 @@ class SpamRegex {
 					}
 					break;
 				case 'delete':
-					$phrases = array_diff( $phrases, array( $spam_text ) );
+					$phrases = array_diff( $phrases, [ $spam_text ] );
 					break;
 			}
 

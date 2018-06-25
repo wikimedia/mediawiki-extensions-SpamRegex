@@ -54,7 +54,7 @@ class SpamRegexHooks {
 			}
 		}
 
-		$t_phrases = array();
+		$t_phrases = [];
 		// and here we check for phrases within the text itself
 		$t_phrases = self::fetchRegexData( 1 );
 		if ( $t_phrases && is_array( $t_phrases ) ) {
@@ -115,7 +115,7 @@ class SpamRegexHooks {
 	protected static function fetchRegexData( $mode, $db_master = 0 ) {
 		global $wgMemc;
 
-		$phrases = array();
+		$phrases = [];
 		/* first, check if regex string is already stored in memcache */
 		$key_clause = ( $mode == 1 ) ? 'Textbox' : 'Summary';
 		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
@@ -128,7 +128,7 @@ class SpamRegexHooks {
 			$res = $dbr->select(
 				'spam_regex',
 				'spam_text',
-				array( $field => 1 ),
+				[ $field => 1 ],
 				__METHOD__
 			);
 			while ( $row = $res->fetchObject() ) {
@@ -159,7 +159,7 @@ class SpamRegexHooks {
 		$filename = 'spam_regex.sql';
 		// For non-MySQL/MariaDB/SQLite DBMSes, use the appropriately named file
 		/*
-		if ( !in_array( $dbType, array( 'mysql', 'sqlite' ) ) ) {
+		if ( !in_array( $dbType, [ 'mysql', 'sqlite' ] ) ) {
 			$filename = "spam_regex.{$dbType}.sql";
 		}
 		*/
@@ -185,8 +185,8 @@ class SpamRegexHooks {
 
 		$dbw->update(
 			'spam_regex',
-			array( 'spam_user' => $newName ),
-			array( 'spam_user' => $oldName ),
+			[ 'spam_user' => $newName ],
+			[ 'spam_user' => $oldName ],
 			__METHOD__
 		);
 

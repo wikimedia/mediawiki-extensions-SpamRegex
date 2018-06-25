@@ -6,99 +6,99 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
-/** English (English) */
-$specialPageAliases['en'] = array(
-	'SpamRegex' => array( 'SpamRegex' ),
-);
+/** English */
+$specialPageAliases['en'] = [
+	'SpamRegex' => [ 'SpamRegex' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'SpamRegex' => array( 'سبام_ريجيكس' ),
-);
+$specialPageAliases['ar'] = [
+	'SpamRegex' => [ 'سبام_ريجيكس' ],
+];
 
 /** Egyptian Spoken Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'SpamRegex' => array( 'Spam_Regex' ),
-);
+$specialPageAliases['arz'] = [
+	'SpamRegex' => [ 'Spam_Regex' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'SpamRegex' => array( 'NeweyinaSpami' ),
-);
+$specialPageAliases['diq'] = [
+	'SpamRegex' => [ 'NeweyinaSpami' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'SpamRegex' => array( 'ביטויי_ספאם' ),
-);
+$specialPageAliases['he'] = [
+	'SpamRegex' => [ 'ביטויי_ספאם' ],
+];
 
 /** Upper Sorbian (hornjoserbsce) */
-$specialPageAliases['hsb'] = array(
-	'SpamRegex' => array( 'Spamowe regularne wurazy' ),
-);
+$specialPageAliases['hsb'] = [
+	'SpamRegex' => [ 'Spamowe regularne wurazy' ],
+];
 
 /** Haitian (Kreyòl ayisyen) */
-$specialPageAliases['ht'] = array(
-	'SpamRegex' => array( 'PouryèlReg' ),
-);
+$specialPageAliases['ht'] = [
+	'SpamRegex' => [ 'PouryèlReg' ],
+];
 
 /** Interlingua (interlingua) */
-$specialPageAliases['ia'] = array(
-	'SpamRegex' => array( 'Regex_antispam', 'Regex_anti-spam' ),
-);
+$specialPageAliases['ia'] = [
+	'SpamRegex' => [ 'Regex_antispam', 'Regex_anti-spam' ],
+];
 
 /** Indonesian (Bahasa Indonesia) */
-$specialPageAliases['id'] = array(
-	'SpamRegex' => array( 'Regex_spam', 'RegexSpam' ),
-);
+$specialPageAliases['id'] = [
+	'SpamRegex' => [ 'Regex_spam', 'RegexSpam' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'SpamRegex' => array( 'スパム正規表現フィルター', 'スパム正規表現フィルタ' ),
-);
+$specialPageAliases['ja'] = [
+	'SpamRegex' => [ 'スパム正規表現フィルター', 'スパム正規表現フィルタ' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'SpamRegex' => array( '스팸정규식' ),
-);
+$specialPageAliases['ko'] = [
+	'SpamRegex' => [ '스팸정규식' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'SpamRegex' => array( 'Regele_fir_Spam_ze_fannen' ),
-);
+$specialPageAliases['lb'] = [
+	'SpamRegex' => [ 'Regele_fir_Spam_ze_fannen' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'SpamRegex' => array( 'РегИзрЗаСпам' ),
-);
+$specialPageAliases['mk'] = [
+	'SpamRegex' => [ 'РегИзрЗаСпам' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'SpamRegex' => array( 'പാഴെഴുത്ത്റെജെക്സ്' ),
-);
+$specialPageAliases['ml'] = [
+	'SpamRegex' => [ 'പാഴെഴുത്ത്റെജെക്സ്' ],
+];
 
 /** Marathi (मराठी) */
-$specialPageAliases['mr'] = array(
-	'SpamRegex' => array( 'उत्पातरिजेक्स' ),
-);
+$specialPageAliases['mr'] = [
+	'SpamRegex' => [ 'उत्पातरिजेक्स' ],
+];
 
 /** Norwegian Bokmål (norsk (bokmål)‎) */
-$specialPageAliases['nb'] = array(
-	'SpamRegex' => array( 'Regulære_uttrykk_mot_spam' ),
-);
+$specialPageAliases['nb'] = [
+	'SpamRegex' => [ 'Regulære_uttrykk_mot_spam' ],
+];
 
 /** Nedersaksisch (Nedersaksisch) */
-$specialPageAliases['nds-nl'] = array(
-	'SpamRegex' => array( 'Moek_reguliere_uutdrokking' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'SpamRegex' => [ 'Moek_reguliere_uutdrokking' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'SpamRegex' => array( 'SpamReguliereExpressie' ),
-);
+$specialPageAliases['nl'] = [
+	'SpamRegex' => [ 'SpamReguliereExpressie' ],
+];
 
 /** Tagalog (Tagalog) */
-$specialPageAliases['tl'] = array(
-	'SpamRegex' => array( 'Karaniwang_pagsasaad_ng_manlulusob' ),
-);
+$specialPageAliases['tl'] = [
+	'SpamRegex' => [ 'Karaniwang_pagsasaad_ng_manlulusob' ],
+];
