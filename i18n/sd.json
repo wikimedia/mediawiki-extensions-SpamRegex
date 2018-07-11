@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Indus Asia"
+			"Indus Asia",
+			"BukhariSaeed"
 		]
 	},
 	"spamregex-reason": "سبب:",
 	"spamregex-text": "(متن)",
 	"spamregex-text-and-summary-log": "(متن, تت)",
-	"spamregex-summary-log": "(تت)"
+	"spamregex-summary-log": "(خلاصو)"
 }
