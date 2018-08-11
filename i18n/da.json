@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Saederup92"
 		]
 	},
-	"spamregex-text": "(Tekst)"
+	"spamregex-text": "(tekst)"
 }

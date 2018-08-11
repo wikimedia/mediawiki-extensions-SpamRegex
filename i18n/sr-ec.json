@@ -31,5 +31,5 @@
 	"spamregex-block-submit": "Блокирајте&nbsp;ову&nbsp;фразу",
 	"spamregex-text": "(текст)",
 	"spamregex-summary-log": "(опис)",
-	"right-spamregex": "Блокирајте спам-фразе помоћу [[Special:SpamRegex]]"
+	"right-spamregex": "блокирање спам-фраза помоћу [[Special:SpamRegex]]"
 }
