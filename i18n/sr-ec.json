@@ -12,7 +12,7 @@
 	"spamregex-desc": "[[Special:SpamRegex|Филтрирајте]] нежељене фразе у измењеним страницама, помоћу регуларних израза",
 	"spamregex-error-unblocking": "Грешка приликом деблокирања „$1”. Вероватно та фраза и није блокирана.",
 	"spamregex-summary": "Текст се нашао у опису странице.",
-	"spamregex-currently-blocked": "'''Забрањене фразе:'''",
+	"spamregex-currently-blocked": "'''Актуелно блокиране фразе:'''",
 	"spamregex-move": "Разлог који сте навели је садржао блокирану фразу.",
 	"spamregex-no-currently-blocked": "'''Нема блокираних фраза.'''",
 	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 уклони]) додат са $5 на $6 у $7",
