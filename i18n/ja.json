@@ -4,7 +4,8 @@
 			"Fryed-peach",
 			"Shirayuki",
 			"青子守歌",
-			"Otokoume"
+			"Otokoume",
+			"2nd-player"
 		]
 	},
 	"spamregex": "スパム正規表現フィルター",
@@ -29,10 +30,12 @@
 	"spamregex-already-blocked": "「$1」は既にブロックされています",
 	"spamregex-phrase-block": "ブロックする語句:",
 	"spamregex-reason": "理由:",
+	"spamregex-error-no-reason": "語句をブロックするには理由の指定が必要です!",
 	"spamregex-phrase-block-text": "語句を本文中でブロック",
 	"spamregex-phrase-block-summary": "語句を要約文中でブロック",
 	"spamregex-block-submit": "この語句をブロック",
 	"spamregex-text": "(本文)",
 	"spamregex-summary-log": "(要約)",
+	"action-spamregex": "スパム語句のブロック",
 	"right-spamregex": "[[Special:SpamRegex]] を使用してスパム語句をブロック"
 }
