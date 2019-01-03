@@ -3,7 +3,8 @@
 		"authors": [
 			"Chhorran",
 			"Lovekhmer",
-			"Thearith"
+			"Thearith",
+			"គីមស៊្រុន"
 		]
 	},
 	"spamregex-summary": "អក្សរ​ត្រូវ​បាន​រកឃើញ​នៅក្នុង​សេចក្ដីសង្ខេប​នៃ​ទំព័រ​។",
@@ -16,6 +17,6 @@
 	"spamregex-phrase-block-text": "ទប់ស្កាត់​ឃ្លា​នៅ​ក្នុង​អត្ថបទ​ទំព័រ",
 	"spamregex-phrase-block-summary": "ទប់ស្កាត់​ឃ្លា​ជា​សង្ខេប",
 	"spamregex-block-submit": "ទប់ស្កាត់&nbsp;ឃ្លា&nbsp;នេះ",
-	"spamregex-text": "(ឃ្លា)",
-	"spamregex-summary-log": "(សេចក្តីសង្ខេប)"
+	"spamregex-text": "(អត្ថបទ)",
+	"spamregex-summary-log": "(ចំណារពន្យល់)"
 }
