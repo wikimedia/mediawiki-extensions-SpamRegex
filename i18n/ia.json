@@ -13,7 +13,7 @@
 	"spamregex-currently-blocked": "'''Phrases actualmente blocate:'''",
 	"spamregex-move": "Le motivo que tu entrava contineva un phrase blocate.",
 	"spamregex-no-currently-blocked": "'''Il non ha phrases blocate.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 disblocar]) addite per $5 le $6 a $7",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 remover]) addite per $5 le $6 a $7 (motivo: $8)",
 	"spamregex-page-title-1": "Blocar un phrase per medio de expressiones regular",
 	"spamregex-unblock-success": "Disblocada succedite",
 	"spamregex-unblock-message": "Le phrase '''$1''' ha essite disblocate de figurar in modificationes.",
@@ -28,7 +28,7 @@
 	"spamregex-phrase-block-text": "blocar phrase in texto de pagina",
 	"spamregex-phrase-block-summary": "blocar phrase in summario",
 	"spamregex-block-submit": "Blocar&nbsp;iste&nbsp;phrase",
-	"spamregex-text": "(Texto)",
-	"spamregex-summary-log": "(Summario)",
+	"spamregex-text": "(texto)",
+	"spamregex-summary-log": "(summario)",
 	"right-spamregex": "Blocar phrases de spam per medio de [[Special:SpamRegex]]"
 }
