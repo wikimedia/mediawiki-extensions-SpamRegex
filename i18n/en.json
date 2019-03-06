@@ -4,6 +4,13 @@
 			"Bartek Łapiński"
 		]
 	},
+	"apihelp-spamregex-summary": "Add entries to SpamRegex or remove already blocked entries from it.",
+	"apihelp-spamregex-param-do": "What to do? Either <kbd>add</kbd> or <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "Block modes, i.e. should the phrase we're trying to block be blocked in page content (text), edit summaries (summary) or both?",
+	"apihelp-spamregex-param-phrase": "The spam phrase to be blocked or removed from SpamRegex.",
+	"apihelp-spamregex-param-reason": "Reason for adding an entry to SpamRegex. Mandatory when adding entries, not used when deleting.",
+	"apihelp-spamregex-example-1": "Add the phrase \"FooBar\" with the reason \"Cross-wiki spam\" to SpamRegex, blocking it both in page text as well as in edit summaries",
+	"apihelp-spamregex-example-2": "Remove the phrase \"Test, just a test\" from SpamRegex",
 	"spamregex": "Spam regex",
 	"spamregex-desc": "[[Special:SpamRegex|Filter]] out unwanted phrases in edited pages, based on regular expressions",
 	"spamregex-error-unblocking": "Error unblocking \"$1\". Probably there is no such pattern.",

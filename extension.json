@@ -1,6 +1,6 @@
 {
 	"name": "Regular Expression Spam Block",
-	"version": "1.5.1",
+	"version": "1.6",
 	"author": [
 		"Bartek Łapiński",
 		"Alexandre Emsenhuber",
@@ -22,26 +22,22 @@
 		"SpamRegexAliases": "SpamRegex.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpamRegex": "/backend/SpamRegex.php",
-		"spamRegexForm": "/backend/spamRegexForm.php",
-		"spamRegexList": "/backend/spamRegexList.php",
-		"SpamRegexUITemplate": "/templates/ui.tmpl.php",
-		"SpecialSpamRegex": "/backend/SpecialSpamRegex.php",
-		"SpamRegexHooks": "/backend/SpamRegexHooks.php"
+		"ApiSpamRegex": "api/ApiSpamRegex.php",
+		"SpamRegex": "backend/SpamRegex.php",
+		"spamRegexForm": "backend/spamRegexForm.php",
+		"spamRegexList": "backend/spamRegexList.php",
+		"SpamRegexUITemplate": "templates/ui.tmpl.php",
+		"SpecialSpamRegex": "backend/SpecialSpamRegex.php",
+		"SpamRegexHooks": "backend/SpamRegexHooks.php"
+	},
+	"APIModules": {
+		"spamregex": "ApiSpamRegex"
 	},
 	"Hooks": {
-		"EditFilter": [
-			"SpamRegexHooks::onEditFilter"
-		],
-		"MovePageCheckPermissions": [
-			"SpamRegexHooks::onMovePageCheckPermissions"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"SpamRegexHooks::onLoadExtensionSchemaUpdates"
-		],
-		"RenameUserComplete": [
-			"SpamRegexHooks::onRenameUserComplete"
-		]
+		"EditFilter": "SpamRegexHooks::onEditFilter",
+		"MovePageCheckPermissions": "SpamRegexHooks::onMovePageCheckPermissions",
+		"LoadExtensionSchemaUpdates": "SpamRegexHooks::onLoadExtensionSchemaUpdates",
+		"RenameUserComplete": "SpamRegexHooks::onRenameUserComplete"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
