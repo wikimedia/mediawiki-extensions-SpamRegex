@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"ZxxZxxZ",
-			"Ommmmid"
+			"Ommmmid",
+			"FarsiNevis"
 		]
 	},
 	"spamregex-currently-blocked": "'''عبارت‌های مسدودشدهٔ کنونی:'''",
 	"spamregex-block-success": "مسدودکردن با موفقیت انجام شد",
 	"spamregex-block-message": "عبارت '''$1''' مسدود شده‌است.",
+	"spamregex-already-blocked": "\"$1\" از قبل بسته شده است",
 	"spamregex-reason": "دلیل:",
 	"spamregex-text": "(متن)",
 	"spamregex-summary-log": "(خلاصه)"
