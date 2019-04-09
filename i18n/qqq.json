@@ -7,6 +7,13 @@
 			"The Evil IP address"
 		]
 	},
+	"apihelp-spamregex-summary": "{{doc-apihelp-summary|spamregex}}",
+	"apihelp-spamregex-param-do": "{{doc-apihelp-param|spamregex|do}}",
+	"apihelp-spamregex-param-modes": "{{doc-apihelp-param|spamregex|modes}}",
+	"apihelp-spamregex-param-phrase": "{{doc-apihelp-param|spamregex|phrase}}",
+	"apihelp-spamregex-param-reason": "{{doc-apihelp-param|spamregex|reason}}",
+	"apihelp-spamregex-example-1": "{{doc-apihelp-example|spamregex}}",
+	"apihelp-spamregex-example-2": "{{doc-apihelp-example|spamregex}}",
 	"spamregex": "{{name}}",
 	"spamregex-desc": "{{desc|name=SpamRegex|url=https://www.mediawiki.org/wiki/Extension:SpamRegex}}",
 	"spamregex-error-unblocking": "Used as text on Special:SpamRegex",
