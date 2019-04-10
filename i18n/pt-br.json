@@ -5,6 +5,12 @@
 			"Eduardo Addad de Oliveira"
 		]
 	},
+	"apihelp-spamregex-summary": "Adicione entradas ao SpamRegex ou remova as entradas já bloqueadas dele.",
+	"apihelp-spamregex-param-modes": "Modos de bloqueio, ou seja, a frase que tentamos bloquear está bloqueada no conteúdo da página (texto), nos resumos de edição (resumo) ou em ambos?",
+	"apihelp-spamregex-param-phrase": "A frase de spam a ser bloqueada ou removida do SpamRegex.",
+	"apihelp-spamregex-param-reason": "Razão para adicionar uma entrada ao SpamRegex. Obrigatório ao adicionar entradas, não usadas ao excluir.",
+	"apihelp-spamregex-example-1": "Adicione a frase \"FooBar\" com o motivo \"Cross-wiki spam\" ao SpamRegex, bloqueando-o tanto no texto da página quanto nos resumos de edição",
+	"apihelp-spamregex-example-2": "Remova a frase \"Teste, apenas um teste\" do SpamRegex",
 	"spamregex": "Expressão regular de spam",
 	"spamregex-desc": "[[Special:SpamRegex|Filtrar]] frases indesejadas em páginas editadas, com base em expressões regulares",
 	"spamregex-error-unblocking": "Erro ao desbloquear \"$1\". Provavelmente, não existe tal padrão.",

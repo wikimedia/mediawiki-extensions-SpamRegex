@@ -6,6 +6,13 @@
 			"ديفيد"
 		]
 	},
+	"apihelp-spamregex-summary": "إضافة إدخالات إلى SpamRegex أو إزالة الإدخالات الممنوعة بالفعل منه.",
+	"apihelp-spamregex-param-do": "ماذا أفعل؟ إما <kbd>add</kbd> أو <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "أوضاع المنع: أي هل يجب منع العبارة التي نحاول منعها في محتوى الصفحة (نص)، تحرير ملخصات التعديل (ملخص) أم كليهما؟",
+	"apihelp-spamregex-param-phrase": "عبارة السخام المراد منعها أو إزالتها من SpamRegex.",
+	"apihelp-spamregex-param-reason": "سبب إضافة إدخال إلى SpamRegex، إلزامي عند إضافة مداخل، لا يُستخدَم عند الحذف.",
+	"apihelp-spamregex-example-1": "إضافة عبارة \"FooBar\" مع سبب \"Cross-wiki spam\" إلى SpamRegex، ومنعها في نص الصفحة وكذلك في تحرير الملخصات",
+	"apihelp-spamregex-example-2": "قم بإزالة عبارة \"اختبار، مجرد اختبار\" من SpamRegex",
 	"spamregex": "تعبير منتظم لسبام",
 	"spamregex-desc": "[[Special:SpamRegex|مُرشّح]] العبارات غير المرغوب فيها في الصفحات المعدلة، بالاعتماد على التعبيرات المنتظمة",
 	"spamregex-error-unblocking": "خطأ رفع منع \"$1\". على الأرجح لا يوجد نمط كهذا.",
