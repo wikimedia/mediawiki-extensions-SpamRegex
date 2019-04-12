@@ -9,6 +9,13 @@
 			"Gomoko"
 		]
 	},
+	"apihelp-spamregex-summary": "Ajouter des entrées à SpamRegex ou supprimer toutes les entrées déjà bloquées de celui-ci.",
+	"apihelp-spamregex-param-do": "Que faire ? Soit <kbd>add</kbd> ou <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "Modes de blocage, c.-à-d. que l’expression que nous essayons de bloquer doit-elle être bloquée dans le contenu de la page (le texte), les résumés de modification (le résumé) ou les deux ?",
+	"apihelp-spamregex-param-phrase": "L’expression de pourriel à bloquer ou à supprimer de SpamRegex.",
+	"apihelp-spamregex-param-reason": "Motif pour l’ajout d’une entrée à SpamRegex. Obligatoire lors de l’ajout d’entrées, non utilisé pour la suppression.",
+	"apihelp-spamregex-example-1": "Ajouter l’expression « FooBar » avec le motif « Pourriel inter-wiki » à SpamRegex, la bloquant à la fois dans le texte de la page ainsi que dans les résumés des modifications.",
+	"apihelp-spamregex-example-2": "Supprimer l’expression « Test, seulement un test » de SpamRegex",
 	"spamregex": "Expressions rationnelles de pourriels",
 	"spamregex-desc": "[[Special:SpamRegex|Filtre]], dans les pages, les phrases ou mots indésirables, basé sur des expressions rationnelles",
 	"spamregex-error-unblocking": "Erreur de déblocage de « $1 ». Il n’y a pas probablement aucun modèle.",

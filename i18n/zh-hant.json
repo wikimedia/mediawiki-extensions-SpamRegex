@@ -6,6 +6,13 @@
 			"Kly"
 		]
 	},
+	"apihelp-spamregex-summary": "添加項目到 SpamRegex 或是移除在裡頭被封禁的項目。",
+	"apihelp-spamregex-param-do": "該做什麼？<kbd>add</kbd> 或 <kbd>delete</kbd>。",
+	"apihelp-spamregex-param-modes": "封禁模式。像是：我們嘗試封禁的詞組是否應在頁面內容（文字）、編輯摘要（摘要）、或以上兩項裡封禁？",
+	"apihelp-spamregex-param-phrase": "從 SpamRegex 封禁或移除的詞組。",
+	"apihelp-spamregex-param-reason": "添加項目到 SpamRegex 的原因。這在添加時需提供，若是刪除則不必。",
+	"apihelp-spamregex-example-1": "以「Cross-wiki spam」原因來添加詞組「FooBar」到 SpamRegex，該詞組會在頁面文字以及編輯摘要裡封禁",
+	"apihelp-spamregex-example-2": "從 SpamRegex 來移除詞組「Test, just a test」",
 	"spamregex": "破壞正規表達式",
 	"spamregex-desc": "在已編輯頁面裡，基於正規表達式[[Special:SpamRegex|篩選]]掉不需要的詞組",
 	"spamregex-error-unblocking": "解封\"$1\"時出錯。可能是因為沒有這樣的模式。",
