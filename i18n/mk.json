@@ -5,6 +5,7 @@
 		]
 	},
 	"apihelp-spamregex-summary": "Додајте ставки во „Регуларни изрази за спам“ или отстранете веќе блокирани.",
+	"apihelp-spamregex-param-do": "Што да правите? Или <kbd>add</kbd> или <kbd>delete</kbd>.",
 	"spamregex": "Филтер за спам",
 	"spamregex-desc": "[[Special:SpamRegex|Филтрирање]] на непожелни фрази во уредуваните страници, засновано на регуларни изрази",
 	"spamregex-error-unblocking": "Грешка при одблокирањето на „$1“. Веројатно нема таква шема.",

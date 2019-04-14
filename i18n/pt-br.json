@@ -6,6 +6,7 @@
 		]
 	},
 	"apihelp-spamregex-summary": "Adicione entradas ao SpamRegex ou remova as entradas já bloqueadas dele.",
+	"apihelp-spamregex-param-do": "O que fazer? Ou <kbd>acionar</kbd> ou <kbd>excluir</kbd>.",
 	"apihelp-spamregex-param-modes": "Modos de bloqueio, ou seja, a frase que tentamos bloquear está bloqueada no conteúdo da página (texto), nos resumos de edição (resumo) ou em ambos?",
 	"apihelp-spamregex-param-phrase": "A frase de spam a ser bloqueada ou removida do SpamRegex.",
 	"apihelp-spamregex-param-reason": "Razão para adicionar uma entrada ao SpamRegex. Obrigatório ao adicionar entradas, não usadas ao excluir.",
