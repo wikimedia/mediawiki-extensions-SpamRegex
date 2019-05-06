@@ -9,6 +9,7 @@
 			"Metalhead64"
 		]
 	},
+	"apihelp-spamregex-param-do": "Was zu tun? Entweder <kbd>add</kbd> oder <kbd>delete</kbd>.",
 	"spamregex": "Spam-Regex",
 	"spamregex-desc": "Ergänzt eine [[Special:SpamRegex|Spezialseite]] mit der auf regulären Ausdrücken basierende Phrasen gefiltert werden können",
 	"spamregex-error-unblocking": "Beim Entsperren von $1 ist ein Fehler aufgetreten. Vermutlich gibt es kein solches Muster.",
