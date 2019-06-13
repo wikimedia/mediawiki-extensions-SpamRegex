@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\Navigation\PrevNextNavigationRenderer;
+
 /**
  * Backend logic for displaying and manipulating the list of blocked phrases
  *
@@ -177,7 +180,8 @@ class spamRegexList {
 	/* init for showPrevNext */
 	function showPrevNext( &$out ) {
 		list( $limit, $offset ) = $this->context->getRequest()->getLimitOffset();
-		$html = $this->context->getLanguage()->viewPrevNext(
+		$prevNext = new PrevNextNavigationRenderer( $this->context );
+		$html = $prevNext->buildPrevNextNavigation(
 			$this->context->getTitle(),
 			$offset,
 			$limit,
