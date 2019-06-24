@@ -6,6 +6,10 @@
 			"Red Winged Duck"
 		]
 	},
+	"apihelp-spamregex-summary": "Дадае запісы ў SpamRegex ці выдаляе ўжо заблякаваныя запісы зь яго.",
+	"apihelp-spamregex-param-do": "Што рабіць? Ці <kbd>add</kbd>, ці <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "Рэжымы блякаваньня, напрыклад, фраза, якую мы блякуем, будзе заблякаваная ў зьмесьце старонкі (text), кароткім апісаньні праўкі (summary) ці ў абодвух?",
+	"apihelp-spamregex-param-phrase": "Спам-фраза для блякаваньня ці выдаленьня з SpamRegex.",
 	"spamregex": "Рэгулярныя выразы для барацьбы са спамам",
 	"spamregex-desc": "[[Special:SpamRegex|Фільтраваньне]] нежаданых фразаў на рэдагуемых старонках з выкарыстаньнем рэгулярных выразаў",
 	"spamregex-error-unblocking": "Памылка разблякаваньня «$1». Верагодна не існуе такога ўзору.",
