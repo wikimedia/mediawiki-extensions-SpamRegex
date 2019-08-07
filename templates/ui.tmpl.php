@@ -2,9 +2,6 @@
 /**
  * @file
  */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( 'This is not a valid entry point to MediaWiki.' );
-}
 
 /**
  * HTML template for Special:SpamRegex
