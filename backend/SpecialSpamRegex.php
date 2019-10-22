@@ -41,9 +41,9 @@ class SpecialSpamRegex extends SpecialPage {
 		// Show a message if the database is in read-only mode
 		$this->checkReadOnly();
 
-		// If user is blocked, s/he doesn't need to access this page
-		if ( $user->isBlocked() ) {
-			throw new UserBlockedError( $user->mBlock );
+		// If user is blocked, they don't need to access this page
+		if ( $user->getBlock() ) {
+			throw new UserBlockedError( $user->getBlock() );
 		}
 
 		// Set the page title and other stuff
