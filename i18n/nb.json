@@ -6,6 +6,13 @@
 			"Jon Harald Søby"
 		]
 	},
+	"apihelp-spamregex-summary": "Legg til oppføringer i SpamRegex eller fjern allerede blokkerte oppføringer fra dem.",
+	"apihelp-spamregex-param-do": "Hva skal gjøres? Enten <kbd>add</kbd> eller <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "Blokkeringsmodus, altså skal frasen vi prøver å blokkere blokkeres i sideinnhold (text), redigeringssamendrag (summary) eller begge?",
+	"apihelp-spamregex-param-phrase": "Spamfrasen som skal blokkeres eller fjernes fra SpamRegex.",
+	"apihelp-spamregex-param-reason": "Årsak for å legge til en oppføring i SpamRegex. Obligatorisk når man legger til oppføringer, ikke når man sletter.",
+	"apihelp-spamregex-example-1": "Legg til frasen «FooBar» med årsaken «Cross-wiki spam» til SpamRegex, og blokkerer det både i sidetekst og redigeringssammendrag.",
+	"apihelp-spamregex-example-2": "Fjern frasen «Test, just a test» fra SpamRegex",
 	"spamregex": "SpamRegex",
 	"spamregex-desc": "[[Special:SpamRegex|Filtrer ut]] uønskede fraser i redigerte sider, basert på regulære uttrykk",
 	"spamregex-error-unblocking": "Feil ved avblokkering av «$1». Det er nok ikke noe slikt mønster.",
@@ -15,7 +22,7 @@
 	"spamregex-currently-blocked": "'''Nåværende blokkerte fraser:'''",
 	"spamregex-move": "Årsaken du skrev inn inneholdt en blokkert frase.",
 	"spamregex-no-currently-blocked": "'''Det er ingen blokkerte fraser.'''",
-	"spamregex-log": "'''$1''' $2 ([{{SERVER}}$3&text=$4 fjern]) lagt til av $5 den $6 klokka $7",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 fjern]) lagt til av $5 $6 $7 (årsak: $8)",
 	"spamregex-page-title-1": "Blokker frase ved hjelp av regulære uttrykk",
 	"spamregex-unblock-success": "Avblokkering lyktes",
 	"spamregex-unblock-message": "Frasen '''$1''' er ikke lenger blokkert.",
@@ -27,10 +34,14 @@
 	"spamregex-warning-2": "Du må velge minst en blokkeringsmodus.",
 	"spamregex-already-blocked": "«$1» er allerede blokkert",
 	"spamregex-phrase-block": "Frase å blokkere:",
+	"spamregex-reason": "Årsak:",
+	"spamregex-error-no-reason": "Du må angi en årsak for å blokkere en frase!",
 	"spamregex-phrase-block-text": "blokker frase i sidetekst",
 	"spamregex-phrase-block-summary": "blokker frase i sammendrag",
 	"spamregex-block-submit": "Blokker&nbsp;denne&nbsp;frasen",
 	"spamregex-text": "(tekst)",
+	"spamregex-text-and-summary-log": "(tekst, sammendrag)",
 	"spamregex-summary-log": "(sammendrag)",
+	"action-spamregex": "blokkere spamfraser",
 	"right-spamregex": "Blokker spamfraser gjennom [[Special:SpamRegex]]"
 }
