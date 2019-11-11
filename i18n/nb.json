@@ -11,7 +11,7 @@
 	"apihelp-spamregex-param-modes": "Blokkeringsmodus, altså skal frasen vi prøver å blokkere blokkeres i sideinnhold (text), redigeringssamendrag (summary) eller begge?",
 	"apihelp-spamregex-param-phrase": "Spamfrasen som skal blokkeres eller fjernes fra SpamRegex.",
 	"apihelp-spamregex-param-reason": "Årsak for å legge til en oppføring i SpamRegex. Obligatorisk når man legger til oppføringer, ikke når man sletter.",
-	"apihelp-spamregex-example-1": "Legg til frasen «FooBar» med årsaken «Cross-wiki spam» til SpamRegex, og blokkerer det både i sidetekst og redigeringssammendrag.",
+	"apihelp-spamregex-example-1": "Legg til frasen «FooBar» med årsaken «Cross-wiki spam» til SpamRegex, og blokkerer det både i sidetekst og redigeringsforklaringer.",
 	"apihelp-spamregex-example-2": "Fjern frasen «Test, just a test» fra SpamRegex",
 	"spamregex": "SpamRegex",
 	"spamregex-desc": "[[Special:SpamRegex|Filtrer ut]] uønskede fraser i redigerte sider, basert på regulære uttrykk",
