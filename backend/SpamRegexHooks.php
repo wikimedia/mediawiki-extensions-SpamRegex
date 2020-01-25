@@ -12,8 +12,8 @@ class SpamRegexHooks {
 	 *
 	 * @param EditPage $editPage
 	 * @param string $text Page text
-	 * @param $section
-	 * @param string $error Error message, if any
+	 * @param string $section
+	 * @param string &$error Error message, if any
 	 * @param string $editSummary User-supplied edit summary
 	 * @return bool True if the edit went through, false if it hit the spam filters
 	 */
@@ -25,8 +25,7 @@ class SpamRegexHooks {
 		if (
 			$title->inNamespace( NS_MEDIAWIKI ) &&
 			$title->getText() == 'Spam-whitelist'
-		)
-		{
+		) {
 			return true;
 		}
 
@@ -79,7 +78,9 @@ class SpamRegexHooks {
 	 * @param Status $status Status object to pass error messages to
 	 * @return bool False if the summary contains spam, otherwise true
 	 */
-	public static function onMovePageCheckPermissions( $oldTitle, $newTitle, $user, $reason, $status ) {
+	public static function onMovePageCheckPermissions(
+		$oldTitle, $newTitle, $user, $reason, $status
+	) {
 		// here we get only the phrases for blocking in summaries...
 		$phrases = self::fetchRegexData( 0 );
 
@@ -149,9 +150,8 @@ class SpamRegexHooks {
 	 * runs /maintenance/update.php (the core database updater script).
 	 *
 	 * @param DatabaseUpdater $updater
-	 * @return bool
 	 */
-	public static function onLoadExtensionSchemaUpdates( $updater ) {
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
 		$dir = __DIR__ . '/../sql';
 
 		$dbType = $updater->getDB()->getType();
@@ -165,8 +165,6 @@ class SpamRegexHooks {
 		*/
 
 		$updater->addExtensionTable( 'spam_regex', "{$dir}/{$filename}" );
-
-		return true;
 	}
 
 	/**
