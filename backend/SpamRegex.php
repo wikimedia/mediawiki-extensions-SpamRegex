@@ -53,7 +53,7 @@ class SpamRegex {
 			'spam_regex',
 			[
 				'spam_text' => $phrase,
-				'spam_timestamp' => wfTimestampNow(),
+				'spam_timestamp' => $dbw->timestamp( wfTimestampNow() ),
 				'spam_user' => $blocker->getName(),
 				'spam_textbox' => $textbox,
 				'spam_summary' => $summary,

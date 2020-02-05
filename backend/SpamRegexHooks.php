@@ -158,11 +158,9 @@ class SpamRegexHooks {
 
 		$filename = 'spam_regex.sql';
 		// For non-MySQL/MariaDB/SQLite DBMSes, use the appropriately named file
-		/*
 		if ( !in_array( $dbType, [ 'mysql', 'sqlite' ] ) ) {
 			$filename = "spam_regex.{$dbType}.sql";
 		}
-		*/
 
 		$updater->addExtensionTable( 'spam_regex', "{$dir}/{$filename}" );
 	}
