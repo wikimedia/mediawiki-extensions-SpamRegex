@@ -176,7 +176,6 @@ class SpamRegexHooks {
 	 * @param int $uid User ID
 	 * @param string $oldName Old user name
 	 * @param string $newName New user name
-	 * @return bool
 	 */
 	public static function onRenameUserComplete( $uid, $oldName, $newName ) {
 		$dbw = wfGetDB( DB_MASTER );
@@ -187,7 +186,5 @@ class SpamRegexHooks {
 			[ 'spam_user' => $oldName ],
 			__METHOD__
 		);
-
-		return true;
 	}
 }
