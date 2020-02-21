@@ -28,12 +28,18 @@ class spamRegexList {
 	/**
 	 * Wrapper for GET values
 	 *
+	 * @param User $user
 	 * @return array Array containing the limit and offset URL params & values
 	 */
-	public static function getListBits() {
+	public static function getListBits( User $user ) {
 		global $wgRequest;
 
-		list( $limit, $offset ) = $wgRequest->getLimitOffset();
+		if ( method_exists( $wgRequest, 'getLimitOffsetForUser' ) ) {
+			// MW 1.35+
+			list( $limit, $offset ) = $wgRequest->getLimitOffsetForUser( $user );
+		} else {
+			list( $limit, $offset ) = $wgRequest->getLimitOffset();
+		}
 		$bits = [
 			'limit' => $limit,
 			'offset' => $offset
@@ -49,6 +55,7 @@ class spamRegexList {
 	 */
 	function showList( $err = '' ) {
 		$out = $this->context->getOutput();
+		$user = $this->context->getUser();
 
 		/* on error, display error */
 		if ( $err != '' ) {
@@ -63,11 +70,18 @@ class spamRegexList {
 		} else {
 			$dbr = wfGetDB( DB_REPLICA );
 			$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
-			$action = htmlspecialchars( $titleObj->getLocalURL( self::getListBits() ) );
+			$action = htmlspecialchars( $titleObj->getLocalURL( self::getListBits( $user ) ) );
 			$action_unblock = htmlspecialchars( $titleObj->getLocalURL(
-				[ 'action' => 'delete' ] + self::getListBits()
+				[ 'action' => 'delete' ] + self::getListBits( $user )
 			) );
-			list( $limit, $offset ) = $this->context->getRequest()->getLimitOffset();
+
+			$request = $this->context->getRequest();
+			if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
+				// MW 1.35+
+				list( $limit, $offset ) = $request->getLimitOffsetForUser( $user );
+			} else {
+				list( $limit, $offset ) = $request->getLimitOffset();
+			}
 
 			$this->showPrevNext( $out );
 			$out->addHTML( "<form name=\"spamregexlist\" method=\"get\" action=\"{$action}\">" );
@@ -138,7 +152,9 @@ class spamRegexList {
 		}
 
 		$this->context->getOutput()->redirect( $titleObj->getFullURL(
-			[ 'action' => $action, 'text' => $text ] + self::getListBits()
+			[ 'action' => $action, 'text' => $text ] + self::getListBits(
+				$this->context->getUser()
+			)
 		) );
 	}
 
@@ -179,7 +195,15 @@ class spamRegexList {
 
 	/* init for showPrevNext */
 	function showPrevNext( &$out ) {
-		list( $limit, $offset ) = $this->context->getRequest()->getLimitOffset();
+		$request = $this->context->getRequest();
+		if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
+			// MW 1.35+
+			list( $limit, $offset ) = $request->getLimitOffsetForUser(
+				$this->context->getUser()
+			);
+		} else {
+			list( $limit, $offset ) = $request->getLimitOffset();
+		}
 		$prevNext = new PrevNextNavigationRenderer( $this->context );
 		$html = $prevNext->buildPrevNextNavigation(
 			$this->context->getTitle(),

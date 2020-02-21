@@ -51,11 +51,12 @@ class spamRegexForm {
 	/* output */
 	function showForm( $err = '' ) {
 		$out = $this->context->getOutput();
+		$user = $this->context->getUser();
 
 		$token = htmlspecialchars( $this->context->getUser()->getEditToken() );
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 		$action = htmlspecialchars( $titleObj->getLocalURL(
-			[ 'action' => 'submit' ] + spamRegexList::getListBits()
+			[ 'action' => 'submit' ] + spamRegexList::getListBits( $user )
 		) );
 
 		if ( $err != '' ) {
@@ -116,7 +117,7 @@ class spamRegexForm {
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 		$this->context->getOutput()->redirect( $titleObj->getFullURL(
 			[ 'action' => 'success_block', 'text' => urlencode( $this->mBlockedPhrase ) ] +
-				spamRegexList::getListBits()
+				spamRegexList::getListBits( $this->context->getUser() )
 		) );
 	}
 }
