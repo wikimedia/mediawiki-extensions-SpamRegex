@@ -116,7 +116,7 @@ class spamRegexList {
 					}
 				}
 
-				$out->addHTML( '<ul>' );
+				$out->addHTML( '<ul class="spamregex-entry">' );
 				$out->addWikiMsg(
 					'spamregex-log',
 					$row->spam_text,
@@ -137,18 +137,47 @@ class spamRegexList {
 		}
 	}
 
-	/* remove from list - without confirmation */
+	/**
+	 * Show the form for deleting a blocked entry.
+	 * Primarily meant as a fallback for no-JS users clicking on a "remove" link.
+	 */
+	function showDeletionForm() {
+		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
+		$this->context->getOutput()->addHTML(
+			Html::openElement( 'form', [ 'method' => 'post', 'action' => $titleObj->getFullURL() ] ) .
+				'<br />' .
+				$this->context->msg( 'spamregex-unblock-form-text' )->escaped() .
+				$this->context->msg( 'word-separator' )->escaped() .
+				'<br />' .
+				Html::input( 'text', $this->context->getRequest()->getVal( 'text' ) ) .
+				Html::hidden( 'action', 'delete' ) .
+				Html::hidden( 'token', $this->context->getUser()->getEditToken() ) .
+				Html::submitButton( $this->context->msg( 'ipusubmit' )->escaped(), [ 'id' => 'spamregex-submit-btn' ] ) .
+				'<br />' .
+			Html::closeElement( 'form' )
+		);
+	}
+
+	/**
+	 * Remove from list - without confirmation
+	 */
 	function deleteFromList() {
-		$text = $this->context->getRequest()->getVal( 'text' );
+		$request = $this->context->getRequest();
+		$text = $request->getVal( 'text' );
+		$token = $request->getVal( 'token' );
 
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 
-		if ( SpamRegex::delete( $text ) ) {
-			/* success */
-			$action = 'success_unblock';
+		if ( $this->context->getUser()->matchEditToken( $token ) ) {
+			if ( SpamRegex::delete( $text ) ) {
+				/* success */
+				$action = 'success_unblock';
+			} else {
+				/* text doesn't exist */
+				$action = 'failure_unblock';
+			}
 		} else {
-			/* text doesn't exist */
-			$action = 'failure_unblock';
+			$action = 'sessionfailure';
 		}
 
 		$this->context->getOutput()->redirect( $titleObj->getFullURL(

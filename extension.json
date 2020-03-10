@@ -1,6 +1,6 @@
 {
 	"name": "Regular Expression Spam Block",
-	"version": "1.6",
+	"version": "1.7",
 	"author": [
 		"Bartek Łapiński",
 		"Alexandre Emsenhuber",
@@ -45,7 +45,13 @@
 	},
 	"ResourceModules": {
 		"ext.spamRegex.js": {
-			"scripts": "resources/js/ext.spamRegex.js"
+			"scripts": "resources/js/ext.spamRegex.js",
+			"messages": [
+				"spamregex-error-unblocking"
+			],
+			"dependencies": [
+				"mediawiki.api"
+			]
 		}
 	},
 	"AvailableRights": [

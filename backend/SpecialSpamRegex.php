@@ -60,14 +60,24 @@ class SpecialSpamRegex extends SpecialPage {
 		} elseif ( $action == 'success_unblock' ) {
 			$sRL->showSuccess();
 			$sRF->showForm();
-		} elseif ( $action == 'failure_unblock' ) {
+		} elseif ( $action == 'failure_unblock' || $action == 'sessionfailure' ) {
 			$text = htmlspecialchars( $request->getVal( 'text' ) );
-			$sRF->showForm( $this->msg( 'spamregex-error-unblocking', $text )->escaped() );
+			if ( $action == 'sessionfailure' ) {
+				$errMsg = $this->msg( 'sessionfailure' )->escaped();
+			} else {
+				$errMsg = $this->msg( 'spamregex-error-unblocking', $text )->escaped();
+			}
+			$sRF->showForm( $errMsg );
 		} elseif ( $request->wasPosted() && $action == 'submit' &&
 			$user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
 			$sRF->doSubmit();
 		} elseif ( $action == 'delete' ) {
-			$sRL->deleteFromList();
+			if ( $request->wasPosted() ) {
+				// This method now has the appropriate anti-CSRF measures
+				$sRL->deleteFromList();
+			} else {
+				$sRL->showDeletionForm();
+			}
 		} else {
 			$sRF->showForm();
 		}
