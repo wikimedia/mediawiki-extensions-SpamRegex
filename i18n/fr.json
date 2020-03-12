@@ -28,6 +28,7 @@
 	"spamregex-no-currently-blocked": "'''Il n’y a aucune phrase bloquée.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 supprimer]) ajouté par $5 le $6 à $7 (motif : $8)",
 	"spamregex-page-title-1": "Blocage d’une phrase utilisant des expressions rationnelles",
+	"spamregex-unblock-form-text": "Phrase à débloquer :",
 	"spamregex-unblock-success": "Le déblocage a réussi",
 	"spamregex-unblock-message": "La phrase '''$1''' a été débloquée à l’édition.",
 	"spamregex-page-title-2": "Blocage des phrases en utilisant des expressions rationnelles",

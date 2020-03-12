@@ -9,6 +9,7 @@
 	"spamregex-currently-blocked": "'''Frasi attualmente bloccate:'''",
 	"spamregex-no-currently-blocked": "'''Non ci sono frasi bloccate.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 rimuovi]) aggiunto da $5 il $6 alle $7 (motivo: $8)",
+	"spamregex-unblock-form-text": "Frase da sbloccare:",
 	"spamregex-unblock-success": "Sblocco eseguito",
 	"spamregex-block-success": "Blocco eseguito",
 	"spamregex-block-message": "La frase '''$1''' è stata bloccata.",

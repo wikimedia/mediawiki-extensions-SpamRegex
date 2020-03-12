@@ -24,6 +24,7 @@
 	"spamregex-no-currently-blocked": "'''沒有被封禁的詞組。'''",
 	"spamregex-log": "* <code>$1</code> $2 （[{{SERVER}}$3&text=$4 remove]）已由 $5 於 $6 $7 所添加（原因：$8）",
 	"spamregex-page-title-1": "使用正規表達式封禁詞組",
+	"spamregex-unblock-form-text": "要解封的詞組：",
 	"spamregex-unblock-success": "解封成功",
 	"spamregex-unblock-message": "已將詞組'''$1'''在編輯操作上解封。",
 	"spamregex-page-title-2": "封禁詞組來無法儲存使用正規表達式",
