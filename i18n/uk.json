@@ -26,6 +26,7 @@
 	"spamregex-no-currently-blocked": "'''Заблокованих фраз немає.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 вилучити]) додано $5 станом на $6 о $7 (причина: $8)",
 	"spamregex-page-title-1": "Блокування фрази за допомогою регулярних виразів",
+	"spamregex-unblock-form-text": "Фраза, яку слід розблокувати:",
 	"spamregex-unblock-success": "Розблокування виконано",
 	"spamregex-unblock-message": "Заборону на використання фрази '''$1''' знято.",
 	"spamregex-page-title-2": "Блокування використання фраз за допомогою регулярних виразів",
