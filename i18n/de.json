@@ -6,7 +6,8 @@
 			"Revolus",
 			"SVG",
 			"Umherirrender",
-			"Metalhead64"
+			"Metalhead64",
+			"Killarnee"
 		]
 	},
 	"apihelp-spamregex-param-do": "Was zu tun? Entweder <kbd>add</kbd> oder <kbd>delete</kbd>.",
@@ -21,6 +22,7 @@
 	"spamregex-no-currently-blocked": "'''Es gibt derzeit keine gesperrten Phrasen.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 entfernen]) hinzugefügt von $5 am $6 um $7 Uhr (Grund: $8)",
 	"spamregex-page-title-1": "Sperre von Phrasen anhand regulärer Ausdrücke",
+	"spamregex-unblock-form-text": "Zu entsperrende Phrase:",
 	"spamregex-unblock-success": "Die Entsperrung war erfolgreich.",
 	"spamregex-unblock-message": "Die Phrase '''$1''' wurde für Bearbeitungen entsperrt.",
 	"spamregex-page-title-2": "Verhinderung des Speicherns von Phrase anhand regulärer Ausdrücke",

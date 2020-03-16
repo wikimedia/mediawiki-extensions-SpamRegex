@@ -19,6 +19,7 @@
 	"spamregex-no-currently-blocked": "'''Det finns inga blockerade fraser.'''",
 	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 ta bort]) lades till av $5 den $6 kl $7 (anledning: $8)",
 	"spamregex-page-title-1": "Blockera fras med hjälp av reguljära uttryck",
+	"spamregex-unblock-form-text": "Fras att avblockera:",
 	"spamregex-unblock-success": "Avblockering lyckades",
 	"spamregex-unblock-message": "Frasen '''$1''' är inte längre blockerad.",
 	"spamregex-page-title-2": "Blockera fraser från att kunna sparas med hjälp av reguljära uttryck",
