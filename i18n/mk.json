@@ -22,6 +22,7 @@
 	"spamregex-no-currently-blocked": "'''Нема блокирани фрази.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 отстрани]) додаден од $5 на $6 во $7 ч. (причина: $8)",
 	"spamregex-page-title-1": "Блокирање на фраза со помош на регуларен израз",
+	"spamregex-unblock-form-text": "Фраза за одблокирање:",
 	"spamregex-unblock-success": "Одблокирањето успеа",
 	"spamregex-unblock-message": "Фразата '''$1''' е одблокирана за уредување.",
 	"spamregex-page-title-2": "Блокирање на зачувувањето на фрази со помош на регуларни изрази",
