@@ -4,7 +4,8 @@
 			"Rubin",
 			"Александр Сигачёв",
 			"Okras",
-			"Vlad5250"
+			"Vlad5250",
+			"Alexander Yukal"
 		]
 	},
 	"spamregex": "Спам-фильтр",
@@ -18,6 +19,7 @@
 	"spamregex-no-currently-blocked": "'''Нет заблокированных фраз.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 удалить]) добавлена $5 $6 $7 (причина: $8)",
 	"spamregex-page-title-1": "Блокировка фразы с использованием регулярных выражений",
+	"spamregex-unblock-form-text": "Фраза для разблокировки:",
 	"spamregex-unblock-success": "Разблокировка выполнена",
 	"spamregex-unblock-message": "Запрет на использование фразы '''$1''' снят.",
 	"spamregex-page-title-2": "Блокировка использования фразы с помощью регулярных выражений",
