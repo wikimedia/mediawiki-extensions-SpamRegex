@@ -152,7 +152,7 @@ class SpamRegexHooks {
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
-		$dir = __DIR__ . '/../sql';
+		$dir = __DIR__ . '/../../sql';
 
 		$dbType = $updater->getDB()->getType();
 

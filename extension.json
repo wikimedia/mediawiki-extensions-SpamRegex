@@ -22,13 +22,13 @@
 		"SpamRegexAliases": "SpamRegex.alias.php"
 	},
 	"AutoloadClasses": {
-		"ApiSpamRegex": "api/ApiSpamRegex.php",
-		"SpamRegex": "backend/SpamRegex.php",
-		"spamRegexForm": "backend/spamRegexForm.php",
-		"spamRegexList": "backend/spamRegexList.php",
+		"ApiSpamRegex": "includes/api/ApiSpamRegex.php",
+		"SpamRegex": "includes/backend/SpamRegex.php",
+		"spamRegexForm": "includes/backend/spamRegexForm.php",
+		"spamRegexList": "includes/backend/spamRegexList.php",
 		"SpamRegexUITemplate": "templates/ui.tmpl.php",
-		"SpecialSpamRegex": "backend/SpecialSpamRegex.php",
-		"SpamRegexHooks": "backend/SpamRegexHooks.php"
+		"SpecialSpamRegex": "includes/backend/SpecialSpamRegex.php",
+		"SpamRegexHooks": "includes/backend/SpamRegexHooks.php"
 	},
 	"APIModules": {
 		"spamregex": "ApiSpamRegex"
