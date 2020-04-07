@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen",
-			"Str4nd",
+			"01miki10",
 			"Hopea",
-			"01miki10"
+			"Silvonen",
+			"Str4nd"
 		]
 	},
 	"spamregex-error-unblocking": "Ilmauksen ”$1” eston poisto ei onnistunut. Sitä ei todennäköisesti ole estetty.",

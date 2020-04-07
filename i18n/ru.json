@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rubin",
-			"Александр Сигачёв",
+			"Alexander Yukal",
 			"Okras",
+			"Rubin",
 			"Vlad5250",
-			"Alexander Yukal"
+			"Александр Сигачёв"
 		]
 	},
 	"spamregex": "Спам-фильтр",

@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jon Harald Søby",
 			"Nghtwlkr",
-			"Unhammer",
-			"Jon Harald Søby"
+			"Unhammer"
 		]
 	},
 	"apihelp-spamregex-summary": "Legg til oppføringer i SpamRegex eller fjern allerede blokkerte oppføringer fra dem.",

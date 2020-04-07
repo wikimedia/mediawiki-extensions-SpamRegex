@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kly",
 			"Liangent",
-			"Liuxinyu970226",
-			"Kly"
+			"Liuxinyu970226"
 		]
 	},
 	"apihelp-spamregex-summary": "添加項目到 SpamRegex 或是移除在裡頭被封禁的項目。",

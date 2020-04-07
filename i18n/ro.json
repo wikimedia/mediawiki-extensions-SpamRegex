@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"KlaudiuMihaila",
-			"Andrei Stroe"
+			"Andrei Stroe",
+			"KlaudiuMihaila"
 		]
 	},
 	"spamregex-no-currently-blocked": "'''Nu există expresii blocate.'''",

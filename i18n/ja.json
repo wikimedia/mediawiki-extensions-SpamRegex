@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"2nd-player",
 			"Fryed-peach",
-			"Shirayuki",
-			"青子守歌",
 			"Otokoume",
-			"2nd-player"
+			"Shirayuki",
+			"青子守歌"
 		]
 	},
 	"spamregex": "スパム正規表現フィルター",

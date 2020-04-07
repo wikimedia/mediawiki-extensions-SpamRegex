@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bugoslav",
 			"Dalibor Bosits",
-			"MaGa",
-			"Bugoslav"
+			"MaGa"
 		]
 	},
 	"spamregex-unblock-form-text": "Fraza za deblokiranje:",

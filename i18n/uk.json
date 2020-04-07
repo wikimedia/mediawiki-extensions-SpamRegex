@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Prima klasy4na",
-			"Тест",
+			"Movses",
 			"Piramidion",
+			"Prima klasy4na",
 			"Vlad5250",
-			"Movses"
+			"Тест"
 		]
 	},
 	"apihelp-spamregex-summary": "Додайте записи у «Регулярні вирази спаму» або видаліть вже заблоковані.",

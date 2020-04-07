@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Grondin",
 			"IAlex",
 			"Meno25",
+			"Thibaut120094",
 			"Urhixidur",
-			"Wladek92",
-			"Gomoko",
-			"Thibaut120094"
+			"Wladek92"
 		]
 	},
 	"apihelp-spamregex-summary": "Ajouter des entrées à SpamRegex ou supprimer toutes les entrées déjà bloquées de celui-ci.",
