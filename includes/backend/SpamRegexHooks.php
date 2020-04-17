@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Hooked functions used by SpamRegex to add our magic to things like the edit
  * page and whatnot.
@@ -114,13 +117,13 @@ class SpamRegexHooks {
 	 * @return array Array of spamRegexed phrases
 	 */
 	protected static function fetchRegexData( $mode, $db_master = 0 ) {
-		global $wgMemc;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
 		$phrases = [];
 		/* first, check if regex string is already stored in memcache */
 		$key_clause = ( $mode == 1 ) ? 'Textbox' : 'Summary';
 		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
-		$cached = $wgMemc->get( $key );
+		$cached = $cache->get( $key );
 
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
@@ -135,7 +138,7 @@ class SpamRegexHooks {
 			while ( $row = $res->fetchObject() ) {
 				$phrases[] = '/' . $row->spam_text . '/i';
 			}
-			$wgMemc->set( $key, $phrases, 30 * 86400 );
+			$cache->set( $key, $phrases, 30 * 86400 );
 			$res->free();
 		} else {
 			/* take from cache */

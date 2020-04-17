@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Navigation\PrevNextNavigationRenderer;
 
 /**
@@ -194,17 +195,16 @@ class spamRegexList {
 	 * @return int Amount of results in the spam_regex database table
 	 */
 	function fetchNumResults() {
-		global $wgMemc;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
 		/* we use memcached here */
 		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'numResults' );
-		$cached = $wgMemc->get( $key );
-		$results = 0;
+		$cached = $cache->get( $key );
 
 		if ( !$cached || is_null( $cached ) || $cached === false ) {
 			$dbr = wfGetDB( DB_REPLICA );
 			$results = $dbr->selectField( 'spam_regex', 'COUNT(*)', '', __METHOD__ );
-			$wgMemc->set( $key, $results, 30 * 86400 );
+			$cache->set( $key, $results, 30 * 86400 );
 		} else {
 			$results = $cached;
 		}

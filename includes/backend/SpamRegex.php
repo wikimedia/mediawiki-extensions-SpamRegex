@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Utility class for managing the blocked phrases.
  *
@@ -103,12 +106,16 @@ class SpamRegex {
 	 */
 	public static function getCacheKey( /*...*/ ) {
 		global $wgSharedDB, $wgSharedTables, $wgSharedPrefix;
+
 		$args = func_get_args();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+
 		if ( in_array( 'spam_regex', $wgSharedTables ) ) {
 			$args = array_merge( [ $wgSharedDB, $wgSharedPrefix ], $args );
-			return call_user_func_array( 'wfForeignMemcKey', $args );
+
+			return call_user_func_array( [ $cache, 'makeGlobalKey' ], $args );
 		} else {
-			return call_user_func_array( 'wfMemcKey', $args );
+			return call_user_func_array( [ $cache, 'makeKey' ], $args );
 		}
 	}
 
@@ -120,7 +127,7 @@ class SpamRegex {
 	 * @param bool $mode 0 for textbox (=content), 1 for summary
 	 */
 	public static function updateMemcKeys( $action, $text, $mode = false ) {
-		global $wgMemc;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
 		if ( $mode === false ) {
 			self::updateMemcKeys( $action, $text, 1 );
@@ -129,7 +136,7 @@ class SpamRegex {
 
 		$key_clause = ( $mode == 1 ) ? 'Summary' : 'Textbox';
 		$key = self::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
-		$phrases = $wgMemc->get( $key );
+		$phrases = $cache->get( $key );
 
 		if ( $phrases ) {
 			$spam_text = '/' . $text . '/i';
@@ -145,7 +152,7 @@ class SpamRegex {
 					break;
 			}
 
-			$wgMemc->set( $key, $phrases, 30 * 86400 );
+			$cache->set( $key, $phrases, 30 * 86400 );
 		}
 	}
 
