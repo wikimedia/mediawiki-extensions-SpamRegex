@@ -10,6 +10,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:SpamRegex",
 	"descriptionmsg": "spamregex-desc",
 	"type": "antispam",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
 	"SpecialPages": {
 		"SpamRegex": "SpecialSpamRegex"
 	},
