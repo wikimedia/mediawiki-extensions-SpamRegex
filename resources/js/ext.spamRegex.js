@@ -1,7 +1,7 @@
-$( function() {
+$( function () {
 	// This JS ensures that at least one block mode is always checked
-	var SRTextboxControl = $( '#wpBlockedTextbox' );
-	var SRSummaryControl = $( '#wpBlockedSummary' );
+	var SRTextboxControl = $( '#wpBlockedTextbox' ),
+		SRSummaryControl = $( '#wpBlockedSummary' );
 
 	SRTextboxControl.on( 'click', function () {
 		if ( !SRTextboxControl.prop( 'checked' ) ) {
@@ -20,7 +20,7 @@ $( function() {
 	} );
 
 	// Handle clicks on the "remove" link for users w/ JS enabled
-	$( '.spamregex-entry ul li a.external' ).click( function ( e ) {
+	$( '.spamregex-entry ul li a.external' ).on( 'click', function ( e ) {
 		// Don't bother following the link since we have JS, d'oh...
 		e.preventDefault();
 
@@ -29,8 +29,8 @@ $( function() {
 		// 2) split it along the ampersands,
 		// 3) get the last part (text=<phrase to unblock>)
 		// 4) and remove "text=" from it, which leaves us with only the phrase to unblock
-		var thisElement = $( this );
-		var phrase = thisElement.attr( 'href' ).split( /&/ ).pop().replace( /text=/, '' );
+		var thisElement = $( this ),
+			phrase = thisElement.attr( 'href' ).split( /&/ ).pop().replace( /text=/, '' );
 
 		( new mw.Api() ).postWithToken( 'csrf', {
 			action: 'spamregex',
