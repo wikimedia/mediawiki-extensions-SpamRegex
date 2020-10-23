@@ -3,18 +3,21 @@
 		"authors": [
 			"01miki10",
 			"Hopea",
+			"Jack Phoenix",
 			"Silvonen",
 			"Str4nd"
 		]
 	},
 	"spamregex-error-unblocking": "Ilmauksen ”$1” eston poisto ei onnistunut. Sitä ei todennäköisesti ole estetty.",
 	"spamregex-summary": "Teksti löytyi sivun yhteenvedosta.",
+	"spamregex-intro": "Käytä tätä lomaketta estääksesi ilmaus tallentamisen sivujen tekstiin. Mikäli teksti sisältää annetun ilmauksen, muokkausta ei tallennettaisi ja käyttäjälle, joka yritti tallentaa muokkauksen, näytettäisiin selitys. Ole varovainen, ilmausten ei tulisi olle liian lyhyitä tai yleisiä.",
 	"spamregex-page-title": "Ei-toivottujen ilmausten estäminen säännöllisten lausekkeiden avulla",
 	"spamregex-currently-blocked": "'''Estetyt ilmaukset:'''",
 	"spamregex-move": "Antamasi syy sisälsi estetyn ilmauksen.",
 	"spamregex-no-currently-blocked": "'''Estettyjä ilmauksia ei ole.'''",
 	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 poista]) lisäsi $5 $6 klo $7 (syy: $8)",
 	"spamregex-page-title-1": "Estä ilmaus säännöllisten lausekkeiden avulla",
+	"spamregex-unblock-form-text": "Ilmaus, jonka esto poistetaan:",
 	"spamregex-unblock-success": "Eston poisto onnistui",
 	"spamregex-unblock-message": "Ilmauksen '''$1''' esto on poistettu.",
 	"spamregex-page-title-2": "Estä ilmausten tallentaminen säännöllisten lausekkeiden avulla",
