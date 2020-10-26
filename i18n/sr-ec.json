@@ -19,7 +19,7 @@
 	"spamregex-page-title-1": "Блокирај фразе користећи регуларне изразе",
 	"spamregex-unblock-success": "Приступ је враћен",
 	"spamregex-unblock-message": "Фраза '''$1''' је била деблокирана за измене.",
-	"spamregex-block-success": "Блокирање је успело",
+	"spamregex-block-success": "Успешно блокирање",
 	"spamregex-block-message": "Фраза '''$1''' је сада блокирана.",
 	"spamregex-warning-1": "Унесите фразу коју желите да забраните.",
 	"spamregex-error-1": "Неисправан регуларни израз.",
