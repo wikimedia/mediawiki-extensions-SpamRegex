@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardo.mps"
+			"Eduardo.mps",
+			"Eduardoaddad"
 		]
 	},
 	"apihelp-spamregex-summary": "Adicione entradas ao SpamRegex ou remova as entradas já bloqueadas dele.",
