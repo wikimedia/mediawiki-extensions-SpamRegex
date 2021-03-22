@@ -26,7 +26,7 @@
 	"spamregex-unblock-success": "Die Entsperrung war erfolgreich.",
 	"spamregex-unblock-message": "Die Phrase '''$1''' wurde für Bearbeitungen entsperrt.",
 	"spamregex-page-title-2": "Verhinderung des Speicherns von Phrase anhand regulärer Ausdrücke",
-	"spamregex-block-success": "Die Sperrung war erfolgreich.",
+	"spamregex-block-success": "Die Sperrung war erfolgreich",
 	"spamregex-block-message": "Die Phrase '''$1''' wurde für Bearbeitungen gesperrt.",
 	"spamregex-warning-1": "Bitte gib eine Phrase für die Sperrung an.",
 	"spamregex-error-1": "Dies ist ein ungültiger regulärer Ausdruck.",
