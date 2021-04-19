@@ -188,4 +188,32 @@ class SpamRegexHooks {
 			__METHOD__
 		);
 	}
+
+	/**
+	 * For integration with the Comments extension, to make sure that Comments
+	 * submitted via that extension are also run throug SpamRegex.
+	 *
+	 * @param string &$text Comment text
+	 * @param bool &$retVal Is $text spammy?
+	 */
+	public static function onCommentsIsSpam( &$text, &$retVal ) {
+		// @todo FIXME: duplicates onEditFilter() slightly
+		$t_phrases = [];
+
+		// and here we check for phrases within the text itself
+		$t_phrases = self::fetchRegexData( 1 );
+		if ( $t_phrases && is_array( $t_phrases ) ) {
+			foreach ( $t_phrases as $t_phrase ) {
+				if ( preg_match( $t_phrase, $text, $t_matches ) ) {
+					// We got a match -> it's spam, alright
+					// The match is stored in $t_matches[0] but unlike the onEditFilter() code,
+					// we don't need to know or care about that.
+					// We'll just let Comments know, "yo, this is spam" and it'll take care of
+					// the rest.
+					$retVal = true;
+				}
+			}
+		}
+	}
+
 }
