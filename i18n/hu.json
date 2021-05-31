@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Glanthor Reviol"
+			"Glanthor Reviol",
+			"Tacsipacsi"
 		]
 	},
 	"spamregex": "Spam reguláris kifejezés",
@@ -28,7 +29,7 @@
 	"spamregex-phrase-block-text": "kifejezés blokklása a lap szövegében",
 	"spamregex-phrase-block-summary": "kifejezés blokklása az összefoglalóban",
 	"spamregex-block-submit": "Kifejezés blokkolása",
-	"spamregex-text": "(Szöveg)",
-	"spamregex-summary-log": "(Összefoglaló)",
+	"spamregex-text": "(szöveg)",
+	"spamregex-summary-log": "(összefoglaló)",
 	"right-spamregex": "Összetett spam kifejezések blokkolása a [[Special:SpamRegex]] lapon"
 }
