@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NMW03"
+		]
+	},
+	"spamregex-text": "(mətn)",
+	"spamregex-summary-log": "(xülasə)"
+}
