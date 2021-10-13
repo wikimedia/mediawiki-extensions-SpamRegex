@@ -4,7 +4,7 @@
  * @covers spamRegexList
  * @group Database
  */
-class SpamRegexListTest extends MediaWikiTestCase {
+class SpamRegexListTest extends MediaWikiIntegrationTestCase {
 
 	public function testShowPrevNext() {
 		$context = new RequestContext();
