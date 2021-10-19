@@ -72,6 +72,9 @@ class spamRegexForm {
 			$scBlockedPhrase = '';
 		}
 
+		// Add CSS
+		$out->addModuleStyles( 'ext.spamRegex.css' );
+
 		// Add JS
 		$out->addModules( 'ext.spamRegex.js' );
 

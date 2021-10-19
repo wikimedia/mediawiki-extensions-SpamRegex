@@ -1,0 +1,4 @@
+input[name="wpBlockedPhrase"],
+input[name="wpBlockedReason"] {
+	width: 100%;
+}

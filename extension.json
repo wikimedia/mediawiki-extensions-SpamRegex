@@ -1,6 +1,6 @@
 {
 	"name": "Regular Expression Spam Block",
-	"version": "1.7.1",
+	"version": "1.7.2",
 	"author": [
 		"Bartek Łapiński",
 		"Alexandre Emsenhuber",
@@ -48,6 +48,9 @@
 		"remoteExtPath": "SpamRegex"
 	},
 	"ResourceModules": {
+		"ext.spamRegex.css": {
+			"styles": "resources/css/ext.spamRegex.css"
+		},
 		"ext.spamRegex.js": {
 			"scripts": "resources/js/ext.spamRegex.js",
 			"messages": [
