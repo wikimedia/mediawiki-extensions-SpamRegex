@@ -4,5 +4,7 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"spamregex-already-blocked": "L'utenti \"$1\" è già bluccatu"
+	"spamregex-already-blocked": "L'utenti \"$1\" è già bluccatu",
+	"spamregex-reason": "Mutivu:",
+	"spamregex-text": "(testu)"
 }
