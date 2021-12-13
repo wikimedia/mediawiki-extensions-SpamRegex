@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
-			"Vinhtantran"
+			"Vinhtantran",
+			"Ioe2015"
 		]
 	},
+	"spamregex-desc": "[[Special:SpamRegex|Lọc]] ra các cụm từ không mong muốn trong các trang đã được sửa, dựa trên biểu thức chính quy",
 	"spamregex-page-title-1": "Cấm cụm từ dùng biểu thức chính quy",
 	"spamregex-unblock-success": "Bỏ cấm thành công",
+	"spamregex-page-title-2": "Chặn lưu các cụm từ bằng biểu thức chính quy",
 	"spamregex-block-success": "Cấm thành công",
 	"spamregex-block-message": "Cụm từ '''$1''' đã bị cấm.",
 	"spamregex-error-1": "Biểu thức chính quy không hợp lệ.",

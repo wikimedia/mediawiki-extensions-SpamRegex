@@ -4,7 +4,8 @@
 			"Jon Harald Søby",
 			"Purodha",
 			"Siebrand",
-			"The Evil IP address"
+			"The Evil IP address",
+			"Umherirrender"
 		]
 	},
 	"apihelp-spamregex-summary": "{{doc-apihelp-summary|spamregex}}",
@@ -14,7 +15,7 @@
 	"apihelp-spamregex-param-reason": "{{doc-apihelp-param|spamregex|reason}}",
 	"apihelp-spamregex-example-1": "{{doc-apihelp-example|spamregex}}",
 	"apihelp-spamregex-example-2": "{{doc-apihelp-example|spamregex}}",
-	"spamregex": "{{name}}",
+	"spamregex": "{{doc-special}}",
 	"spamregex-desc": "{{desc|name=SpamRegex|url=https://www.mediawiki.org/wiki/Extension:SpamRegex}}",
 	"spamregex-error-unblocking": "Used as text on Special:SpamRegex",
 	"spamregex-summary": "Used as summary on Special:SpamRegex",

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chinamoonroll"
+		]
+	},
+	"apihelp-spamregex-summary": "Wewehin majingan nuju SpamRegex utawi usap sampun ngacadel mqjingan saking punika.",
+	"apihelp-spamregex-param-do": "Napi sané patut kamargiang? Riantara <kbd>weweh</kbd> utawi <kbd>usap</kbd>.",
+	"spamregex-block-success": "Pacadelan kaasil",
+	"spamregex-already-blocked": "\"$1\" sampun kacadel"
+}
