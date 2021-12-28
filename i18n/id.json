@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bennylin",
-			"IvanLanin"
+			"IvanLanin",
+			"Daud I.F. Argana"
 		]
 	},
 	"spamregex": "Regex spam",
@@ -14,8 +15,9 @@
 	"spamregex-currently-blocked": "'''Frasa yang sedang diblokir:'''",
 	"spamregex-move": "Alasan yang Anda masukkan mengandung suatu frasa yang diblokir.",
 	"spamregex-no-currently-blocked": "''Tidak ada frasa yang diblokir.'''",
-	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 hapus]) ditambahkan oleh $5 pada $6 pukul $7",
+	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 hapus]) ditambahkan oleh $5 pada $6 pukul $7 (alasan: $8)",
 	"spamregex-page-title-1": "Blokir frasa dengan menggunakan ekspresi reguler",
+	"spamregex-unblock-form-text": "Frasa untuk membatalkan blokir:",
 	"spamregex-unblock-success": "Pembukaan blokir berhasil",
 	"spamregex-unblock-message": "Frasa '''$1''' telah dibuka blokirnya.",
 	"spamregex-page-title-2": "Blokir penyimpanan frasa dengan menggunakan ekspresi regular",
@@ -26,10 +28,14 @@
 	"spamregex-warning-2": "Silakan pilih paling tidak satu mode blokir.",
 	"spamregex-already-blocked": "\"$1\" telah diblokir",
 	"spamregex-phrase-block": "Frasa untuk diblokir:",
+	"spamregex-reason": "Alasan:",
+	"spamregex-error-no-reason": "Anda perlu memberikan alasan memblokir suatu frasa!",
 	"spamregex-phrase-block-text": "blokir frasa dalam teks halaman",
 	"spamregex-phrase-block-summary": "blokir frasa dalam ringkasan",
 	"spamregex-block-submit": "Blokirnbsp;frasa&nbsp;ini",
-	"spamregex-text": "(Teks)",
-	"spamregex-summary-log": "(Ringkasan)",
+	"spamregex-text": "(teks)",
+	"spamregex-text-and-summary-log": "(teks, ringkasan)",
+	"spamregex-summary-log": "(ringkasan)",
+	"action-spamregex": "memblokir frasa spam",
 	"right-spamregex": "Blokir frasa spam melalui [[Special:SpamRegex]]"
 }
