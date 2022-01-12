@@ -6,6 +6,13 @@
 			"IvanLanin"
 		]
 	},
+	"apihelp-spamregex-summary": "Menambahkan entri ke SpamRegex atau menghapus entri yang sudah diblokir dari sana.",
+	"apihelp-spamregex-param-do": "Apa yang harus dikerjakan? Pilih <kbd>add</kbd> (tambah) atau <kbd>delete</kbd> (hapus).",
+	"apihelp-spamregex-param-modes": "Mode blokir, artinya apakah frasa yang ingin diblokir berada dalam konten halaman (''text''), ringkasan suntingan (''summary''), atau keduanya?",
+	"apihelp-spamregex-param-phrase": "Frasa spam yang ingin diblokir atau dihapus dari SpamRegex.",
+	"apihelp-spamregex-param-reason": "Alasan menambahkan entri ke SpamRegex. Wajib ketika menambahkan entri, tidak dipakai ketika menghapus.",
+	"apihelp-spamregex-example-1": "Menambahkan frasa \"FooBar\" dengan alasan \"Cross-wiki spam\" ke SpamRegex, memblokirnya dari ditampilkan di teks halaman ataupun di ringkasan suntingan",
+	"apihelp-spamregex-example-2": "Menghapus frasa \"Test, just a test\" dari SpamRegex",
 	"spamregex": "Regex spam",
 	"spamregex-desc": "[[Special:SpamRegex|Menyaring]] frasa yang tak diinginkan di halaman yang disunting, didasarkan pada ekspresi regular (regex).",
 	"spamregex-error-unblocking": "Kesalahan menghapus blokir \"$1\". Mungkin pola tersebut tak ditemukan.",
