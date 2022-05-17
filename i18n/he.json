@@ -6,6 +6,7 @@
 			"Amire80"
 		]
 	},
+	"apihelp-spamregex-param-reason": "סיבה להוספת רשומה ל־SpamRegex. חובה בעת הוספת רשומות, לא משמש בעת מחיקה.",
 	"spamregex": "ביטוי רגולרי לספאם",
 	"spamregex-desc": "[[Special:SpamRegex|סינון]] מונחים בלתי רצויים בדפים שנערכים, בהתבסס על ביטויים רגולריים",
 	"spamregex-error-unblocking": "שגיאה בביטול חסימת \"$1\". ייתכן שלא קיימת תבנית כזו.",
@@ -27,6 +28,7 @@
 	"spamregex-warning-2": "אנא סמנו לפחות מצב חסימה אחד.",
 	"spamregex-already-blocked": "\"$1\" כבר נחסם",
 	"spamregex-phrase-block": "מונח לחסימה:",
+	"spamregex-reason": "סיבה:",
 	"spamregex-phrase-block-text": "חסימת המונח בטקסט שבדף",
 	"spamregex-phrase-block-summary": "חסימת המונח בתקציר",
 	"spamregex-block-submit": "חסימת&nbsp;מונח&nbsp;זה",
