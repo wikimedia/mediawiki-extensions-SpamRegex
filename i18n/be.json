@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Тест"
+			"Тест",
+			"No Sleep till Krupki"
 		]
 	},
-	"spamregex-text": "(Тэкст)"
+	"spamregex-text": "(тэкст)"
 }
