@@ -4,5 +4,7 @@
 			"Yupik"
 		]
 	},
+	"spamregex-reason": "Mäinn:",
+	"spamregex-text": "(teʹkstt)",
 	"spamregex-summary-log": "(õʹhtteǩeässmõš)"
 }
