@@ -3,7 +3,8 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"spamregex": "Strob regex (Spam regex)",
@@ -30,7 +31,7 @@
 	"spamregex-phrase-block-text": "stankañ ar frazenn e testenn ar bajenn",
 	"spamregex-phrase-block-summary": "stankañ ar frazenn en evezhiadenn",
 	"spamregex-block-submit": "Stankañ&nbsp;ar&nbsp;frazenn-se",
-	"spamregex-text": "(Testenn)",
-	"spamregex-summary-log": "(Diverradur)",
+	"spamregex-text": "(testenn)",
+	"spamregex-summary-log": "(diverradur)",
 	"right-spamregex": "Stankañ stroboù dre [[Special:SpamRegex]]"
 }
