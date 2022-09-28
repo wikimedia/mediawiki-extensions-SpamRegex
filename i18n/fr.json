@@ -7,7 +7,8 @@
 			"Meno25",
 			"Thibaut120094",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
 	"apihelp-spamregex-summary": "Ajouter des entrées à SpamRegex ou supprimer toutes les entrées déjà bloquées de celui-ci.",
@@ -35,7 +36,7 @@
 	"spamregex-block-success": "Le blocage a réussi",
 	"spamregex-block-message": "La phrase '''$1''' a été bloquée.",
 	"spamregex-warning-1": "Indiquez une phrase à bloquer.",
-	"spamregex-error-1": "Expression rationnelle invalide.",
+	"spamregex-error-1": "Expression rationnelle non valide.",
 	"spamregex-warning-2": "Choisissez au moins un mode de blocage.",
 	"spamregex-already-blocked": "« $1 » est déjà bloqué",
 	"spamregex-phrase-block": "Phrase à bloquer :",

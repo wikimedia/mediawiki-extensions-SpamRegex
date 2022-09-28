@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
+	"spamregex-error-unblocking": "Napaka pri odblokiranju »$1«. Verjetno ni takega vzorca.",
+	"spamregex-unblock-success": "Odblokiranje je uspelo.",
 	"spamregex-summary-log": "(povzetek)"
 }
