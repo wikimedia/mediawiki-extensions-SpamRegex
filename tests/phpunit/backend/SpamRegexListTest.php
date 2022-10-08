@@ -19,12 +19,12 @@ class SpamRegexListTest extends MediaWikiIntegrationTestCase {
 
 		$html = $out->getHTML();
 
-		$this->assertStringStartsWith( '<p>View (previous 50 ', $html );
+		$this->assertStringStartsWith( '<p><div class="mw-pager-navigation-bar">View (<span class="mw-prevlink">previous 50', $html );
 
 		preg_match_all( '!<a.*?</a>!', $html, $m, PREG_PATTERN_ORDER );
 		$links = $m[0];
 
-		$nums = [ 20, 50, 100, 250, 500 ];
+		$nums = [ 20, 100, 250, 500 ];
 		$i = 0;
 		foreach ( $links as $a ) {
 			$this->assertStringContainsString( 'Special:SpamRegex', $a );
