@@ -31,7 +31,7 @@
 	"spamregex-reason": "סיבה:",
 	"spamregex-phrase-block-text": "חסימת המונח בטקסט שבדף",
 	"spamregex-phrase-block-summary": "חסימת המונח בתקציר",
-	"spamregex-block-submit": "חסימת&nbsp;מונח&nbsp;זה",
+	"spamregex-block-submit": "חסימת&nbsp;המונח&nbsp;הזה",
 	"spamregex-text": "(טקסט)",
 	"spamregex-summary-log": "(תקציר)",
 	"right-spamregex": "חסימת מונחי ספאם דרך [[Special:SpamRegex]]"
