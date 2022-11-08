@@ -24,6 +24,7 @@
 	"spamregex-no-currently-blocked": "'''لا توجد عبارات ممنوعة.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 إزالة]) أُضِيف بواسطة $5 في $6 الساعة $7 (السبب: $8)",
 	"spamregex-page-title-1": "منع عبارة باستخدام التعبيرات المنتظمة",
+	"spamregex-unblock-form-text": "العبارة المطلوب إلغاء حظرها:",
 	"spamregex-unblock-success": "رفع المنع نجح",
 	"spamregex-unblock-message": "العبارة '''$1''' تم رفع المنع عنها ضد التحرير.",
 	"spamregex-page-title-2": "منع العبارات من الحفظ باستخدام التعبيرات المنتظمة",
