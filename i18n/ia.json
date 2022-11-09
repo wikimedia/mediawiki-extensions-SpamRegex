@@ -4,6 +4,13 @@
 			"McDutchie"
 		]
 	},
+	"apihelp-spamregex-summary": "Adder entratas a SpamRegex o remover entratas ja blocate de illo.",
+	"apihelp-spamregex-param-do": "Que facer? Sia <kbd>add</kbd> o <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "Modos de blocage, i.e., si le phrase que se tenta blocar debe esser blocate in le contento de paginas (text), in summarios de modification (summary) o in ambes.",
+	"apihelp-spamregex-param-phrase": "Le phrase de spam a blocar o a remover de SpamRegex.",
+	"apihelp-spamregex-param-reason": "Motivo pro adder un entrata a SpamRegEx. Obligatori pro le addition de entratas, non usate pro le deletion.",
+	"apihelp-spamregex-example-1": "Adder le phrase \"FooBar\" con le motivo \"Cross-wiki spam\" a SpamRegex, blocante lo in le texto de paginas e in le summarios de modification.",
+	"apihelp-spamregex-example-2": "Remover le phrase \"Test, just a test\" de SpamRegex.",
 	"spamregex": "Regex antispam",
 	"spamregex-desc": "[[Special:SpamRegex|Filtrar]] phrases non desirabile in paginas modificate, a base de expressiones regular",
 	"spamregex-error-unblocking": "Error durante le disblocada de \"$1\". Probabilemente non existe tal patrono.",
@@ -26,10 +33,14 @@
 	"spamregex-warning-2": "Per favor selige al minus un modo de blocada.",
 	"spamregex-already-blocked": "\"$1\" es ja blocate",
 	"spamregex-phrase-block": "Phrase a blocar:",
+	"spamregex-reason": "Motivo:",
+	"spamregex-error-no-reason": "Es obligatori fornir un motivo pro blocar un phrase.",
 	"spamregex-phrase-block-text": "blocar phrase in texto de pagina",
 	"spamregex-phrase-block-summary": "blocar phrase in summario",
 	"spamregex-block-submit": "Blocar&nbsp;iste&nbsp;phrase",
 	"spamregex-text": "(texto)",
+	"spamregex-text-and-summary-log": "(texto, summario)",
 	"spamregex-summary-log": "(summario)",
+	"action-spamregex": "blocar phrases de spam",
 	"right-spamregex": "Blocar phrases de spam per medio de [[Special:SpamRegex]]"
 }
