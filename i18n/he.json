@@ -6,7 +6,13 @@
 			"YaronSh"
 		]
 	},
+	"apihelp-spamregex-summary": "הוספת רשומות ל־SpamRegex או הסרת ערכים שכבר חסומים משם.",
+	"apihelp-spamregex-param-do": "מה לעשות? <kbd>add</kbd> או <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "מצבי חסימה, כלומר האם לחסום את הביטוי שאנו מנסים לחסום בתוכן הדף (text), תקצירי עריכה (summary) או בשניהם?",
+	"apihelp-spamregex-param-phrase": "ביטוי הספאם שיש לחסום או להסיר מ־SpamRegex.",
 	"apihelp-spamregex-param-reason": "סיבה להוספת רשומה ל־SpamRegex. חובה בעת הוספת רשומות, לא משמש בעת מחיקה.",
+	"apihelp-spamregex-example-1": "הוספת הביטוי \"FooBar\" עם הסיבה \"Cross-wiki spam\" ל־SpamRegex, כך שתחסום אותו הן בטקסט הדף והן בתקצירי עריכה",
+	"apihelp-spamregex-example-2": "הסרת הביטוי \"Test, just a test\" מ־SpamRegex",
 	"spamregex": "ביטוי רגולרי לספאם",
 	"spamregex-desc": "[[Special:SpamRegex|סינון]] מונחים בלתי רצויים בדפים שנערכים, בהתבסס על ביטויים רגולריים",
 	"spamregex-error-unblocking": "שגיאה בביטול חסימת \"$1\". ייתכן שלא קיימת תבנית כזו.",
@@ -18,6 +24,7 @@
 	"spamregex-no-currently-blocked": "'''אין מונחים חסומים.'''",
 	"spamregex-log": "* '''$1''' $2 ([{{SERVER}}$3&text=$4 הסרה]) נוספה על־ידי $5 ב־$7, $6 (סיבה: $8)",
 	"spamregex-page-title-1": "חסימת ביטוי באמצעות ביטויים רגולריים",
+	"spamregex-unblock-form-text": "ביטוי שצריך לבטל את חסימתו:",
 	"spamregex-unblock-success": "הסרת החסימה הושלמה בהצלחה",
 	"spamregex-unblock-message": "הוסרה חסימת המונח '''$1''' מעריכה.",
 	"spamregex-page-title-2": "חסימת מונחים משמירה באמצעות שימוש בביטויים רגולריים",
@@ -29,10 +36,13 @@
 	"spamregex-already-blocked": "\"$1\" כבר נחסם",
 	"spamregex-phrase-block": "מונח לחסימה:",
 	"spamregex-reason": "סיבה:",
+	"spamregex-error-no-reason": "יש לספק סיבה לחסימת ביטוי!",
 	"spamregex-phrase-block-text": "חסימת המונח בטקסט שבדף",
 	"spamregex-phrase-block-summary": "חסימת המונח בתקציר",
 	"spamregex-block-submit": "חסימת&nbsp;המונח&nbsp;הזה",
 	"spamregex-text": "(טקסט)",
+	"spamregex-text-and-summary-log": "(טקסט, תקציר)",
 	"spamregex-summary-log": "(תקציר)",
+	"action-spamregex": "ביטויי ספאם לחסימה",
 	"right-spamregex": "חסימת מונחי ספאם דרך [[Special:SpamRegex]]"
 }
