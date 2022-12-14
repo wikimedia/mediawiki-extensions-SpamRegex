@@ -3,7 +3,8 @@
 		"authors": [
 			"Kly",
 			"Liangent",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"捍粵者"
 		]
 	},
 	"apihelp-spamregex-summary": "添加項目到 SpamRegex 或是移除在裡頭被封禁的項目。",
@@ -33,7 +34,7 @@
 	"spamregex-warning-1": "提供要封禁的詞組。",
 	"spamregex-error-1": "無效的正規表示式。",
 	"spamregex-warning-2": "請檢查至少一項的封禁模式。",
-	"spamregex-already-blocked": "「$1」已被封禁",
+	"spamregex-already-blocked": "「$1」已封禁",
 	"spamregex-phrase-block": "要封禁的詞組：",
 	"spamregex-reason": "原因：",
 	"spamregex-error-no-reason": "您需要提供封禁詞組的原因！",
