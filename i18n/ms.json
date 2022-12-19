@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Tofeiku"
 		]
 	},
-	"spamregex-summary-log": "(Ringkasan)"
+	"spamregex-summary-log": "(ringkasan)"
 }
