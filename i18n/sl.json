@@ -6,6 +6,8 @@
 		]
 	},
 	"spamregex-error-unblocking": "Napaka pri odblokiranju »$1«. Verjetno ni takega vzorca.",
+	"spamregex-intro": "Uporabite ta obrazec za učinkovito blokiranje shranjevanja izrazov v besedilo strani.\nČe besedilo vsebuje dani izraz, se sprememba ne bo shranila in bo uporabniku, ki je poskušal shraniti stran, prikazano pojasnilo.\nPriporočamo previdnost, izrazi ne smejo biti prekratki ali prepogosti.",
 	"spamregex-unblock-success": "Odblokiranje je uspelo.",
+	"spamregex-page-title-2": "Blokiranje shranjevanja fraz z uporabo regularnih izrazov",
 	"spamregex-summary-log": "(povzetek)"
 }
