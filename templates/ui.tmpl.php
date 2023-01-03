@@ -8,6 +8,7 @@
  *
  * @ingroup Templates
  */
+// phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 class SpamRegexUITemplate extends QuickTemplate {
 	public function execute() {
 ?>

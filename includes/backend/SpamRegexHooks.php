@@ -36,9 +36,9 @@ class SpamRegexHooks {
 		$s_phrases = self::fetchRegexData( 0 );
 
 		if ( $s_phrases && ( $editPage->summary != '' ) ) {
-			//	...so let's rock with our custom spamPage to indicate that
-			//	(since some phrases can be safely in the text and not in a summary
-			//	and we do not want to confuse the good users, right?)
+			// ...so let's rock with our custom spamPage to indicate that
+			// (since some phrases can be safely in the text and not in a summary,
+			// and we do not want to confuse the good users, right?)
 
 			foreach ( $s_phrases as $s_phrase ) {
 				if ( preg_match( $s_phrase, $editPage->summary, $s_matches ) ) {
@@ -135,6 +135,7 @@ class SpamRegexHooks {
 				[ $field => 1 ],
 				__METHOD__
 			);
+			// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
 			while ( $row = $res->fetchObject() ) {
 				$phrases[] = '/' . $row->spam_text . '/i';
 			}

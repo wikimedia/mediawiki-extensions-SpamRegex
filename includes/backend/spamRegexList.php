@@ -9,10 +9,11 @@ use MediaWiki\Navigation\PrevNextNavigationRenderer;
  * @file
  */
 class spamRegexList {
+	/** @var int */
 	public $numResults = 0;
 
 	/**
-	 * @var RequestContext $context RequestContext object passed by the SpecialPage
+	 * @var RequestContext RequestContext object passed by the SpecialPage
 	 */
 	public $context;
 
@@ -100,6 +101,7 @@ class spamRegexList {
 			);
 
 			$lang = $this->context->getLanguage();
+			// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
 			while ( $row = $res->fetchObject() ) {
 				$date = $lang->date( wfTimestamp( TS_MW, $row->spam_timestamp ), true );
 				$time = $lang->time( wfTimestamp( TS_MW, $row->spam_timestamp ), true );
@@ -201,7 +203,7 @@ class spamRegexList {
 		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'numResults' );
 		$cached = $cache->get( $key );
 
-		if ( !$cached || is_null( $cached ) || $cached === false ) {
+		if ( !$cached || $cached === null || $cached === false ) {
 			$dbr = wfGetDB( DB_REPLICA );
 			$results = $dbr->selectField( 'spam_regex', 'COUNT(*)', '', __METHOD__ );
 			$cache->set( $key, $results, 30 * 86400 );
@@ -214,7 +216,7 @@ class spamRegexList {
 		return $results;
 	}
 
-	/* on success */
+	/** on success */
 	function showSuccess() {
 		$out = $this->context->getOutput();
 		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-1' ) );
@@ -222,8 +224,11 @@ class spamRegexList {
 		$out->addWikiMsg( 'spamregex-unblock-message', $this->context->getRequest()->getVal( 'text' ) );
 	}
 
-	/* init for showPrevNext */
-	function showPrevNext( &$out ) {
+	/**
+	 * Init for showPrevNext
+	 * @param OutputPage &$out
+	 */
+	function showPrevNext( OutputPage &$out ) {
 		$request = $this->context->getRequest();
 		if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
 			// MW 1.35+

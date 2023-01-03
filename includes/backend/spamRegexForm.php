@@ -6,27 +6,27 @@
  */
 class spamRegexForm {
 	/**
-	 * @var string $mBlockedPhrase The phrase to be blocked
+	 * @var string The phrase to be blocked
 	 */
 	public $mBlockedPhrase;
 
 	/**
-	 * @var string $mBlockedReason Reason for blocking a phrase
+	 * @var string Reason for blocking a phrase
 	 */
 	public $mBlockedReason;
 
 	/**
-	 * @var bool $mBlockedTextbox Is the phrase to be blocked in article text?
+	 * @var bool Is the phrase to be blocked in article text?
 	 */
 	public $mBlockedTextbox;
 
 	/**
-	 * @var bool $mBlockedSummary Is the phrase to be blocked in edit summaries?
+	 * @var bool Is the phrase to be blocked in edit summaries?
 	 */
 	public $mBlockedSummary;
 
 	/**
-	 * @var RequestContext $context RequestContext object passed by the SpecialPage
+	 * @var RequestContext RequestContext object passed by the SpecialPage
 	 */
 	public $context;
 
@@ -48,8 +48,12 @@ class spamRegexForm {
 		$this->context = $context;
 	}
 
-	/* output */
-	function showForm( $err = '' ) {
+	/**
+	 * Output
+	 * @param string $err
+	 * @return void
+	 */
+	function showForm( string $err = '' ) {
 		$out = $this->context->getOutput();
 		$user = $this->context->getUser();
 
@@ -86,7 +90,7 @@ class spamRegexForm {
 		$out->addTemplate( $template );
 	}
 
-	/* on success */
+	/** on success */
 	function showSuccess() {
 		$out = $this->context->getOutput();
 		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-2' ) );
@@ -94,7 +98,7 @@ class spamRegexForm {
 		$out->addWikiMsg( 'spamregex-block-message', $this->mBlockedPhrase );
 	}
 
-	/* on submit */
+	/** on submit */
 	function doSubmit() {
 		$modes = [];
 		if ( $this->mBlockedTextbox ) {

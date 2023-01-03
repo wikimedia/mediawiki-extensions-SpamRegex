@@ -11,6 +11,7 @@ class ApiSpamRegex extends ApiBase {
 
 	/**
 	 * Main entry point.
+	 * @return bool
 	 */
 	public function execute() {
 		// Check permission first before proceeding any further
@@ -107,7 +108,7 @@ class ApiSpamRegex extends ApiBase {
 	}
 
 	/**
-	 * @see ApiBase::getExamplesMessages()
+	 * @inheritDoc
 	 */
 	protected function getExamplesMessages() {
 		return [

@@ -104,7 +104,7 @@ class SpamRegex {
 	 *
 	 * @return string The proper memcached key, depending on whether spamRegex's DB table is shared or not
 	 */
-	public static function getCacheKey( /*...*/ ) {
+	public static function getCacheKey() {
 		global $wgSharedDB, $wgSharedTables, $wgSharedPrefix;
 
 		$args = func_get_args();
@@ -165,6 +165,7 @@ class SpamRegex {
 	 */
 	public static function validateRegex( $text ) {
 		try {
+			// phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged
 			$test = @preg_match( "/{$text}/", 'Whatever' );
 			if ( !is_int( $test ) ) {
 				throw new Exception( 'error!' );

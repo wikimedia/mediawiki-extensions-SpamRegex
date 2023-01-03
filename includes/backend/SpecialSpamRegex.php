@@ -18,7 +18,10 @@ class SpecialSpamRegex extends SpecialPage {
 		return 'pagetools';
 	}
 
-	// @see https://phabricator.wikimedia.org/T123591
+	/**
+	 * @see https://phabricator.wikimedia.org/T123591
+	 * @return bool
+	 */
 	public function doesWrites() {
 		return true;
 	}
