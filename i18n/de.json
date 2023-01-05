@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"ChrisiPK",
 			"Kghbln",
 			"Killarnee",
@@ -12,7 +13,7 @@
 	},
 	"apihelp-spamregex-param-do": "Was zu tun? Entweder <kbd>add</kbd> oder <kbd>delete</kbd>.",
 	"spamregex": "Spam-Regex",
-	"spamregex-desc": "Erweitert das Wiki um eine [[Special:SpamRegex|Spezialseite]] mit der unerwünschte Phrasen mit Hilfe regulärer Ausdrücke ermittelt werden können",
+	"spamregex-desc": "Erweitert das Wiki um eine [[Special:SpamRegex|Spezialseite]], mit der unerwünschte Phrasen mit Hilfe regulärer Ausdrücke ermittelt werden können",
 	"spamregex-error-unblocking": "Beim Entsperren von $1 ist ein Fehler aufgetreten. Vermutlich gibt es kein solches Muster.",
 	"spamregex-summary": "Der Text befand sich in der Zusammenfassung.",
 	"spamregex-intro": "Benutze dieses Formular, um effektiv zu verhindern, dass angegebene Phrasen in den Text einer Seite eingefügt werden.\nWenn der Text die angegebene Phrase enthält, wird die Änderung nicht gespeichert und ein Hinweis an den Benutzer ausgegeben, der versucht hat, die Seite zu speichern.\nSei aber vorsichtig, Phrasen sollten nicht zu kurz oder zu allgemein sein.",
