@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"spamregex-desc": "[[Special:SpamRegex|Filter]] onerwënscht Setz aus geännerte Säiten eraus, op Basis vu regulären Ausdréck",
 	"spamregex-error-unblocking": "Feeler beim Ophiewe vun der Spär: \"$1\". Et gëtt warscheinlech keen esou e Muster.",
 	"spamregex-summary": "Dësen Text gouf am Resumé vun der Säit fonnt",
-	"spamregex-currently-blocked": "'''Sätz déi elo gespaart sinn:'''",
+	"spamregex-currently-blocked": "'''Sätz, déi elo gespaart sinn:'''",
 	"spamregex-no-currently-blocked": "'''Et gëtt keng gespaarte Sätz.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 ewechhuelen]) dobäigesat vum $5 de(n) $6 ëm $7 Auer (Grond: $8)",
 	"spamregex-unblock-form-text": "Saz fir ze entspären:",
