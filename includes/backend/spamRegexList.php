@@ -238,14 +238,40 @@ class spamRegexList {
 		} else {
 			list( $limit, $offset ) = $request->getLimitOffset();
 		}
-		$prevNext = new PrevNextNavigationRenderer( $this->context );
-		$html = $prevNext->buildPrevNextNavigation(
-			$this->context->getTitle(),
-			$offset,
-			$limit,
-			[],
-			( $this->numResults - $offset ) <= $limit
-		);
+
+		if ( class_exists( 'MediaWiki\Navigation\PagerNavigationBuilder' ) ) {
+			// MW 1.39+
+			$navBuilder = new MediaWiki\Navigation\PagerNavigationBuilder( $this->context );
+			$navBuilder
+				->setPage( $this->context->getTitle() )
+				->setLinkQuery( [ 'limit' => $limit, 'offset' => $offset ] )
+				->setLimitLinkQueryParam( 'limit' )
+				->setCurrentLimit( $limit )
+				->setPrevTooltipMsg( 'prevn-title' )
+				->setNextTooltipMsg( 'nextn-title' )
+				->setLimitTooltipMsg( 'shown-title' );
+
+			if ( $offset > 0 ) {
+				$navBuilder->setPrevLinkQuery( [ 'offset' => (string)max( $offset - $limit, 0 ) ] );
+			}
+
+			$atEnd = ( $this->numResults - $offset ) <= $limit;
+			if ( !$atEnd ) {
+				$navBuilder->setNextLinkQuery( [ 'offset' => (string)( $offset + $limit ) ] );
+			}
+
+			$html = $navBuilder->getHtml();
+		} else {
+			$prevNext = new PrevNextNavigationRenderer( $this->context );
+			$html = $prevNext->buildPrevNextNavigation(
+				$this->context->getTitle(),
+				$offset,
+				$limit,
+				[],
+				( $this->numResults - $offset ) <= $limit
+			);
+		}
+
 		$out->addHTML( '<p>' . $html . '</p>' );
 	}
 }
