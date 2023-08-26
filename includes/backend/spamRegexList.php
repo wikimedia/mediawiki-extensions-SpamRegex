@@ -152,7 +152,7 @@ class spamRegexList {
 				$this->context->msg( 'spamregex-unblock-form-text' )->escaped() .
 				$this->context->msg( 'word-separator' )->escaped() .
 				'<br />' .
-				Html::input( 'text', $this->context->getRequest()->getVal( 'text' ) ) .
+				Html::input( 'text', $this->context->getRequest()->getText( 'text' ) ) .
 				Html::hidden( 'action', 'delete' ) .
 				Html::hidden( 'token', $this->context->getUser()->getEditToken() ) .
 				Html::submitButton( $this->context->msg( 'ipusubmit' )->escaped(), [ 'id' => 'spamregex-submit-btn' ] ) .
@@ -166,8 +166,8 @@ class spamRegexList {
 	 */
 	function deleteFromList() {
 		$request = $this->context->getRequest();
-		$text = $request->getVal( 'text' );
-		$token = $request->getVal( 'token' );
+		$text = $request->getText( 'text' );
+		$token = $request->getText( 'token' );
 
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 
@@ -221,7 +221,7 @@ class spamRegexList {
 		$out = $this->context->getOutput();
 		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-1' ) );
 		$out->setSubTitle( $this->context->msg( 'spamregex-unblock-success' )->escaped() );
-		$out->addWikiMsg( 'spamregex-unblock-message', $this->context->getRequest()->getVal( 'text' ) );
+		$out->addWikiMsg( 'spamregex-unblock-message', $this->context->getRequest()->getText( 'text' ) );
 	}
 
 	/**

@@ -56,7 +56,7 @@ class SpecialSpamRegex extends SpecialPage {
 		$sRF = new spamRegexForm( $par, $this->getContext() );
 		$sRL = new spamRegexList( $par, $this->getContext() );
 
-		$action = $request->getVal( 'action' );
+		$action = $request->getRawVal( 'action' );
 		if ( $action == 'success_block' ) {
 			$sRF->showSuccess();
 			$sRF->showForm();
@@ -64,7 +64,7 @@ class SpecialSpamRegex extends SpecialPage {
 			$sRL->showSuccess();
 			$sRF->showForm();
 		} elseif ( $action == 'failure_unblock' || $action == 'sessionfailure' ) {
-			$text = htmlspecialchars( $request->getVal( 'text' ) );
+			$text = htmlspecialchars( $request->getText( 'text' ) );
 			if ( $action == 'sessionfailure' ) {
 				$errMsg = $this->msg( 'sessionfailure' )->escaped();
 			} else {
@@ -72,7 +72,7 @@ class SpecialSpamRegex extends SpecialPage {
 			}
 			$sRF->showForm( $errMsg );
 		} elseif ( $request->wasPosted() && $action == 'submit' &&
-			$user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
+			$user->matchEditToken( $request->getText( 'wpEditToken' ) ) ) {
 			$sRF->doSubmit();
 		} elseif ( $action == 'delete' ) {
 			if ( $request->wasPosted() ) {

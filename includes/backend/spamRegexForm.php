@@ -41,8 +41,8 @@ class spamRegexForm {
 		// urldecode() to avoid *displaying* \ as %5C etc.; even w/o it the
 		// entries are saved correctly to the DB
 		// and trim() to avoid unwanted trailing whitespace in blocked entries
-		$this->mBlockedPhrase = trim( $request->getVal( 'wpBlockedPhrase', urldecode( $request->getVal( 'text', $par ) ) ) );
-		$this->mBlockedReason = $request->getVal( 'wpBlockedReason' );
+		$this->mBlockedPhrase = trim( $request->getText( 'wpBlockedPhrase', urldecode( $request->getText( 'text', $par ) ) ) );
+		$this->mBlockedReason = $request->getText( 'wpBlockedReason' );
 		$this->mBlockedTextbox = $request->getCheck( 'wpBlockedTextbox' ) ? 1 : 0;
 		$this->mBlockedSummary = $request->getCheck( 'wpBlockedSummary' ) ? 1 : 0;
 		$this->context = $context;
@@ -70,7 +70,7 @@ class spamRegexForm {
 
 		$out->addWikiMsg( 'spamregex-intro' );
 
-		if ( $this->context->getRequest()->getVal( 'action' ) == 'submit' ) {
+		if ( $this->context->getRequest()->getRawVal( 'action' ) == 'submit' ) {
 			$scBlockedPhrase = htmlspecialchars( $this->mBlockedPhrase );
 		} else {
 			$scBlockedPhrase = '';
