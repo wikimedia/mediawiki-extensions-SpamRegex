@@ -1,6 +1,6 @@
 {
 	"name": "Regular Expression Spam Block",
-	"version": "1.7.2",
+	"version": "1.7.3",
 	"author": [
 		"Bartek Łapiński",
 		"Alexandre Emsenhuber",
@@ -41,7 +41,8 @@
 		"MovePageCheckPermissions": "SpamRegexHooks::onMovePageCheckPermissions",
 		"LoadExtensionSchemaUpdates": "SpamRegexHooks::onLoadExtensionSchemaUpdates",
 		"RenameUserComplete": "SpamRegexHooks::onRenameUserComplete",
-		"Comments::isSpam": "SpamRegexHooks::onCommentsIsSpam"
+		"Comments::isSpam": "SpamRegexHooks::onCommentsIsSpam",
+		"ProblemReportsContentCheck": "SpamRegexHooks::onProblemReportsContentCheck"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
