@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
 			"Yupik"
 		]
 	},
-	"spamregex-unblock-success": "Hehttema sihkkun lihkostuvai"
+	"spamregex-unblock-success": "Hehttema fámuhuhttin lihkostuvai"
 }
