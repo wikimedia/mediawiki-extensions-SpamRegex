@@ -217,4 +217,31 @@ class SpamRegexHooks {
 		}
 	}
 
+	/**
+	 * For integration with the ProblemReports extension, a ShoutWiki exclusive.
+	 *
+	 * @param string $text Problem report content
+	 * @return bool False when we have spam and should abort processing; normally true
+	 */
+	public static function onProblemReportsContentCheck( $text ) {
+		// @todo FIXME: like above, the code duplication is getting out of hand :-(
+		$t_phrases = [];
+
+		// and here we check for phrases within the text itself
+		$t_phrases = self::fetchRegexData( 1 );
+		if ( $t_phrases && is_array( $t_phrases ) ) {
+			foreach ( $t_phrases as $t_phrase ) {
+				if ( preg_match( $t_phrase, $text, $t_matches ) ) {
+					// We got a match -> it's spam, alright
+					// The match is stored in $t_matches[0] but unlike the onEditFilter() code,
+					// we don't need to know or care about that.
+					// We'll just let ProblemReports know, "yo, this is spam" and it'll take care of
+					// the rest.
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
 }
