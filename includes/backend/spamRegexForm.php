@@ -57,11 +57,11 @@ class spamRegexForm {
 		$out = $this->context->getOutput();
 		$user = $this->context->getUser();
 
-		$token = htmlspecialchars( $this->context->getUser()->getEditToken() );
+		$token = $this->context->getUser()->getEditToken();
 		$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
-		$action = htmlspecialchars( $titleObj->getLocalURL(
+		$action = $titleObj->getLocalURL(
 			[ 'action' => 'submit' ] + spamRegexList::getListBits( $user )
-		) );
+		);
 
 		if ( $err != '' ) {
 			$out->setSubtitle( $this->context->msg( 'formerror' )->escaped() );
@@ -71,7 +71,7 @@ class spamRegexForm {
 		$out->addWikiMsg( 'spamregex-intro' );
 
 		if ( $this->context->getRequest()->getRawVal( 'action' ) == 'submit' ) {
-			$scBlockedPhrase = htmlspecialchars( $this->mBlockedPhrase );
+			$scBlockedPhrase = $this->mBlockedPhrase;
 		} else {
 			$scBlockedPhrase = '';
 		}
@@ -82,12 +82,23 @@ class spamRegexForm {
 		// Add JS
 		$out->addModules( 'ext.spamRegex.js' );
 
-		// Output the UI template
-		$template = new SpamRegexUITemplate;
-		$template->set( 'action', $action );
-		$template->set( 'scBlockedPhrase', $scBlockedPhrase );
-		$template->set( 'token', $token );
-		$out->addTemplate( $template );
+		// Render & output the UI template
+		$templateParser = new TemplateParser( __DIR__ . '/../../templates' );
+		$html = $templateParser->processTemplate(
+			'user-interface',
+			[
+				'action' => $action,
+				'scBlockedPhrase' => $scBlockedPhrase,
+				'token' => $token,
+				// i18n messages
+				'spamregex-phrase-block' => $this->context->msg( 'spamregex-phrase-block' )->parse(),
+				'spamregex-reason' => $this->context->msg( 'spamregex-reason' )->parse(),
+				'spamregex-phrase-block-text' => $this->context->msg( 'spamregex-phrase-block-text' )->parse(),
+				'spamregex-phrase-block-summary' => $this->context->msg( 'spamregex-phrase-block-summary' )->parse(),
+				'spamregex-block-submit' => $this->context->msg( 'spamregex-block-submit' )->text(),
+			]
+		);
+		$out->addHTML( $html );
 	}
 
 	/** on success */

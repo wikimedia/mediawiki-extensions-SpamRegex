@@ -1,6 +1,6 @@
 {
 	"name": "Regular Expression Spam Block",
-	"version": "1.7.3",
+	"version": "1.8",
 	"author": [
 		"Bartek Łapiński",
 		"Alexandre Emsenhuber",
@@ -29,7 +29,6 @@
 		"SpamRegex": "includes/backend/SpamRegex.php",
 		"spamRegexForm": "includes/backend/spamRegexForm.php",
 		"spamRegexList": "includes/backend/spamRegexList.php",
-		"SpamRegexUITemplate": "templates/ui.tmpl.php",
 		"SpecialSpamRegex": "includes/backend/SpecialSpamRegex.php",
 		"SpamRegexHooks": "includes/backend/SpamRegexHooks.php"
 	},
