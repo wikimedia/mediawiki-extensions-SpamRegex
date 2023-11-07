@@ -95,7 +95,9 @@ class spamRegexForm {
 		$out = $this->context->getOutput();
 		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-2' ) );
 		$out->setSubTitle( $this->context->msg( 'spamregex-block-success' ) );
-		$out->addWikiMsg( 'spamregex-block-message', $this->mBlockedPhrase );
+		$out->addHTML( Html::successBox(
+			$this->context->msg( 'spamregex-block-message', $this->mBlockedPhrase )->parse()
+		) );
 	}
 
 	/** on submit */
