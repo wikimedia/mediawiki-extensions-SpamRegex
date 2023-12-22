@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aftabuzzaman",
+			"Aishik Rehman",
 			"Bellayet",
 			"আফতাবুজ্জামান"
 		]
@@ -9,7 +10,7 @@
 	"spamregex": "স্প্যাম রেজেক্স",
 	"spamregex-summary": "পাঠ্যটি পৃষ্ঠার সারসংক্ষেপে পাওয়া গেছে।",
 	"spamregex-currently-blocked": "'''বর্তমানে অবরুদ্ধ বাক্যাংশগুলি:'''",
-	"spamregex-no-currently-blocked": "'''এখানে কোন অবরুদ্ধ বাক্যাংশ নেই।'''",
+	"spamregex-no-currently-blocked": "'''এখানে কোনো অবরুদ্ধ বাক্যাংশ নেই।'''",
 	"spamregex-log": "* $5 কর্তৃক $6 তারিখে $7 টায় <code>$1</code> $2 ([{{SERVER}}$3&text=$4 সরান]) যোগ হয়েছে (কারণ: $8)",
 	"spamregex-page-title-1": "রেগুলার এক্সপ্রেশন ব্যবহার করে বাক্যাংশ অবরুদ্ধ করুন",
 	"spamregex-unblock-message": "সম্পাদনা থেকে বাক্যাংশ '''$1'''-এর অবরুদ্ধ তোলা হয়েছে।",
