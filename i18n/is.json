@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"S.Örvarr.S"
+			"S.Örvarr.S",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
-	"spamregex-already-blocked": "„$1“ er nú þegar í banni"
+	"spamregex-already-blocked": "„$1“ er nú þegar hindraður"
 }
