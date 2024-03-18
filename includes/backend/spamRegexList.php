@@ -38,9 +38,9 @@ class spamRegexList {
 
 		if ( method_exists( $wgRequest, 'getLimitOffsetForUser' ) ) {
 			// MW 1.35+
-			list( $limit, $offset ) = $wgRequest->getLimitOffsetForUser( $user );
+			[ $limit, $offset ] = $wgRequest->getLimitOffsetForUser( $user );
 		} else {
-			list( $limit, $offset ) = $wgRequest->getLimitOffset();
+			[ $limit, $offset ] = $wgRequest->getLimitOffset();
 		}
 		$bits = [
 			'limit' => $limit,
@@ -80,9 +80,9 @@ class spamRegexList {
 			$request = $this->context->getRequest();
 			if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
 				// MW 1.35+
-				list( $limit, $offset ) = $request->getLimitOffsetForUser( $user );
+				[ $limit, $offset ] = $request->getLimitOffsetForUser( $user );
 			} else {
-				list( $limit, $offset ) = $request->getLimitOffset();
+				[ $limit, $offset ] = $request->getLimitOffset();
 			}
 
 			$this->showPrevNext( $out );
@@ -232,11 +232,11 @@ class spamRegexList {
 		$request = $this->context->getRequest();
 		if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
 			// MW 1.35+
-			list( $limit, $offset ) = $request->getLimitOffsetForUser(
+			[ $limit, $offset ] = $request->getLimitOffsetForUser(
 				$this->context->getUser()
 			);
 		} else {
-			list( $limit, $offset ) = $request->getLimitOffset();
+			[ $limit, $offset ] = $request->getLimitOffset();
 		}
 
 		if ( class_exists( 'MediaWiki\Navigation\PagerNavigationBuilder' ) ) {
