@@ -4,12 +4,13 @@
 			"Beginneruser",
 			"FarsiNevis",
 			"Ommmmid",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Ebraminio"
 		]
 	},
 	"spamregex-currently-blocked": "'''عبارت‌های مسدودشدهٔ کنونی:'''",
 	"spamregex-block-success": "بستن دسترسی با موفقیت انجام شد",
-	"spamregex-block-message": "عبارت '''$1''' مسدود شده‌است.",
+	"spamregex-block-message": "عبارت '''$1''' مسدود شده است.",
 	"spamregex-already-blocked": "\"$1\" از قبل بسته شده است",
 	"spamregex-reason": "دلیل:",
 	"spamregex-text": "(متن)",
