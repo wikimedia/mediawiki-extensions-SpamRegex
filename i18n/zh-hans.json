@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anterdc99",
 			"Liangent",
 			"Liuxinyu970226"
 		]
 	},
+	"apihelp-spamregex-param-do": "要做什么？<kbd>add</kbd>或<kbd>delete</kbd>。",
 	"spamregex": "破坏正则表达式",
 	"spamregex-desc": "基于正则表达式，在已编辑页面中[[Special:SpamRegex|过滤]]不需要的词组",
 	"spamregex-error-unblocking": "解封“$1”时出错。可能没有这种模式。",
@@ -16,6 +18,7 @@
 	"spamregex-no-currently-blocked": "'''这里没有被封禁的词组。'''",
 	"spamregex-log": "* <code>$1</code> $2（[{{SERVER}}$3&text=$4 移除]）已由$5于$6 $7添加（原因：$8）",
 	"spamregex-page-title-1": "封禁词组使用正则表达式",
+	"spamregex-unblock-form-text": "要解封的词组：",
 	"spamregex-unblock-success": "解封成功",
 	"spamregex-unblock-message": "词组'''$1'''已被封禁，不能编辑。",
 	"spamregex-page-title-2": "封禁词组使其不能使用正则表达式保存",
