@@ -105,11 +105,10 @@ class SpamRegex {
 	 * that, then from the database.
 	 *
 	 * @param int $mode 0 = summary, 1 = textbox (use this class' TYPE_* constants)
-	 * @param int $db_master Use master database for fetching data?
 	 * @return array Array of spamRegexed phrases (user-supplied string wrapped in forward
 	 *  slashes and with the case insensitive (i) modifier as the suffix)
 	 */
-	public static function fetchRegexData( $mode, $db_master = 0 ) {
+	public static function fetchRegexData( $mode ) {
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
 		$phrases = [];
@@ -121,7 +120,7 @@ class SpamRegex {
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
 			$field = ( $mode == self::TYPE_TEXTBOX ? 'spam_textbox' : 'spam_summary' );
-			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_REPLICA );
+			$dbr = wfGetDB( DB_REPLICA );
 			$res = $dbr->select(
 				'spam_regex',
 				'spam_text',
