@@ -8,6 +8,9 @@ use MediaWiki\MediaWikiServices;
  * @file
  */
 class SpamRegex {
+	// These merely make the code more readable
+	public const TYPE_SUMMARY = 0;
+	public const TYPE_TEXTBOX = 1;
 
 	/**
 	 * Add an entry to SpamRegex.
@@ -98,6 +101,51 @@ class SpamRegex {
 	}
 
 	/**
+	 * Fetch regex data for the given mode, either from cache, or failing
+	 * that, then from the database.
+	 *
+	 * @param int $mode 0 = summary, 1 = textbox (use this class' TYPE_* constants)
+	 * @param int $db_master Use master database for fetching data?
+	 * @return array Array of spamRegexed phrases (user-supplied string wrapped in forward
+	 *  slashes and with the case insensitive (i) modifier as the suffix)
+	 */
+	public static function fetchRegexData( $mode, $db_master = 0 ) {
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+
+		$phrases = [];
+		/* first, check if regex string is already stored in memcache */
+		$key_clause = ( $mode == self::TYPE_TEXTBOX ) ? 'Textbox' : 'Summary';
+		$key = self::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
+		$cached = $cache->get( $key );
+
+		if ( !$cached ) {
+			/* fetch data from DB, concatenate into one string, then fill cache */
+			$field = ( $mode == self::TYPE_TEXTBOX ? 'spam_textbox' : 'spam_summary' );
+			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_REPLICA );
+			$res = $dbr->select(
+				'spam_regex',
+				'spam_text',
+				[ $field => 1 ],
+				__METHOD__
+			);
+
+			// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
+			while ( $row = $res->fetchObject() ) {
+				$phrases[] = '/' . $row->spam_text . '/i';
+			}
+
+			$cache->set( $key, $phrases, 30 * 86400 );
+
+			$res->free();
+		} else {
+			/* take from cache */
+			$phrases = $cached;
+		}
+
+		return $phrases;
+	}
+
+	/**
 	 * Get the correct cache key, depending on if we're on a wiki farm like
 	 * setup where the spam_regex DB table is shared, or if we're on a
 	 * single-wiki setup.
@@ -134,6 +182,8 @@ class SpamRegex {
 			self::updateMemcKeys( $action, $text, 0 );
 		}
 
+		// @todo FIXME: ...why is the logic for summary or textbox inverted here when compared
+		// to the (brand new) class TYPE_* constants?!
 		$key_clause = ( $mode == 1 ) ? 'Summary' : 'Textbox';
 		$key = self::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
 		$phrases = $cache->get( $key );

@@ -1,7 +1,4 @@
 <?php
-
-use MediaWiki\MediaWikiServices;
-
 /**
  * Hooked functions used by SpamRegex to add our magic to things like the edit
  * page and whatnot.
@@ -33,7 +30,7 @@ class SpamRegexHooks {
 		}
 
 		// here we get only the phrases for blocking in summaries...
-		$s_phrases = self::fetchRegexData( 0 );
+		$s_phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_SUMMARY );
 
 		if ( $s_phrases && ( $editPage->summary != '' ) ) {
 			// ...so let's rock with our custom spamPage to indicate that
@@ -58,7 +55,7 @@ class SpamRegexHooks {
 
 		$t_phrases = [];
 		// and here we check for phrases within the text itself
-		$t_phrases = self::fetchRegexData( 1 );
+		$t_phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_TEXTBOX );
 		if ( $t_phrases && is_array( $t_phrases ) ) {
 			foreach ( $t_phrases as $t_phrase ) {
 				if ( preg_match( $t_phrase, $editPage->textbox1, $t_matches ) ) {
@@ -85,7 +82,7 @@ class SpamRegexHooks {
 		$oldTitle, $newTitle, $user, $reason, $status
 	) {
 		// here we get only the phrases for blocking in summaries...
-		$phrases = self::fetchRegexData( 0 );
+		$phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_SUMMARY );
 
 		if ( $phrases && $reason ) {
 			foreach ( $phrases as $phrase ) {
@@ -103,50 +100,6 @@ class SpamRegexHooks {
 		}
 
 		return true;
-	}
-
-	/**
-	 * Fetch regex data for the given mode, either from memcached, or failing
-	 * that, then from the database.
-	 *
-	 * @todo Maybe consider moving to the SpamRegex class? Then again there are
-	 * no outside callers for this method...
-	 *
-	 * @param int $mode 0 = summary, 1 = textbox
-	 * @param int $db_master Use master database for fetching data?
-	 * @return array Array of spamRegexed phrases
-	 */
-	protected static function fetchRegexData( $mode, $db_master = 0 ) {
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-
-		$phrases = [];
-		/* first, check if regex string is already stored in memcache */
-		$key_clause = ( $mode == 1 ) ? 'Textbox' : 'Summary';
-		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'spamRegex', $key_clause );
-		$cached = $cache->get( $key );
-
-		if ( !$cached ) {
-			/* fetch data from DB, concatenate into one string, then fill cache */
-			$field = ( $mode == 1 ? 'spam_textbox' : 'spam_summary' );
-			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_REPLICA );
-			$res = $dbr->select(
-				'spam_regex',
-				'spam_text',
-				[ $field => 1 ],
-				__METHOD__
-			);
-			// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
-			while ( $row = $res->fetchObject() ) {
-				$phrases[] = '/' . $row->spam_text . '/i';
-			}
-			$cache->set( $key, $phrases, 30 * 86400 );
-			$res->free();
-		} else {
-			/* take from cache */
-			$phrases = $cached;
-		}
-
-		return $phrases;
 	}
 
 	/**
@@ -202,7 +155,7 @@ class SpamRegexHooks {
 		$t_phrases = [];
 
 		// and here we check for phrases within the text itself
-		$t_phrases = self::fetchRegexData( 1 );
+		$t_phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_TEXTBOX );
 		if ( $t_phrases && is_array( $t_phrases ) ) {
 			foreach ( $t_phrases as $t_phrase ) {
 				if ( preg_match( $t_phrase, $text, $t_matches ) ) {
@@ -228,7 +181,7 @@ class SpamRegexHooks {
 		$t_phrases = [];
 
 		// and here we check for phrases within the text itself
-		$t_phrases = self::fetchRegexData( 1 );
+		$t_phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_TEXTBOX );
 		if ( $t_phrases && is_array( $t_phrases ) ) {
 			foreach ( $t_phrases as $t_phrase ) {
 				if ( preg_match( $t_phrase, $text, $t_matches ) ) {
