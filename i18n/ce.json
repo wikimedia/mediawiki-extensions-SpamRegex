@@ -4,7 +4,7 @@
 			"Умар"
 		]
 	},
-	"spamregex": "Спам-луьттург",
+	"spamregex": "Спам-фильтр",
 	"spamregex-reason": "Бахьана:",
 	"spamregex-text": "(текст)",
 	"spamregex-summary-log": "Цунах лаьцна"
