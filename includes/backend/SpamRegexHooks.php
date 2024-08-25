@@ -133,7 +133,7 @@ class SpamRegexHooks {
 	 * @param string $newName New user name
 	 */
 	public static function onRenameUserComplete( $uid, $oldName, $newName ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		$dbw->update(
 			'spam_regex',
