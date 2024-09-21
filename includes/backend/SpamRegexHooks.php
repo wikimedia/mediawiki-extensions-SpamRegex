@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Hooked functions used by SpamRegex to add our magic to things like the edit
  * page and whatnot.
@@ -133,7 +136,7 @@ class SpamRegexHooks {
 	 * @param string $newName New user name
 	 */
 	public static function onRenameUserComplete( $uid, $oldName, $newName ) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		$dbw->update(
 			'spam_regex',
