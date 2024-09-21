@@ -51,7 +51,7 @@ class SpamRegex {
 		}
 
 		/* make insert to DB */
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->insert(
 			'spam_regex',
 			[
@@ -87,7 +87,7 @@ class SpamRegex {
 		self::updateMemcKeys( 'delete', $text );
 
 		/* delete in DB */
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->delete(
 			'spam_regex',
 			[ 'spam_text' => $text ],

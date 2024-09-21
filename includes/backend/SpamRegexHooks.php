@@ -128,7 +128,7 @@ class SpamRegexHooks {
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
 			$field = ( $mode == 1 ? 'spam_textbox' : 'spam_summary' );
-			$dbr = wfGetDB( ( $db_master == 1 ) ? DB_MASTER : DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$res = $dbr->select(
 				'spam_regex',
 				'spam_text',
@@ -180,7 +180,7 @@ class SpamRegexHooks {
 	 * @param string $newName New user name
 	 */
 	public static function onRenameUserComplete( $uid, $oldName, $newName ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		$dbw->update(
 			'spam_regex',

@@ -70,7 +70,7 @@ class spamRegexList {
 		if ( !$this->fetchNumResults() ) {
 			$out->addWikiMsg( 'spamregex-no-currently-blocked' );
 		} else {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$titleObj = SpecialPage::getTitleFor( 'SpamRegex' );
 			$action = htmlspecialchars( $titleObj->getLocalURL( self::getListBits( $user ) ) );
 			$action_unblock = htmlspecialchars( $titleObj->getLocalURL(
@@ -204,7 +204,7 @@ class spamRegexList {
 		$cached = $cache->get( $key );
 
 		if ( !$cached || $cached === null || $cached === false ) {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$results = $dbr->selectField( 'spam_regex', 'COUNT(*)', '', __METHOD__ );
 			$cache->set( $key, $results, 30 * 86400 );
 		} else {
