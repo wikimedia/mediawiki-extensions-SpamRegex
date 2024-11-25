@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
+	"spamregex-already-blocked": "\"$1\" lii jo estum",
 	"spamregex-reason": "Suijâ:"
 }
