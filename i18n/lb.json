@@ -15,6 +15,7 @@
 	"spamregex-unblock-success": "Spär ass opgehuewen",
 	"spamregex-block-success": "Gespaart",
 	"spamregex-block-message": "De Saatz '''$1''' gouf gespaart.",
+	"spamregex-error-1": "Ongültege regulären Ausdrock.",
 	"spamregex-already-blocked": "\"$1\" ass scho gespaart",
 	"spamregex-phrase-block": "Saatz fir ze spären",
 	"spamregex-reason": "Grond:",
