@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Joseph",
 			"Karduelis",
 			"MuratTheTurkish",
 			"Vito Genovese"
@@ -36,7 +37,7 @@
 	"spamregex-warning-2": "Lütfen en az bir engelleme modunu kontrol edin.",
 	"spamregex-already-blocked": "\"$1\" zaten engellenmiş",
 	"spamregex-phrase-block": "Engellenecek ifade:",
-	"spamregex-reason": "Nedeni:",
+	"spamregex-reason": "Gerekçe:",
 	"spamregex-error-no-reason": "Bir ifadeyi engellemek için bir neden belirtmelisiniz!",
 	"spamregex-phrase-block-text": "sayfa metninde cümleyi engelle",
 	"spamregex-phrase-block-summary": "özetinde ifade engelle",
