@@ -109,7 +109,8 @@ class SpamRegex {
 	 *  slashes and with the case insensitive (i) modifier as the suffix)
 	 */
 	public static function fetchRegexData( $mode ) {
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getMainWANObjectCache();
 
 		$phrases = [];
 		/* first, check if regex string is already stored in memcache */
@@ -120,7 +121,7 @@ class SpamRegex {
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
 			$field = ( $mode == self::TYPE_TEXTBOX ? 'spam_textbox' : 'spam_summary' );
-			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+			$dbr = $services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$res = $dbr->select(
 				'spam_regex',
 				'spam_text',

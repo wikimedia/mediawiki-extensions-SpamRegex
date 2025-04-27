@@ -1,7 +1,10 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Navigation\PrevNextNavigationRenderer;
+use MediaWiki\Navigation\PagerNavigationBuilder;
+use MediaWiki\Output\OutputPage;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\User\User;
 
 /**
  * Backend logic for displaying and manipulating the list of blocked phrases
@@ -13,7 +16,7 @@ class spamRegexList {
 	public $numResults = 0;
 
 	/**
-	 * @var RequestContext RequestContext object passed by the SpecialPage
+	 * @var MediaWiki\Context\RequestContext RequestContext object passed by the SpecialPage
 	 */
 	public $context;
 
@@ -21,7 +24,7 @@ class spamRegexList {
 	 * Constructor
 	 *
 	 * @param string $par Parameter passed to the special page (phrase to be blocked) or null [unused here]
-	 * @param RequestContext $context Context object from the SpecialPage
+	 * @param MediaWiki\Context\RequestContext $context Context object from the SpecialPage
 	 */
 	function __construct( $par, $context ) {
 		$this->context = $context;
@@ -36,12 +39,8 @@ class spamRegexList {
 	public static function getListBits( User $user ) {
 		global $wgRequest;
 
-		if ( method_exists( $wgRequest, 'getLimitOffsetForUser' ) ) {
-			// MW 1.35+
-			[ $limit, $offset ] = $wgRequest->getLimitOffsetForUser( $user );
-		} else {
-			[ $limit, $offset ] = $wgRequest->getLimitOffset();
-		}
+		[ $limit, $offset ] = $wgRequest->getLimitOffsetForUser( $user );
+
 		$bits = [
 			'limit' => $limit,
 			'offset' => $offset
@@ -78,12 +77,7 @@ class spamRegexList {
 			) );
 
 			$request = $this->context->getRequest();
-			if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
-				// MW 1.35+
-				[ $limit, $offset ] = $request->getLimitOffsetForUser( $user );
-			} else {
-				[ $limit, $offset ] = $request->getLimitOffset();
-			}
+			[ $limit, $offset ] = $request->getLimitOffsetForUser( $user );
 
 			$this->showPrevNext( $out );
 			$out->addHTML( "<form name=\"spamregexlist\" method=\"get\" action=\"{$action}\">" );
@@ -197,14 +191,15 @@ class spamRegexList {
 	 * @return int Amount of results in the spam_regex database table
 	 */
 	function fetchNumResults() {
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getMainWANObjectCache();
 
 		/* we use memcached here */
 		$key = SpamRegex::getCacheKey( 'spamRegexCore', 'numResults' );
 		$cached = $cache->get( $key );
 
 		if ( !$cached || $cached === null || $cached === false ) {
-			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+			$dbr = $services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$results = $dbr->selectField( 'spam_regex', 'COUNT(*)', '', __METHOD__ );
 			$cache->set( $key, $results, 30 * 86400 );
 		} else {
@@ -219,58 +214,42 @@ class spamRegexList {
 	/** on success */
 	function showSuccess() {
 		$out = $this->context->getOutput();
-		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-1' ) );
+		$out->setPageTitleMsg( $this->context->msg( 'spamregex-page-title-1' ) );
 		$out->setSubTitle( $this->context->msg( 'spamregex-unblock-success' )->escaped() );
 		$out->addWikiMsg( 'spamregex-unblock-message', $this->context->getRequest()->getText( 'text' ) );
 	}
 
 	/**
 	 * Init for showPrevNext
+	 *
 	 * @param OutputPage &$out
 	 */
 	function showPrevNext( OutputPage &$out ) {
 		$request = $this->context->getRequest();
-		if ( method_exists( $request, 'getLimitOffsetForUser' ) ) {
-			// MW 1.35+
-			[ $limit, $offset ] = $request->getLimitOffsetForUser(
-				$this->context->getUser()
-			);
-		} else {
-			[ $limit, $offset ] = $request->getLimitOffset();
+		[ $limit, $offset ] = $request->getLimitOffsetForUser(
+			$this->context->getUser()
+		);
+
+		$navBuilder = new PagerNavigationBuilder( $this->context );
+		$navBuilder
+			->setPage( $this->context->getTitle() )
+			->setLinkQuery( [ 'limit' => $limit, 'offset' => $offset ] )
+			->setLimitLinkQueryParam( 'limit' )
+			->setCurrentLimit( $limit )
+			->setPrevTooltipMsg( 'prevn-title' )
+			->setNextTooltipMsg( 'nextn-title' )
+			->setLimitTooltipMsg( 'shown-title' );
+
+		if ( $offset > 0 ) {
+			$navBuilder->setPrevLinkQuery( [ 'offset' => (string)max( $offset - $limit, 0 ) ] );
 		}
 
-		if ( class_exists( 'MediaWiki\Navigation\PagerNavigationBuilder' ) ) {
-			// MW 1.39+
-			$navBuilder = new MediaWiki\Navigation\PagerNavigationBuilder( $this->context );
-			$navBuilder
-				->setPage( $this->context->getTitle() )
-				->setLinkQuery( [ 'limit' => $limit, 'offset' => $offset ] )
-				->setLimitLinkQueryParam( 'limit' )
-				->setCurrentLimit( $limit )
-				->setPrevTooltipMsg( 'prevn-title' )
-				->setNextTooltipMsg( 'nextn-title' )
-				->setLimitTooltipMsg( 'shown-title' );
-
-			if ( $offset > 0 ) {
-				$navBuilder->setPrevLinkQuery( [ 'offset' => (string)max( $offset - $limit, 0 ) ] );
-			}
-
-			$atEnd = ( $this->numResults - $offset ) <= $limit;
-			if ( !$atEnd ) {
-				$navBuilder->setNextLinkQuery( [ 'offset' => (string)( $offset + $limit ) ] );
-			}
-
-			$html = $navBuilder->getHtml();
-		} else {
-			$prevNext = new PrevNextNavigationRenderer( $this->context );
-			$html = $prevNext->buildPrevNextNavigation(
-				$this->context->getTitle(),
-				$offset,
-				$limit,
-				[],
-				( $this->numResults - $offset ) <= $limit
-			);
+		$atEnd = ( $this->numResults - $offset ) <= $limit;
+		if ( !$atEnd ) {
+			$navBuilder->setNextLinkQuery( [ 'offset' => (string)( $offset + $limit ) ] );
 		}
+
+		$html = $navBuilder->getHtml();
 
 		$out->addHTML( '<p>' . $html . '</p>' );
 	}

@@ -13,7 +13,7 @@ class SpamRegexHooks {
 	/**
 	 * Main hook handler for edits
 	 *
-	 * @param EditPage $editPage
+	 * @param MediaWiki\EditPage\EditPage $editPage
 	 * @param string $text Page text
 	 * @param string $section
 	 * @param string &$error Error message, if any
@@ -42,7 +42,7 @@ class SpamRegexHooks {
 
 			foreach ( $s_phrases as $s_phrase ) {
 				if ( preg_match( $s_phrase, $editPage->summary, $s_matches ) ) {
-					$wgOut->setPageTitle( wfMessage( 'spamprotectiontitle' ) );
+					$wgOut->setPageTitleMsg( wfMessage( 'spamprotectiontitle' ) );
 					$wgOut->setRobotPolicy( 'noindex,nofollow' );
 					$wgOut->setArticleRelated( false );
 
@@ -74,9 +74,9 @@ class SpamRegexHooks {
 	/**
 	 * This is for page move
 	 *
-	 * @param Title $oldTitle Old page title
-	 * @param Title $newTitle New page title
-	 * @param User $user User trying to move the page
+	 * @param MediaWiki\Title\Title $oldTitle Old page title
+	 * @param MediaWiki\Title\Title $newTitle New page title
+	 * @param MediaWiki\User\User $user User trying to move the page
 	 * @param string $reason User-supplied reason for the move (if any)
 	 * @param Status $status Status object to pass error messages to
 	 * @return bool False if the summary contains spam, otherwise true
@@ -109,9 +109,9 @@ class SpamRegexHooks {
 	 * Adds the new required database table into the database when the user
 	 * runs /maintenance/update.php (the core database updater script).
 	 *
-	 * @param DatabaseUpdater $updater
+	 * @param MediaWiki\Installer\DatabaseUpdater $updater
 	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
+	public static function onLoadExtensionSchemaUpdates( $updater ) {
 		$dir = __DIR__ . '/../../sql';
 
 		$dbType = $updater->getDB()->getType();

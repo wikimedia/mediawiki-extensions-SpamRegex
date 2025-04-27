@@ -1,5 +1,8 @@
 <?php
 
+use MediaWiki\Context\RequestContext;
+use MediaWiki\Title\Title;
+
 /**
  * @covers spamRegexList
  * @group Database

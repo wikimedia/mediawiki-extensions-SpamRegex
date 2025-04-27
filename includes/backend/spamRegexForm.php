@@ -4,6 +4,11 @@
  *
  * @file
  */
+
+use MediaWiki\Html\Html;
+use MediaWiki\Html\TemplateParser;
+use MediaWiki\SpecialPage\SpecialPage;
+
 class spamRegexForm {
 	/**
 	 * @var string The phrase to be blocked

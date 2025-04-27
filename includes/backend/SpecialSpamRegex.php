@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\SpecialPage\SpecialPage;
+
 class SpecialSpamRegex extends SpecialPage {
 
 	/**
@@ -51,7 +53,7 @@ class SpecialSpamRegex extends SpecialPage {
 
 		// Set the page title and other stuff
 		$this->setHeaders();
-		$out->setPageTitle( $this->msg( 'spamregex-page-title' ) );
+		$out->setPageTitleMsg( $this->msg( 'spamregex-page-title' ) );
 
 		$sRF = new spamRegexForm( $par, $this->getContext() );
 		$sRL = new spamRegexList( $par, $this->getContext() );

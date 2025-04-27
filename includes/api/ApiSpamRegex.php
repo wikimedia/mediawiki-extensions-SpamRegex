@@ -7,7 +7,10 @@
  * @ingroup API
  * @see https://www.mediawiki.org/wiki/API:Extensions#ApiSampleApiExtension.php
  */
-class ApiSpamRegex extends ApiBase {
+
+use Wikimedia\ParamValidator\ParamValidator;
+
+class ApiSpamRegex extends MediaWiki\Api\ApiBase {
 
 	/**
 	 * Main entry point.
@@ -83,26 +86,26 @@ class ApiSpamRegex extends ApiBase {
 	public function getAllowedParams() {
 		return [
 			'do' => [
-				ApiBase::PARAM_TYPE => 'string',
-				ApiBase::PARAM_TYPE => [
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_TYPE => [
 					'add',
 					'delete'
 				],
-				ApiBase::PARAM_REQUIRED => true
+				ParamValidator::PARAM_REQUIRED => true
 			],
 			'modes' => [
-				ApiBase::PARAM_TYPE => [
+				ParamValidator::PARAM_TYPE => [
 					'text',
 					'summary'
 				],
-				ApiBase::PARAM_ISMULTI => true
+				ParamValidator::PARAM_ISMULTI => true
 			],
 			'phrase' => [
-				ApiBase::PARAM_TYPE => 'string',
-				ApiBase::PARAM_REQUIRED => true
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => true
 			],
 			'reason' => [
-				ApiBase::PARAM_TYPE => 'string'
+				ParamValidator::PARAM_TYPE => 'string'
 			],
 		];
 	}
