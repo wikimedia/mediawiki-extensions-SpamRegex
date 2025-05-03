@@ -1,9 +1,9 @@
-$( function () {
+$( () => {
 	// This JS ensures that at least one block mode is always checked
-	var SRTextboxControl = $( '#wpBlockedTextbox' ),
+	const SRTextboxControl = $( '#wpBlockedTextbox' ),
 		SRSummaryControl = $( '#wpBlockedSummary' );
 
-	SRTextboxControl.on( 'click', function () {
+	SRTextboxControl.on( 'click', () => {
 		if ( !SRTextboxControl.prop( 'checked' ) ) {
 			if ( !SRSummaryControl.prop( 'checked' ) ) {
 				SRSummaryControl.prop( 'checked', true );
@@ -11,7 +11,7 @@ $( function () {
 		}
 	} );
 
-	$( '#wpBlockedSummary' ).on( 'click', function () {
+	$( '#wpBlockedSummary' ).on( 'click', () => {
 		if ( !SRSummaryControl.prop( 'checked' ) ) {
 			if ( !SRTextboxControl.prop( 'checked' ) ) {
 				SRTextboxControl.prop( 'checked', true );
@@ -29,7 +29,7 @@ $( function () {
 		// 2) split it along the ampersands,
 		// 3) get the last part (text=<phrase to unblock>)
 		// 4) and remove "text=" from it, which leaves us with only the phrase to unblock
-		var thisElement = $( this ),
+		const thisElement = $( this ),
 			phrase = thisElement.attr( 'href' ).split( /&/ ).pop().replace( /text=/, '' );
 
 		( new mw.Api() ).postWithToken( 'csrf', {
@@ -37,7 +37,7 @@ $( function () {
 			format: 'json',
 			do: 'delete',
 			phrase: phrase
-		} ).done( function ( data ) {
+		} ).done( ( data ) => {
 			if ( data.spamregex.result === 'ok' ) {
 				thisElement.parent().parent().parent().fadeOut( 500 );
 			} else if ( data.spamregex.result === 'error' ) {
