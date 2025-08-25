@@ -7,5 +7,6 @@
 	},
 	"spamregex-unblock-success": "Hehttema fámuhuhttin lihkostuvai",
 	"spamregex-error-1": "Dohkketmeahttun virolaš cealkka.",
-	"spamregex-already-blocked": "\"$1\" lea juo hehttejuvvon"
+	"spamregex-already-blocked": "\"$1\" lea juo hehttejuvvon",
+	"spamregex-text": "(teaksta)"
 }
