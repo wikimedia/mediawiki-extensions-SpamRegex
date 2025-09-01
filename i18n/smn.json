@@ -6,5 +6,6 @@
 		]
 	},
 	"spamregex-already-blocked": "\"$1\" lii jo estum",
-	"spamregex-reason": "Suijâ:"
+	"spamregex-reason": "Suijâ:",
+	"spamregex-text": "(tekstâ)"
 }
