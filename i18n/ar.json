@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
+			"Mohammed Qays",
 			"OsamaK",
 			"ديفيد"
 		]
@@ -43,6 +44,6 @@
 	"spamregex-text": "(نص)",
 	"spamregex-text-and-summary-log": "(نص، ملخص)",
 	"spamregex-summary-log": "(ملخص)",
-	"action-spamregex": "حظر عبارات السخام",
+	"action-spamregex": "منع عبارات البريد العشوائي",
 	"right-spamregex": "منع عبارات السبام من خلال [[Special:SpamRegex]]"
 }
