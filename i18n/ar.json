@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"OsamaK",
-			"ديفيد"
+			"ديفيد",
+			"Mohammed Qays"
 		]
 	},
 	"apihelp-spamregex-summary": "إضافة إدخالات إلى SpamRegex أو إزالة الإدخالات الممنوعة بالفعل منه.",
@@ -43,6 +44,6 @@
 	"spamregex-text": "(نص)",
 	"spamregex-text-and-summary-log": "(نص، ملخص)",
 	"spamregex-summary-log": "(ملخص)",
-	"action-spamregex": "حظر عبارات السخام",
+	"action-spamregex": "منع عبارات البريد العشوائي",
 	"right-spamregex": "منع عبارات السبام من خلال [[Special:SpamRegex]]"
 }
