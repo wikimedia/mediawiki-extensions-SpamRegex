@@ -8,7 +8,7 @@
 			"Xosé"
 		]
 	},
-	"spamregex": "SpamRegex",
+	"spamregex": "Expresións regulares de spam",
 	"spamregex-desc": "[[Special:SpamRegex|Filtro]] de frases non desexadas nas páxinas editadas, baseado en expresións regulares",
 	"spamregex-error-unblocking": "Erro ao desbloquear \"$1\". Probablemente non hai tal patrón.",
 	"spamregex-summary": "O texto atopouse no resumo da páxina.",
