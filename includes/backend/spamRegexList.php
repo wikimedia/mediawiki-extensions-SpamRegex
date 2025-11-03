@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Navigation\PagerNavigationBuilder;
 use MediaWiki\Output\OutputPage;
