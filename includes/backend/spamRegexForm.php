@@ -109,7 +109,7 @@ class spamRegexForm {
 	/** on success */
 	function showSuccess() {
 		$out = $this->context->getOutput();
-		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-2' ) );
+		$out->setPageTitle( $this->context->msg( 'spamregex-page-title-2' )->escaped() );
 		$out->setSubTitle( $this->context->msg( 'spamregex-block-success' ) );
 		$out->addHTML( Html::successBox(
 			$this->context->msg( 'spamregex-block-message', $this->mBlockedPhrase )->parse()
