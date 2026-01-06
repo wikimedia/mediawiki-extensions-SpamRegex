@@ -3,10 +3,17 @@
 		"authors": [
 			"Anterdc99",
 			"Liangent",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Peterxy12"
 		]
 	},
+	"apihelp-spamregex-summary": "将项目添加至SpamRegex或从中移除已封禁的项目。",
 	"apihelp-spamregex-param-do": "要做什么？<kbd>add</kbd>或<kbd>delete</kbd>。",
+	"apihelp-spamregex-param-modes": "封禁模式，页面内容（文本）、编辑摘要（摘要）或其中一项出现封禁的片段时封锁。",
+	"apihelp-spamregex-param-phrase": "从SpamRegex中封禁或删除的垃圾邮件片段。",
+	"apihelp-spamregex-param-reason": "添加项目到SpamRegex的原因。此项添加项目时为必填，移除时不使用。",
+	"apihelp-spamregex-example-1": "将片段“FooBar”和原因“Cross-wiki spam”添加到SpamRegex，在页面文字和编辑摘要中封禁该片段",
+	"apihelp-spamregex-example-2": "从SpamRegex移除片段“Test, just a test”",
 	"spamregex": "破坏正则表达式",
 	"spamregex-desc": "基于正则表达式，在已编辑页面中[[Special:SpamRegex|过滤]]不需要的词组",
 	"spamregex-error-unblocking": "解封“$1”时出错。可能没有这种模式。",
