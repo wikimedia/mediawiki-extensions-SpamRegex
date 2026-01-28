@@ -20,6 +20,7 @@
 	"spamregex-error-1": "Невалиден регулярен израз.",
 	"spamregex-already-blocked": "„$1“ е вече блокиран",
 	"spamregex-phrase-block": "Фраза за блокиране:",
+	"spamregex-reason": "Причина:",
 	"spamregex-phrase-block-text": "блокиране на фраза в текста на статията",
 	"spamregex-phrase-block-summary": "блокиране на фраза в резюмето",
 	"spamregex-block-submit": "Блокиране&nbsp;на&nbsp;фразата",
