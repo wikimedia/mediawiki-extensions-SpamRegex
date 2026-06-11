@@ -33,7 +33,7 @@
 	"spamregex-block-success": "Blokkade geslaagd",
 	"spamregex-block-message": "De uitdrukking '''$1''' is geblokkeerd.",
 	"spamregex-warning-1": "Voer een uitdrukking in om te blokkeren.",
-	"spamregex-error-1": "Ongeldige reguliere expressie.",
+	"spamregex-error-1": "Incorrecte reguliere expressie.",
 	"spamregex-warning-2": "Selecteer tenminste één blokkeermogelijkheid.",
 	"spamregex-already-blocked": "\"$1\" is al geblokkeerd",
 	"spamregex-phrase-block": "Zin om te blokkeren:",
