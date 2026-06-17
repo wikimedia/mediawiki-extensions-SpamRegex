@@ -8,7 +8,7 @@
 			"Vistaus"
 		]
 	},
-	"apihelp-spamregex-summary": "Voeg vermeldingen toe aan SpamRegex of verwijder reeds geblokkeerde vermeldingen.",
+	"apihelp-spamregex-summary": "Voeg vermeldingen toe aan SpamRegex of verwijder al geblokkeerde vermeldingen.",
 	"apihelp-spamregex-param-do": "Maak een keuze: voeg <kbd>toe</kbd> of <kbd>verwijder</kbd>.",
 	"apihelp-spamregex-param-modes": "De blokkeermodi, d.w.z.: dient de zin te worden geblokkeerd in de pagina-inhoud (tekst), bewerkingssamenvattingen of beide?",
 	"apihelp-spamregex-param-phrase": "De uit SpamRegex te blokkeren of verwijderen zin.",
@@ -33,7 +33,7 @@
 	"spamregex-block-success": "Blokkade geslaagd",
 	"spamregex-block-message": "De uitdrukking '''$1''' is geblokkeerd.",
 	"spamregex-warning-1": "Voer een uitdrukking in om te blokkeren.",
-	"spamregex-error-1": "Ongeldige reguliere expressie.",
+	"spamregex-error-1": "Incorrecte reguliere expressie.",
 	"spamregex-warning-2": "Selecteer tenminste één blokkeermogelijkheid.",
 	"spamregex-already-blocked": "\"$1\" is al geblokkeerd",
 	"spamregex-phrase-block": "Zin om te blokkeren:",
