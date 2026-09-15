@@ -1,6 +1,8 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Title\Title;
 
 /**
  * Hooked functions used by SpamRegex to add our magic to things like the edit
@@ -13,17 +15,17 @@ class SpamRegexHooks {
 	/**
 	 * Main hook handler for edits
 	 *
-	 * @param MediaWiki\EditPage\EditPage $editPage
-	 * @param string $text Page text
-	 * @param string $section
-	 * @param string &$error Error message, if any
-	 * @param string $editSummary User-supplied edit summary
-	 * @return bool True if the edit went through, false if it hit the spam filters
+	 *
+	 * @param MediaWiki\Revision\RenderedRevision $renderedRevision
+	 * @param MediaWiki\User\UserIdentity $user
+	 * @param MediaWiki\CommentStore\CommentStoreComment $summary User-supplied edit summary
+	 * @param int $flags Edit bit flags, like EDIT_BOT, if any
+	 * @param MediaWiki\Status\Status $status Status object we'll be manipulating to prevent saving if necessary
+	 * @return bool|void True if editing the spam whitelist or when no spam was detected, false if we have spam
 	 */
-	public static function onEditFilter( $editPage, $text, $section, &$error, $editSummary ) {
-		global $wgOut;
-
-		$title = $editPage->getTitle();
+	public static function onMultiContentSave( $renderedRevision, $user, $summary, $flags, $status ) {
+		$rev = $renderedRevision->getRevision();
+		$title = Title::newFromLinkTarget( $rev->getPageAsLinkTarget() );
 		// allow blocked words to be added to whitelist
 		if (
 			$title->inNamespace( NS_MEDIAWIKI ) &&
@@ -35,22 +37,14 @@ class SpamRegexHooks {
 		// here we get only the phrases for blocking in summaries...
 		$s_phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_SUMMARY );
 
-		if ( $s_phrases && ( $editPage->summary != '' ) ) {
+		if ( $s_phrases && ( $summary->text != '' ) ) {
 			// ...so let's rock with our custom spamPage to indicate that
 			// (since some phrases can be safely in the text and not in a summary,
 			// and we do not want to confuse the good users, right?)
 
 			foreach ( $s_phrases as $s_phrase ) {
-				if ( preg_match( $s_phrase, $editPage->summary, $s_matches ) ) {
-					$wgOut->setPageTitleMsg( wfMessage( 'spamprotectiontitle' ) );
-					$wgOut->setRobotPolicy( 'noindex,nofollow' );
-					$wgOut->setArticleRelated( false );
-
-					$wgOut->addWikiMsg( 'spamprotectiontext' );
-					$wgOut->addWikiMsg( 'spamprotectionmatch', "<nowiki>{$s_matches[0]}</nowiki>" );
-					$wgOut->addWikiMsg( 'spamregex-summary' );
-
-					$wgOut->returnToMain( false, $title );
+				if ( preg_match( $s_phrase, $summary->text, $s_matches ) ) {
+					$status->fatal( 'spamregex-summary-hit', $s_matches[0] );
 					return false;
 				}
 			}
@@ -61,8 +55,9 @@ class SpamRegexHooks {
 		$t_phrases = SpamRegex::fetchRegexData( SpamRegex::TYPE_TEXTBOX );
 		if ( $t_phrases && is_array( $t_phrases ) ) {
 			foreach ( $t_phrases as $t_phrase ) {
-				if ( preg_match( $t_phrase, $editPage->textbox1, $t_matches ) ) {
-					$editPage->spamPageWithContent( $t_matches[0] );
+				$pageContent = $rev->getContent( SlotRecord::MAIN )->getText();
+				if ( preg_match( $t_phrase, $pageContent, $t_matches ) ) {
+					$status->fatal( 'spamprotectionmatch', $t_matches[0] );
 					return false;
 				}
 			}
@@ -154,7 +149,7 @@ class SpamRegexHooks {
 	 * @param bool &$retVal Is $text spammy?
 	 */
 	public static function onCommentsIsSpam( &$text, &$retVal ) {
-		// @todo FIXME: duplicates onEditFilter() slightly
+		// @todo FIXME: duplicates onMultiContentSave() slightly
 		$t_phrases = [];
 
 		// and here we check for phrases within the text itself
@@ -163,7 +158,7 @@ class SpamRegexHooks {
 			foreach ( $t_phrases as $t_phrase ) {
 				if ( preg_match( $t_phrase, $text, $t_matches ) ) {
 					// We got a match -> it's spam, alright
-					// The match is stored in $t_matches[0] but unlike the onEditFilter() code,
+					// The match is stored in $t_matches[0] but unlike the onMultiContentSave() code,
 					// we don't need to know or care about that.
 					// We'll just let Comments know, "yo, this is spam" and it'll take care of
 					// the rest.
@@ -189,7 +184,7 @@ class SpamRegexHooks {
 			foreach ( $t_phrases as $t_phrase ) {
 				if ( preg_match( $t_phrase, $text, $t_matches ) ) {
 					// We got a match -> it's spam, alright
-					// The match is stored in $t_matches[0] but unlike the onEditFilter() code,
+					// The match is stored in $t_matches[0] but unlike the onMultiContentSave() code,
 					// we don't need to know or care about that.
 					// We'll just let ProblemReports know, "yo, this is spam" and it'll take care of
 					// the rest.

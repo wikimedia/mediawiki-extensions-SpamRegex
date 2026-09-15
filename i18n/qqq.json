@@ -18,6 +18,7 @@
 	"spamregex": "{{doc-special}}",
 	"spamregex-desc": "{{desc|name=SpamRegex|url=https://www.mediawiki.org/wiki/Extension:SpamRegex}}",
 	"spamregex-error-unblocking": "Used as text on Special:SpamRegex",
+	"spamregex-summary-hit": "{{ignored}}",
 	"spamregex-summary": "Used as summary on Special:SpamRegex",
 	"spamregex-intro": "Used as intro on Special:SpamRegex",
 	"spamregex-page-title": "Used as page title on Special:SpamRegex",

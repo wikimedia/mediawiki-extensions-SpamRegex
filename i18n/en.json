@@ -15,6 +15,7 @@
 	"spamregex-desc": "[[Special:SpamRegex|Filter]] out unwanted phrases in edited pages, based on regular expressions",
 	"spamregex-error-unblocking": "Error unblocking \"$1\". Probably there is no such pattern.",
 	"spamregex-summary": "The text was found in the page's summary.",
+	"spamregex-summary-hit": "{{int:spamprotectiontext}}\n{{int:spamprotectionmatch|$1}}\n{{int:spamregex-summary}}",
 	"spamregex-intro": "Use this form to effectively block expressions from saving into a page's text.\nIf the text contains the given expression, change would not be saved and an explanation will be displayed to user that tried to save the page.\nCaution advised, expressions should not be too short or too common.",
 	"spamregex-page-title": "Spam regex unwanted expressions block",
 	"spamregex-currently-blocked": "'''Currently blocked phrases:'''",
