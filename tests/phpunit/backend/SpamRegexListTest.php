@@ -4,7 +4,7 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Title\Title;
 
 /**
- * @covers spamRegexList
+ * @covers \spamRegexList
  * @group Database
  */
 class SpamRegexListTest extends MediaWikiIntegrationTestCase {

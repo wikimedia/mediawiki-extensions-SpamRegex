@@ -54,7 +54,7 @@ class SpamRegex {
 		}
 
 		/* make insert to DB */
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 		$dbw->insert(
 			'spam_regex',
 			[
@@ -90,7 +90,7 @@ class SpamRegex {
 		self::updateMemcKeys( 'delete', $text );
 
 		/* delete in DB */
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 		$dbw->delete(
 			'spam_regex',
 			[ 'spam_text' => $text ],
@@ -121,7 +121,7 @@ class SpamRegex {
 		if ( !$cached ) {
 			/* fetch data from DB, concatenate into one string, then fill cache */
 			$field = ( $mode == self::TYPE_TEXTBOX ? 'spam_textbox' : 'spam_summary' );
-			$dbr = $services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+			$dbr = $services->getConnectionProvider()->getReplicaDatabase();
 			$res = $dbr->select(
 				'spam_regex',
 				'spam_text',

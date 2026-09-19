@@ -124,7 +124,7 @@ class SpamRegexHooks {
 	 * @param string $newName New user name
 	 */
 	public static function onRenameUserComplete( $uid, $oldName, $newName ) {
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 
 		$dbw->update(
 			'spam_regex',
