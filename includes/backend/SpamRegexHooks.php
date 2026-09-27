@@ -15,7 +15,6 @@ class SpamRegexHooks {
 	/**
 	 * Main hook handler for edits
 	 *
-	 *
 	 * @param MediaWiki\Revision\RenderedRevision $renderedRevision
 	 * @param MediaWiki\User\UserIdentity $user
 	 * @param MediaWiki\CommentStore\CommentStoreComment $summary User-supplied edit summary
@@ -74,7 +73,7 @@ class SpamRegexHooks {
 	 * @param MediaWiki\User\User $user User trying to move the page
 	 * @param string $reason User-supplied reason for the move (if any)
 	 * @param Status $status Status object to pass error messages to
-	 * @return bool False if the summary contains spam, otherwise true
+	 * @return bool False if the user-supplied reason for the page move contains spam, otherwise true
 	 */
 	public static function onMovePageCheckPermissions(
 		$oldTitle, $newTitle, $user, $reason, $status
@@ -85,13 +84,7 @@ class SpamRegexHooks {
 		if ( $phrases && $reason ) {
 			foreach ( $phrases as $phrase ) {
 				if ( preg_match( $phrase, $reason, $matches ) ) {
-					// Quoth core MovePage::checkPermissions,
-					// "This is kind of lame, won't display nice"
-					$status->fatal( 'spamprotectiontext' );
-					// Old code (which was used with the AbortMove hook, which
-					// no longer exists in core):
-					//$error .= wfMessage( 'spamregex-move' )->parse() . wfMessage( 'word_separator' )->escaped();
-					//$error .= wfMessage( 'spamprotectionmatch', "<nowiki>{$matches[0]}</nowiki>" )->parse();
+					$status->fatal( 'spamregex-move-with-match', "<nowiki>{$matches[0]}</nowiki>" );
 					return false;
 				}
 			}
@@ -143,7 +136,7 @@ class SpamRegexHooks {
 
 	/**
 	 * For integration with the Comments extension, to make sure that Comments
-	 * submitted via that extension are also run throug SpamRegex.
+	 * submitted via that extension are also run through SpamRegex.
 	 *
 	 * @param string &$text Comment text
 	 * @param bool &$retVal Is $text spammy?
