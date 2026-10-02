@@ -22,7 +22,7 @@
 	"spamregex-intro": "Used as intro on Special:SpamRegex",
 	"spamregex-page-title": "Used as page title on Special:SpamRegex",
 	"spamregex-currently-blocked": "Used as header for a list",
-	"spamregex-move": "Currently unused",
+	"spamregex-move": "Error message (or a part of it, rather) shown to the user when they try to move a page but the reason they entered for the page move contains a blocked phrase. Used as a part of {{msg-mw|spamregex-move-with-match}}, which also contains the message which informs the user what exact phrase triggered the spam filter.",
 	"spamregex-no-currently-blocked": "Used as hint for a empty list",
 	"spamregex-log": "Parameters:\n* $1 is spam text\n* $2 is a description\n* $3 is an unblock link\n* $4 is the IP address to be unblocked\n* $5 is a username\n* $6 is a date\n* $7 is a time",
 	"spamregex-page-title-1": "Used as page title on Special:SpamRegex",
