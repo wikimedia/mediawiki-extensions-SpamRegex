@@ -35,11 +35,16 @@
 	"APIModules": {
 		"spamregex": "ApiSpamRegex"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "SpamRegexHooks"
+		}
+	},
 	"Hooks": {
-		"MultiContentSave": "SpamRegexHooks::onMultiContentSave",
-		"MovePageCheckPermissions": "SpamRegexHooks::onMovePageCheckPermissions",
-		"LoadExtensionSchemaUpdates": "SpamRegexHooks::onLoadExtensionSchemaUpdates",
-		"RenameUserComplete": "SpamRegexHooks::onRenameUserComplete",
+		"MultiContentSave": "main",
+		"MovePageCheckPermissions": "main",
+		"LoadExtensionSchemaUpdates": "main",
+		"RenameUserComplete": "main",
 		"Comments::isSpam": "SpamRegexHooks::onCommentsIsSpam",
 		"ProblemReportsContentCheck": "SpamRegexHooks::onProblemReportsContentCheck"
 	},

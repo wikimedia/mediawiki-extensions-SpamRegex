@@ -10,7 +10,12 @@ use MediaWiki\Title\Title;
  *
  * @file
  */
-class SpamRegexHooks {
+class SpamRegexHooks implements
+	\MediaWiki\Hook\MovePageCheckPermissionsHook,
+	\MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook,
+	\MediaWiki\RenameUser\Hook\RenameUserCompleteHook,
+	\MediaWiki\Storage\Hook\MultiContentSaveHook
+{
 
 	/**
 	 * Main hook handler for edits
@@ -22,7 +27,7 @@ class SpamRegexHooks {
 	 * @param MediaWiki\Status\Status $status Status object we'll be manipulating to prevent saving if necessary
 	 * @return bool|void True if editing the spam whitelist or when no spam was detected, false if we have spam
 	 */
-	public static function onMultiContentSave( $renderedRevision, $user, $summary, $flags, $status ) {
+	public function onMultiContentSave( $renderedRevision, $user, $summary, $flags, $status ) {
 		$rev = $renderedRevision->getRevision();
 		$title = Title::newFromLinkTarget( $rev->getPageAsLinkTarget() );
 		// allow blocked words to be added to whitelist
@@ -75,7 +80,7 @@ class SpamRegexHooks {
 	 * @param Status $status Status object to pass error messages to
 	 * @return bool False if the user-supplied reason for the page move contains spam, otherwise true
 	 */
-	public static function onMovePageCheckPermissions(
+	public function onMovePageCheckPermissions(
 		$oldTitle, $newTitle, $user, $reason, $status
 	) {
 		// here we get only the phrases for blocking in summaries...
@@ -99,7 +104,7 @@ class SpamRegexHooks {
 	 *
 	 * @param MediaWiki\Installer\DatabaseUpdater $updater
 	 */
-	public static function onLoadExtensionSchemaUpdates( $updater ) {
+	public function onLoadExtensionSchemaUpdates( $updater ) {
 		$dir = __DIR__ . '/../../sql';
 
 		$dbType = $updater->getDB()->getType();
@@ -123,7 +128,7 @@ class SpamRegexHooks {
 	 * @param string $oldName Old user name
 	 * @param string $newName New user name
 	 */
-	public static function onRenameUserComplete( $uid, $oldName, $newName ) {
+	public function onRenameUserComplete( int $uid, string $oldName, string $newName ): void {
 		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 
 		$dbw->update(
