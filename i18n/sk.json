@@ -2,9 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Helix84",
-			"TomášPolonec"
+			"TomášPolonec",
+			"Wizzard"
 		]
 	},
+	"apihelp-spamregex-summary": "Pridať položky do SpamRegex alebo z neho odstrániť už zablokované položky.",
+	"apihelp-spamregex-param-do": "Čo robiť? Buď <kbd>add</kbd> alebo <kbd>delete</kbd>.",
+	"apihelp-spamregex-param-modes": "Režimy blokovania, t. j. či sa má blokovaná fráza blokovať v obsahu stránky (text), v zhrnutiach úprav (summary), alebo v oboch?",
+	"apihelp-spamregex-param-phrase": "Spamová fráza, ktorá sa má v SpamRegex zablokovať alebo z neho odstrániť.",
+	"apihelp-spamregex-param-reason": "Dôvod pridania položky do SpamRegex. Povinný pri pridávaní položiek, pri mazaní sa nepoužíva.",
+	"apihelp-spamregex-example-1": "Pridať do SpamRegex frázu „FooBar“ s dôvodom „Cross-wiki spam“, blokovanú v texte stránky aj v zhrnutiach úprav",
+	"apihelp-spamregex-example-2": "Odstrániť zo SpamRegex frázu „Test, just a test“",
 	"spamregex": "SpamRegex",
 	"spamregex-desc": "[[Special:SpamRegex|Filtrovanie]] neželaných výrazov v upravovaných stránkach na základe regulárnych výrazov",
 	"spamregex-error-unblocking": "Chyba pri odblokovaní „$1”. Taký vzor pravdepodobne neexistuje.",
@@ -16,6 +24,7 @@
 	"spamregex-no-currently-blocked": "'''Nie sú žiadne zablokované frázy.'''",
 	"spamregex-log": "* <code>$1</code> $2 ([{{SERVER}}$3&text=$4 odstrániť]) pridal $5 dňa $6 o čase $7 (dôvod: $8)",
 	"spamregex-page-title-1": "Zablokovať frázu pomocou regulárnych výrazov",
+	"spamregex-unblock-form-text": "Fráza na odblokovanie:",
 	"spamregex-unblock-success": "Odblokovanie úspešné",
 	"spamregex-unblock-message": "Bol zrušený zákaz uložiť frázu „$1“.",
 	"spamregex-page-title-2": "Blokovať ukladanie fráz pomocou regulárnych výrazov",
@@ -26,10 +35,14 @@
 	"spamregex-warning-2": "Prosím, označte aspoň jeden režim blokovania.",
 	"spamregex-already-blocked": "„$1“ je už blokované",
 	"spamregex-phrase-block": "Blokovať frázu:",
+	"spamregex-reason": "Dôvod:",
+	"spamregex-error-no-reason": "Pri blokovaní frázy musíte uviesť dôvod!",
 	"spamregex-phrase-block-text": "blokovať frázu v texte stránky",
 	"spamregex-phrase-block-summary": "blokovať frázu v zhrnutí úprav",
 	"spamregex-block-submit": "Blokovať&nbsp;túto&nbsp;frázu",
 	"spamregex-text": "(v texte)",
+	"spamregex-text-and-summary-log": "(text, zhrnutie)",
 	"spamregex-summary-log": "(v zhrnutí)",
+	"action-spamregex": "blokovať spamové frázy",
 	"right-spamregex": "Blokovať spam v texte pomocou [[Special:SpamRegex]]"
 }
