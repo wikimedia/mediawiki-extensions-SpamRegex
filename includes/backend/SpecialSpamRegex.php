@@ -4,11 +4,13 @@ use MediaWiki\SpecialPage\SpecialPage;
 
 class SpecialSpamRegex extends SpecialPage {
 
-	/**
-	 * Constructor
-	 */
 	public function __construct() {
-		parent::__construct( 'SpamRegex', 'spamregex' );
+		parent::__construct( 'SpamRegex' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'spamregex';
 	}
 
 	/**

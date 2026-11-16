@@ -11,7 +11,7 @@
 	"descriptionmsg": "spamregex-desc",
 	"type": "antispam",
 	"requires": {
-		"MediaWiki": ">= 1.43.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"SpecialPages": {
 		"SpamRegex": "SpecialSpamRegex"
